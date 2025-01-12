@@ -1,0 +1,100 @@
+// here start hero seciton design 
+#hero{
+    .hero-benner-box{
+
+    }
+}
+
+#gift-section{
+   
+    background-color: $section-primary;
+    margin-top: 60rem;
+    .gift-card-box{
+        padding-top: 6rem;
+        padding-bottom: 6rem;
+        display: grid;
+        grid-template-columns: repeat(8,minmax(129px, 1fr));
+        grid-column-gap: 2rem;
+        grid-row-gap: 2rem;
+
+     .gift-card{
+        padding: 30px 11px;
+        border: 1px solid #FFFFFF1A;
+        border-radius: 6px;
+        background-color: $section-secoundry;
+        transition: all 0.3s linear;
+        .gift-card-img{
+           
+         
+        }
+        .gift-card-title{
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 30px;
+            color: $heading-white;
+        }
+        &:hover{
+            border: 1px solid #45F88280;
+            box-shadow: 0px 5px 15px 0px #45F88280;
+
+        }
+     }
+    }
+}
+// here atart offer card 
+
+#offer-Card{
+    background-color: $section-primary;
+    margin-bottom: 70px /*unknow margin*/;
+    .offer-card-head{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 30px;
+        .offer-card-details{
+            .offer-card-subtitle{
+                font-size: 18px;
+                font-weight: 500;
+                color: $button-color;
+            }
+            .offer-card-title{
+                font-size: 36px;
+                font-weight: 500;
+                line-height: 56px;
+                color: $heading-white;
+            }
+        }
+        .offerCard-btn{
+            padding: 17px 25px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: $button-color;
+            color: $section-secoundry;
+            gap: 9px;
+            font-size: 16px;
+            font-weight: 500;
+            border-radius: 5px;
+            transition: all 0.3s linear;
+            &:hover{
+                background-color: $section-secoundry;
+                border: 1px solid #F6F8FF;
+                box-shadow: 7px 7px 20px 4px #0000000D;
+                color: $heading-white;
+               &span { svg 
+                { path 
+                    { fill: $heading-white; 
+                         } 
+                        } 
+                    }
+            }
+        }
+    }
+    .offer-card-wepper{
+        display: grid;
+        grid-template-columns: repeat(3,minmax(300px, 1fr));
+        grid-column-gap: 3rem;
+        grid-row-gap: 3rem;
+
+    }
+}

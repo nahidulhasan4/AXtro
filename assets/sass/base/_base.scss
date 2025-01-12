@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
+// base-------------------->
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    background: $section-primary;
+    font-family: $urbrains;
+   
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+img {
+    vertical-align: middle;
+    max-width: 100%;
+}
+
+iframe {
+    max-width: 100%;
+}
+
+.container {
+    max-width: 120rem;
+    margin: 0 auto;
+    padding-left: 1.5rem;
+    padding-right:1.5rem ;
+
+}
+
+input,
+button {
+    border: none;
+    outline: none;
+    background: transparent;
+}
+
+
+@media #{$pc-xl} {
+    .container {
+        padding: 0 1rem;
+    }
+}

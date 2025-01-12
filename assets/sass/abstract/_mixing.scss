@@ -1,0 +1,35 @@
+
+@mixin flex($justify: unset, $align: center, $direction: row, $gap: 0) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+    flex-direction: $direction;
+    gap: $gap;
+}
+
+@mixin btnPrimary($pd,$fsize,$bg,$color,$display){
+    padding: $pd;
+    background-color: $bg;
+    font-size: $fsize;
+    color: $color;
+    display: $display;
+    
+
+}
+
+// grid-------------------->
+@mixin grid($grid: repeat(6, minmax(0, 1fr)), $gap: 2.4rem) {
+    display: grid;
+    grid-template-columns: $grid;
+    gap: $gap;
+}
+
+// wrapper-------------------->
+@mixin wrapper {
+    background: $color-white;
+    border: 1px solid #eaf1ff;
+    border-radius: 1rem;
+}
+
+// button-------------------->

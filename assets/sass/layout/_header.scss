@@ -1,0 +1,153 @@
+// header-------------------->
+.header {
+  position: fixed;
+
+  width: 100%;
+  z-index: 10;
+  background-color: $section-secoundry;
+  .header-list {
+    @include flex($gap: 3.2rem);
+
+    .list-item {
+      @include flex($gap: 0.8rem);
+      font-family: $urbrains;
+    }
+  }
+
+  .list-text {
+    color: $heading-white;
+  }
+
+  .nav-bg {
+    background: rgba(37, 37, 37, 0.4);
+    backdrop-filter: blur(2rem);
+  }
+
+  .nav-list {
+    .header-sub-menu {
+      .list-text {
+        &::before {
+          top: 2.2rem;
+          height: 1px;
+        }
+      }
+    }
+  }
+}
+
+// header-top---------->
+.header-top {
+  padding: 1.2rem 0;
+
+  .header-top-section {
+    @include flex($justify: space-between);
+  }
+
+  .list-item {
+    font-weight: 500;
+    font-size: 1.6rem;
+  }
+
+  .btn {
+    &:active {
+      border-color: transparent;
+    }
+  }
+}
+
+// header-nav---------->
+.header-nav {
+  // border: 1px solid rgba($color: $color-white, $alpha: 0.1);
+  padding: 1.7rem 0;
+
+  .header-nav-section {
+    @include flex($justify: space-between);
+  }
+
+  .header-navigation {
+    @include flex($gap: 14.4rem);
+  }
+
+  .header-search-input {
+    border: 1px solid #ffffff1a;
+    width: 462px;
+    border-radius: 4px;
+    position: relative;
+
+    .header-search-box {
+      width: 100% !important;
+      padding-left: 22px;
+      padding-top: 19px;
+      padding-bottom: 16px;
+      font-size: 18px;
+      font-weight: 500;
+    }
+
+    .search-btn {
+      position: absolute;
+      top: 50%;
+      right: 5px;
+      transform: translateY(-50%);
+      padding: 11px 28px;
+
+      background-color: $button-color;
+      border-radius: 4px;
+      color: $section-secoundry;
+      font-size: 16px;
+      font-weight: 500;
+      transition: all 0.3s linear;
+      &:hover{
+        background-color: $section-secoundry;
+        border: 1px solid #F6F8FF;
+        box-shadow: 7px 7px 20px 4px #0000000D;
+        color: $heading-white;
+      
+    }
+    }
+  }
+}
+
+.header-nav-menu {
+  .header-menu-box {
+    @include flex($justify: space-between);
+
+    .header-navigation {
+      @include flex($justify: space-between, $gap:6.9rem,);
+      
+    }
+
+    .header-btn {
+      .header-menu-btn {
+        padding: 11px 16px ;
+        background-color: $button-color;
+        color: $section-secoundry;
+        font-weight: 600;
+        font-size: 16px;
+        border-radius: 6px;
+        transition: all 0.3s linear;
+        &:hover{
+          background-color: $section-secoundry;
+          border: 1px solid #F6F8FF;
+          box-shadow: 7px 7px 20px 4px #0000000D;
+          color: $heading-white;
+        
+      }
+          
+      }
+    }
+    .header-dropDown-menu{
+       width: 270px;
+        padding: 21px 20px;
+        background-color: $section-primary;
+        border-radius: 6px;
+        .dropdwon-icon{
+            gap: 16px;
+            .dropDwon-cetagoris{
+                font-size: 14px;
+                font-weight: 400px;
+                color: $heading-white;
+            }
+        }
+    }
+  }
+}

@@ -1,0 +1,37 @@
+
+// abstract-------------------->
+@import "./abstract/mixing";
+@import "./abstract/variable";
+
+// base-------------------->
+@import"./base/animation";
+@import"./base/base";
+@import"./base/typography";
+@import"./base/utilities";
+
+
+// components-------------------->
+@import"./component/buttons";
+@import"./component/carousel";
+@import"./component/faq";
+@import"./component/form";
+@import"./component/hero";
+@import"./component/modal";
+@import"./component/wrapper-box";
+
+// layout-------------------->
+@import"./layout/footer";
+@import "./layout/header";
+
+
+// pages-------------------->
+@import"./pages/about";
+@import"./pages/blog-pages";
+@import"./pages/contact-us";
+@import"./pages/dashboard";
+@import"./pages/home";
+@import"./pages/hotel-listing";
+@import"./pages/payment-mathod";
+@import"./pages/privacy-terms";
+@import"./pages/responsive";
+

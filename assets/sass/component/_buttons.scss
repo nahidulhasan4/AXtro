@@ -1,0 +1,16 @@
+// primary-btn----------------
+@mixin PrimaryBtn($pd,$bg , $color, $fsize, $bra, $border, $outline, $tran, $hoverBG, $hoverCol){
+    padding: $pd;
+    background: $bg;
+    color: $color;
+    font-size: $fsize;
+    border-radius: $bra;
+    font-weight: 500;
+    border: $border;
+    outline: $outline;
+    transition: $tran;
+    &:hover{
+        background: $hoverBG;
+        color: $hoverCol;
+    }
+}
