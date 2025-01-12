@@ -142,4 +142,27 @@
             }
         }
     }
+    .Games-wepper{
+        .game-wepperBox{
+
+        }
+    }
+    .games-card{
+        .game-card-head{
+            max-width: 160px;
+            aspect-ratio: 160px/125px;
+
+            .games-watch-icon{
+                padding: 5px;
+                top: 5px;
+                left: 5px;
+                border-radius: 25%;
+            }
+            .games-img{
+                width: 100%;
+                height: auto;
+                object-fit: cover;
+            }
+        }
+    }
 }
