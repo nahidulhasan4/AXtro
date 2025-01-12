@@ -412,4 +412,32 @@ a {
   grid-template-columns: repeat(3, minmax(300px, 1fr));
   grid-column-gap: 3rem;
   grid-row-gap: 3rem;
+}
+
+#games .offer-card-head {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 14px;
+  margin-bottom: 30px;
+}
+#games .offer-card-head .offerCard-btn {
+  padding: 17px 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #000000;
+  color: #FFFFFF;
+  gap: 9px;
+  border: 1px solid #F6F8FF;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 5px;
+  transition: all 0.3s linear;
+}
+#games .offer-card-head .offerCard-btn:hover {
+  background-color: #45F882;
+  box-shadow: 7px 7px 20px 4px rgba(0, 0, 0, 0.0509803922);
+  color: #000000;
+  border: 1px solid #45F882;
 }/*# sourceMappingURL=main.css.map */
