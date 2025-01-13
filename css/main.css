@@ -312,10 +312,15 @@ a {
   font-size: 16px;
   border-radius: 6px;
   transition: all 0.3s linear;
+  border-width: 1.5px, 1px, 1.5px, 1px;
+  border-style: solid;
+  border-color: #0B0E12;
 }
 .header-nav-menu .header-menu-box .header-btn .header-menu-btn:hover {
   background-color: #000000;
-  border: 1px solid #F6F8FF;
+  border-width: 1.5px, 1px, 1.5px, 1px;
+  border-style: solid;
+  border-color: #F6F8FF;
   box-shadow: 7px 7px 20px 4px rgba(0, 0, 0, 0.0509803922);
   color: #FFFFFF;
 }
@@ -414,6 +419,9 @@ a {
   grid-row-gap: 3rem;
 }
 
+#games {
+  margin-bottom: 48px;
+}
 #games .offer-card-head {
   display: flex;
   align-items: center;
@@ -440,4 +448,442 @@ a {
   box-shadow: 7px 7px 20px 4px rgba(0, 0, 0, 0.0509803922);
   color: #000000;
   border: 1px solid #45F882;
+}
+#games .game-wepperBox {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(420px, 1fr));
+  grid-column-gap: 3rem;
+  grid-row-gap: 3rem;
+}
+#games .games-card {
+  padding: 12px;
+  background-color: #000000;
+  border: 1px solid #3C3E42;
+  border-radius: 6px;
+  gap: 1.6rem;
+}
+#games .games-card .game-card-head {
+  width: 160px;
+  aspect-ratio: 160px/125px;
+}
+#games .games-card .game-card-head .games-watch-icon {
+  padding: 5px;
+  top: 5px;
+  left: 5px;
+  border-radius: 50%;
+  background-color: #FFFFFF;
+  cursor: pointer;
+}
+#games .games-card .game-card-head .games-img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 6px;
+}
+#games .games-card .game-car-body {
+  max-width: 220px;
+  width: 100%;
+}
+#games .games-card .game-car-body .gameCard-price {
+  gap: 0.4rem;
+  color: #45F882;
+  font-weight: 700;
+  font-size: 20px;
+}
+#games .games-card .game-car-body .gameCard-price .games-delate-price {
+  font-size: 14px;
+  font-weight: 400;
+  color: #7B7B7B;
+}
+#games .games-card .game-car-body .gameCard-ttile {
+  color: #FFFFFF;
+  font-size: 20px;
+  font-weight: 600;
+}
+#games .games-card .game-car-body .gameCard-sles {
+  font-size: 16px;
+  font-weight: 500;
+  color: #A8ABA9;
+  padding: 8px 10px;
+  background-color: #343434;
+  border-radius: 4px;
+}
+#games .games-card .game-car-body .gamecard-rating {
+  font-size: 16px;
+  font-weight: 500;
+  gap: 5px;
+  color: #FFFFFF;
+}
+#games .Games-wepper {
+  gap: 3rem;
+}
+#games .game-wepper-img {
+  max-width: 258px;
+  width: 100%;
+  aspect-ratio: 258px/501px;
+  border-radius: 8px;
+  background: #FFFFFF;
+  box-shadow: 0px 6px 60px 5px rgba(0, 0, 0, 0.0784313725);
+}
+#games .game-wepper-img .game-bennerImg {
+  padding: 11px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+#latestApp {
+  background-color: #000000;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+#latestApp .offer-card-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+#latestApp .offer-card-head .offer-card-details .offer-card-subtitle {
+  font-size: 18px;
+  font-weight: 500;
+  color: #45F882;
+}
+#latestApp .offer-card-head .offer-card-details .offer-card-title {
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 56px;
+  color: #FFFFFF;
+}
+#latestApp .offer-card-head .offerCard-btn {
+  padding: 17px 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #45F882;
+  color: #000000;
+  gap: 9px;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 5px;
+  transition: all 0.3s linear;
+}
+#latestApp .offer-card-head .offerCard-btn:hover {
+  background-color: #000000;
+  border: 1px solid #F6F8FF;
+  box-shadow: 7px 7px 20px 4px rgba(0, 0, 0, 0.0509803922);
+  color: #FFFFFF;
+}
+#latestApp .offer-card-head .offerCard-btn:hoverspan svg path {
+  fill: #FFFFFF;
+}
+#latestApp .lastetApp-card-box .game-lasted-wepper {
+  padding: 12px;
+}
+#latestApp .games-card {
+  padding: 12px;
+  background-color: #0B0E13;
+  border: 1px solid #3C3E42;
+  border-radius: 6px;
+  gap: 1.6rem;
+}
+#latestApp .games-card .game-card-head .games-watch-icon {
+  padding: 5px;
+  top: 5px;
+  left: 5px;
+  border-radius: 50%;
+  background-color: #FFFFFF;
+  cursor: pointer;
+}
+#latestApp .games-card .game-card-head .games-img {
+  height: auto;
+  object-fit: cover;
+  border-radius: 6px;
+}
+#latestApp .games-card .game-car-body {
+  max-width: 220px;
+  width: 100%;
+}
+#latestApp .games-card .game-car-body .gameCard-price {
+  gap: 0.4rem;
+  color: #45F882;
+  font-weight: 700;
+  font-size: 20px;
+}
+#latestApp .games-card .game-car-body .gameCard-price .games-delate-price {
+  font-size: 14px;
+  font-weight: 400;
+  color: #7B7B7B;
+}
+#latestApp .games-card .game-car-body .gameCard-ttile {
+  color: #FFFFFF;
+  font-size: 20px;
+  font-weight: 600;
+}
+#latestApp .games-card .game-car-body .gameCard-sles {
+  font-size: 16px;
+  font-weight: 500;
+  color: #A8ABA9;
+  padding: 8px 10px;
+  background-color: #343434;
+  border-radius: 4px;
+}
+#latestApp .games-card .game-car-body .gamecard-rating {
+  font-size: 16px;
+  font-weight: 500;
+  gap: 5px;
+  color: #FFFFFF;
+}
+#latestApp .btn-pav {
+  top: 50%;
+  transform: translateY(-50%);
+  left: -30px;
+}
+#latestApp .btn-next {
+  top: 50%;
+  transform: translateY(-50%);
+  right: -49px;
+}
+
+#UpCamingApp {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+#UpCamingApp .offer-card-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+#UpCamingApp .offer-card-head .offer-card-details .offer-card-subtitle {
+  font-size: 18px;
+  font-weight: 500;
+  color: #45F882;
+}
+#UpCamingApp .offer-card-head .offer-card-details .offer-card-title {
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 56px;
+  color: #FFFFFF;
+}
+#UpCamingApp .offer-card-head .offerCard-btn {
+  padding: 17px 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #45F882;
+  color: #000000;
+  gap: 9px;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 5px;
+  transition: all 0.3s linear;
+}
+#UpCamingApp .offer-card-head .offerCard-btn:hover {
+  background-color: #000000;
+  border: 1px solid #F6F8FF;
+  box-shadow: 7px 7px 20px 4px rgba(0, 0, 0, 0.0509803922);
+  color: #FFFFFF;
+}
+#UpCamingApp .offer-card-head .offerCard-btn:hoverspan svg path {
+  fill: #FFFFFF;
+}
+#UpCamingApp .lastetApp-card-box .game-lasted-wepper {
+  padding: 12px;
+}
+#UpCamingApp .games-card {
+  padding: 12px;
+  background-color: #000000;
+  border: 1px solid #3C3E42;
+  border-radius: 6px;
+  gap: 1.6rem;
+}
+#UpCamingApp .games-card .game-card-head .games-watch-icon {
+  padding: 5px;
+  top: 5px;
+  left: 5px;
+  border-radius: 50%;
+  background-color: #FFFFFF;
+  cursor: pointer;
+}
+#UpCamingApp .games-card .game-card-head .games-img {
+  height: auto;
+  object-fit: cover;
+  border-radius: 6px;
+}
+#UpCamingApp .games-card .game-car-body {
+  max-width: 220px;
+  width: 100%;
+}
+#UpCamingApp .games-card .game-car-body .gameCard-price {
+  gap: 0.4rem;
+  color: #45F882;
+  font-weight: 700;
+  font-size: 20px;
+}
+#UpCamingApp .games-card .game-car-body .gameCard-price .games-delate-price {
+  font-size: 14px;
+  font-weight: 400;
+  color: #7B7B7B;
+}
+#UpCamingApp .games-card .game-car-body .gameCard-ttile {
+  color: #FFFFFF;
+  font-size: 20px;
+  font-weight: 600;
+}
+#UpCamingApp .games-card .game-car-body .gameCard-sles {
+  font-size: 16px;
+  font-weight: 500;
+  color: #A8ABA9;
+  padding: 8px 10px;
+  background-color: #343434;
+  border-radius: 4px;
+}
+#UpCamingApp .games-card .game-car-body .gamecard-rating {
+  font-size: 16px;
+  font-weight: 500;
+  gap: 5px;
+  color: #FFFFFF;
+}
+#UpCamingApp .btn-pav1 {
+  top: 50%;
+  transform: translateY(-50%);
+  left: -30px;
+}
+#UpCamingApp .btn-next1 {
+  top: 50%;
+  transform: translateY(-50%);
+  right: -49px;
+}
+
+#counter {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: #45F882;
+}
+#counter .counter-box {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(174px, 1fr));
+  grid-column-gap: 3rem;
+  grid-row-gap: 3rem;
+}
+#counter .single-counter {
+  gap: 2.5rem;
+}
+#counter .single-counter .counter-number {
+  font-size: 65px;
+  font-weight: 600;
+  color: #121313;
+}
+#counter .single-counter .couner-name {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+#recommendtion {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+#recommendtion .offer-card-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+#recommendtion .offer-card-head .offer-card-details .offer-card-subtitle {
+  font-size: 18px;
+  font-weight: 500;
+  color: #45F882;
+}
+#recommendtion .offer-card-head .offer-card-details .offer-card-title {
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 56px;
+  color: #FFFFFF;
+}
+#recommendtion .offer-card-head .offerCard-btn {
+  padding: 17px 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #45F882;
+  color: #000000;
+  gap: 9px;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 5px;
+  transition: all 0.3s linear;
+}
+#recommendtion .offer-card-head .offerCard-btn:hover {
+  background-color: #000000;
+  border: 1px solid #F6F8FF;
+  box-shadow: 7px 7px 20px 4px rgba(0, 0, 0, 0.0509803922);
+  color: #FFFFFF;
+}
+#recommendtion .offer-card-head .offerCard-btn:hoverspan svg path {
+  fill: #FFFFFF;
+}
+#recommendtion .game-wepperBox {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(370px, 1fr));
+  grid-column-gap: 3rem;
+  grid-row-gap: 3rem;
+}
+#recommendtion .games-card {
+  padding: 12px;
+  background-color: #000000;
+  border-radius: 6px;
+  gap: 1.6rem;
+}
+#recommendtion .games-card .game-card-head {
+  width: 160px !important;
+  aspect-ratio: 160px/125.85px;
+}
+#recommendtion .games-card .game-card-head .games-watch-icon {
+  padding: 5px;
+  top: 5px;
+  left: 5px;
+  border-radius: 50%;
+  background-color: #FFFFFF;
+  cursor: pointer;
+}
+#recommendtion .games-card .game-card-head .games-img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 6px;
+}
+#recommendtion .games-card .game-car-body {
+  max-width: 170px;
+  width: 100%;
+}
+#recommendtion .games-card .game-car-body .gameCard-price {
+  gap: 0.4rem;
+  color: #45F882;
+  font-weight: 700;
+  font-size: 20px;
+}
+#recommendtion .games-card .game-car-body .gameCard-price .games-delate-price {
+  font-size: 14px;
+  font-weight: 400;
+  color: #7B7B7B;
+}
+#recommendtion .games-card .game-car-body .gameCard-ttile {
+  color: #FFFFFF;
+  font-size: 20px;
+  font-weight: 600;
+}
+#recommendtion .games-card .game-car-body .gameCard-sles {
+  font-size: 16px;
+  font-weight: 500;
+  color: #A8ABA9;
+  padding: 8px 10px;
+  background-color: #343434;
+  border-radius: 4px;
+}
+#recommendtion .games-card .game-car-body .gamecard-rating {
+  font-size: 16px;
+  font-weight: 500;
+  gap: 5px;
+  color: #FFFFFF;
 }/*# sourceMappingURL=main.css.map */

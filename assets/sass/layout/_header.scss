@@ -125,9 +125,14 @@
         font-size: 16px;
         border-radius: 6px;
         transition: all 0.3s linear;
+         border-width: 1.5px, 1px, 1.5px, 1px;
+         border-style: solid;
+         border-color: #0B0E12;
         &:hover{
           background-color: $section-secoundry;
-          border: 1px solid #F6F8FF;
+          border-width: 1.5px, 1px, 1.5px, 1px;
+          border-style: solid;
+          border-color: #F6F8FF;
           box-shadow: 7px 7px 20px 4px #0000000D;
           color: $heading-white;
         

@@ -111,6 +111,7 @@
 
 // here start games section
 #games {
+    margin-bottom: 48px;
     .offer-card-head {
         display: flex;
         align-items: center;
@@ -147,22 +148,548 @@
 
         }
     }
+    .game-wepperBox{
+        display: grid;
+        grid-template-columns: repeat(2, minmax(420px, 1fr));
+        grid-column-gap: 3rem;
+        grid-row-gap: 3rem;
+    }
     .games-card{
+       
+        padding: 12px;
+        background-color: $section-secoundry;
+        border: 1px solid #3C3E42;
+        border-radius: 6px;
+        gap: 1.6rem;
         .game-card-head{
-            max-width: 160px;
+            
+            width: 160px;
             aspect-ratio: 160px/125px;
 
             .games-watch-icon{
                 padding: 5px;
                 top: 5px;
                 left: 5px;
-                border-radius: 25%;
+                border-radius: 50%;
+                background-color: $heading-white;
+                cursor: pointer;
+              
             }
             .games-img{
                 width: 100%;
                 height: auto;
                 object-fit: cover;
+                border-radius: 6px;
+            }
+        }
+        .game-car-body{
+            max-width: 220px;
+            width: 100%;
+            .gameCard-price{
+                gap: 0.4rem;
+                color: $button-color;
+                font-weight: 700;
+                font-size: 20px;
+                .games-delate-price{
+                    font-size: 14px;
+                    font-weight: 400;
+                    color: #7B7B7B;
+                }
+            }
+            .gameCard-ttile{
+                color: $heading-white;
+                font-size: 20px;
+                font-weight: 600;
+
+            }
+            .gameCard-btn-box{
+
+            }
+            .gameCard-sles{
+                font-size: 16px;
+                font-weight: 500;
+                color: #A8ABA9;
+                padding: 8px 10px;
+                background-color: #343434;
+                border-radius: 4px;
+            }
+            .gamecard-rating{
+                font-size: 16px;
+                font-weight: 500;
+                gap: 5px;
+                color: $heading-white;
             }
         }
     }
+    .Games-wepper{
+    gap: 3rem;
+    }
+    .game-wepper-img{
+   
+        max-width: 258px;
+        width: 100%;
+        aspect-ratio: 258px/501px;
+        border-radius: 8px;
+        
+        background: #FFFFFF;
+        box-shadow: 0px 6px 60px 5px #00000014;
+        .game-bennerImg{
+            padding: 11px;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 8px;
+        
+        }
+
+
+    }
+}
+
+// here start the Latest Application section
+#latestApp{
+    background-color: $section-secoundry;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    .offer-card-head {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 30px;
+
+        .offer-card-details {
+            .offer-card-subtitle {
+                font-size: 18px;
+                font-weight: 500;
+                color: $button-color;
+            }
+
+            .offer-card-title {
+                font-size: 36px;
+                font-weight: 500;
+                line-height: 56px;
+                color: $heading-white;
+            }
+        }
+
+        .offerCard-btn {
+            padding: 17px 25px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: $button-color;
+            color: $section-secoundry;
+            gap: 9px;
+            font-size: 16px;
+            font-weight: 500;
+            border-radius: 5px;
+            transition: all 0.3s linear;
+
+            &:hover {
+                background-color: $section-secoundry;
+                border: 1px solid #F6F8FF;
+                box-shadow: 7px 7px 20px 4px #0000000D;
+                color: $heading-white;
+
+                &span {
+                    svg {
+                        path {
+                            fill: $heading-white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .lastetApp-card-box{
+        .game-lasted-wepper{
+            // display: grid;
+            // grid-template-columns: repeat(4, minmax(270px, 1fr));
+            // grid-column-gap: 3rem;
+            // grid-row-gap: 3rem;
+            padding: 12px ;
+          
+        
+        }
+    }
+    .games-card{
+       
+        padding: 12px;
+        background-color: $section-primary;
+        border: 1px solid #3C3E42;
+        border-radius: 6px;
+        gap: 1.6rem;
+        .game-card-head{
+            
+           
+
+            .games-watch-icon{
+                padding: 5px;
+                top: 5px;
+                left: 5px;
+                border-radius: 50%;
+                background-color: $heading-white;
+                cursor: pointer;
+              
+            }
+            .games-img{
+              
+                height: auto;
+                object-fit: cover;
+                border-radius: 6px;
+            }
+        }
+        .game-car-body{
+            max-width: 220px;
+            width: 100%;
+            .gameCard-price{
+                gap: 0.4rem;
+                color: $button-color;
+                font-weight: 700;
+                font-size: 20px;
+                .games-delate-price{
+                    font-size: 14px;
+                    font-weight: 400;
+                    color: #7B7B7B;
+                }
+            }
+            .gameCard-ttile{
+                color: $heading-white;
+                font-size: 20px;
+                font-weight: 600;
+
+            }
+            .gameCard-btn-box{
+
+            }
+            .gameCard-sles{
+                font-size: 16px;
+                font-weight: 500;
+                color: #A8ABA9;
+                padding: 8px 10px;
+                background-color: #343434;
+                border-radius: 4px;
+            }
+            .gamecard-rating{
+                font-size: 16px;
+                font-weight: 500;
+                gap: 5px;
+                color: $heading-white;
+            }
+        }
+    }
+
+  .btn-pav{
+    top: 50%;
+    transform: translateY(-50%);
+    left: -30px;
+  }
+   .btn-next{
+    top: 50%;
+    transform: translateY(-50%);
+    right: -49px;
+   }
+   
+   
+}
+
+// here start upcaming 
+
+#UpCamingApp{
+  
+    padding-top: 60px;
+    padding-bottom: 60px;
+    .offer-card-head {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 30px;
+
+        .offer-card-details {
+            .offer-card-subtitle {
+                font-size: 18px;
+                font-weight: 500;
+                color: $button-color;
+            }
+
+            .offer-card-title {
+                font-size: 36px;
+                font-weight: 500;
+                line-height: 56px;
+                color: $heading-white;
+            }
+        }
+
+        .offerCard-btn {
+            padding: 17px 25px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: $button-color;
+            color: $section-secoundry;
+            gap: 9px;
+            font-size: 16px;
+            font-weight: 500;
+            border-radius: 5px;
+            transition: all 0.3s linear;
+
+            &:hover {
+                background-color: $section-secoundry;
+                border: 1px solid #F6F8FF;
+                box-shadow: 7px 7px 20px 4px #0000000D;
+                color: $heading-white;
+
+                &span {
+                    svg {
+                        path {
+                            fill: $heading-white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .lastetApp-card-box{
+        .game-lasted-wepper{
+            // display: grid;
+            // grid-template-columns: repeat(4, minmax(270px, 1fr));
+            // grid-column-gap: 3rem;
+            // grid-row-gap: 3rem;
+            padding: 12px ;
+          
+        
+        }
+    }
+    .games-card{
+       
+        padding: 12px;
+        background-color: $section-secoundry;
+        border: 1px solid #3C3E42;
+        border-radius: 6px;
+        gap: 1.6rem;
+        .game-card-head{
+            
+           
+
+            .games-watch-icon{
+                padding: 5px;
+                top: 5px;
+                left: 5px;
+                border-radius: 50%;
+                background-color: $heading-white;
+                cursor: pointer;
+              
+            }
+            .games-img{
+              
+                height: auto;
+                object-fit: cover;
+                border-radius: 6px;
+            }
+        }
+        .game-car-body{
+            max-width: 220px;
+            width: 100%;
+            .gameCard-price{
+                gap: 0.4rem;
+                color: $button-color;
+                font-weight: 700;
+                font-size: 20px;
+                .games-delate-price{
+                    font-size: 14px;
+                    font-weight: 400;
+                    color: #7B7B7B;
+                }
+            }
+            .gameCard-ttile{
+                color: $heading-white;
+                font-size: 20px;
+                font-weight: 600;
+
+            }
+            .gameCard-btn-box{
+
+            }
+            .gameCard-sles{
+                font-size: 16px;
+                font-weight: 500;
+                color: #A8ABA9;
+                padding: 8px 10px;
+                background-color: #343434;
+                border-radius: 4px;
+            }
+            .gamecard-rating{
+                font-size: 16px;
+                font-weight: 500;
+                gap: 5px;
+                color: $heading-white;
+            }
+        }
+    }
+
+  .btn-pav1{
+    top: 50%;
+    transform: translateY(-50%);
+    left: -30px;
+  }
+   .btn-next1{
+    top: 50%;
+    transform: translateY(-50%);
+    right: -49px;
+   }
+   
+   
+}
+// here counter section 
+#counter{
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: $button-color;
+    .counter-box{
+        display: grid;
+        grid-template-columns: repeat(4, minmax(174px, 1fr));
+        grid-column-gap: 3rem;
+        grid-row-gap: 3rem;
+    }
+    .single-counter{
+        gap: 2.5rem;
+        .counter-number{
+            font-size: 65px;
+            font-weight: 600;
+            color: #121313;
+        }
+        .couner-name{
+   font-size: 18px;
+    font-weight: 400;
+        }
+    }
+}
+
+// here start the recommendtion section 
+#recommendtion{
+    margin-top: 60px;
+    margin-bottom: 60px;
+    .offer-card-head {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 30px;
+
+        .offer-card-details {
+            .offer-card-subtitle {
+                font-size: 18px;
+                font-weight: 500;
+                color: $button-color;
+            }
+
+            .offer-card-title {
+                font-size: 36px;
+                font-weight: 500;
+                line-height: 56px;
+                color: $heading-white;
+            }
+        }
+
+        .offerCard-btn {
+            padding: 17px 25px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: $button-color;
+            color: $section-secoundry;
+            gap: 9px;
+            font-size: 16px;
+            font-weight: 500;
+            border-radius: 5px;
+            transition: all 0.3s linear;
+
+            &:hover {
+                background-color: $section-secoundry;
+                border: 1px solid #F6F8FF;
+                box-shadow: 7px 7px 20px 4px #0000000D;
+                color: $heading-white;
+
+                &span {
+                    svg {
+                        path {
+                            fill: $heading-white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .game-wepperBox{
+        display: grid;
+        grid-template-columns: repeat(3, minmax(370px, 1fr));
+        grid-column-gap: 3rem;
+        grid-row-gap: 3rem;
+    }
+    .games-card{
+        padding: 12px;
+        background-color: $section-secoundry;
+        border-radius: 6px;
+        gap: 1.6rem;
+        .game-card-head{
+            
+            width: 160px !important;
+            aspect-ratio: 160px/125.85px;
+
+            .games-watch-icon{
+                padding: 5px;
+                top: 5px;
+                left: 5px;
+                border-radius: 50%;
+                background-color: $heading-white;
+                cursor: pointer;
+              
+            }
+            .games-img{
+                width: 100%;
+                height: auto;
+                object-fit: cover;
+                border-radius: 6px;
+            }
+        }
+        .game-car-body{
+            max-width: 170px;
+            width: 100%;
+            .gameCard-price{
+                gap: 0.4rem;
+                color: $button-color;
+                font-weight: 700;
+                font-size: 20px;
+                .games-delate-price{
+                    font-size: 14px;
+                    font-weight: 400;
+                    color: #7B7B7B;
+                }
+            }
+            .gameCard-ttile{
+                color: $heading-white;
+                font-size: 20px;
+                font-weight: 600;
+
+            }
+            .gameCard-btn-box{
+
+            }
+            .gameCard-sles{
+                font-size: 16px;
+                font-weight: 500;
+                color: #A8ABA9;
+                padding: 8px 10px;
+                background-color: #343434;
+                border-radius: 4px;
+            }
+            .gamecard-rating{
+                font-size: 16px;
+                font-weight: 500;
+                gap: 5px;
+                color: $heading-white;
+            }
+        }
+    }
+   
+    
 }
