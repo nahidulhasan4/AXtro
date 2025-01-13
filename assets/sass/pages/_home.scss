@@ -693,3 +693,144 @@
    
     
 }
+
+// here start the footer section 
+#footer{
+    padding-top: 77px;
+    background-color: $section-secoundry;
+    .Subscribe{
+        padding: 39px 38px 39px 40px;
+        background-color: $section-primary;
+        border: 1px solid #FFFFFF1A;
+        border-radius: 8px;
+        .Subscribe-title{
+            font-size: 35px;
+            font-weight: 700;
+            color: $heading-white;
+        }
+        .subscrib-box{
+            gap: 2rem;
+            .subscribe-input{
+                padding: 22px 25px;
+                width: 300px;
+               
+                font-size: 16px;
+                font-weight: 400;
+                border-radius: 4px;
+                color: #ABABAB;
+                background-color: $section-secoundry;
+            }
+             .offerCard-btn {
+                padding: 17px 25px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: $button-color;
+                color: $section-secoundry;
+                gap: 9px;
+                font-size: 16px;
+                font-weight: 500;
+                border-radius: 5px;
+                border: 1px solid #121313;
+                transition: all 0.3s linear;
+    
+                &:hover {
+                    background-color: $section-secoundry;
+                    border: 1px solid #F6F8FF;
+                    box-shadow: 7px 7px 20px 4px #0000000D;
+                    color: $heading-white;
+    
+                   
+                }
+            }
+        }
+       
+    }
+    .footer-box{
+        padding-top: 39.98px;
+        padding-bottom: 27px;
+      
+        gap: 128px;
+        .footerbox-item{
+            width: fit-content;
+            .discover-info{
+                max-width: 301px;
+                margin-top: 26px;
+                color: #E5E7EB;
+                line-height: 24px;
+            }
+            
+
+            .footer-items-title{
+                font-size: 18px;
+                font-weight: 600;
+                line-height: 30px;
+                color: #FFFFFF;
+                margin-bottom: 0 !important;
+                
+            }
+            .footer-menu{
+                list-style: none;
+                display: flex;
+                flex-direction: column;
+                margin-top: 26px;
+                gap: 12px;
+                .footer-menu-items{
+                    overflow: hidden;
+                    .menu-item-link{
+                        font-size: 16px;
+                        font-weight: 400;
+                        text-decoration: none;
+                        display: block;
+                        color: #E5E7EB;
+                        transition: all 0.3s linear ;
+                    
+                        
+                    }
+                }
+            }
+           
+         
+           
+        }
+        .footer-box-two{
+            max-width: 160px;
+            width: 100%;
+        }
+    }
+      .footer-copyright-box{
+        position: relative;
+        padding-top: 23px;
+        padding-bottom: 6px;
+       
+       
+        .copy-right-title{
+            color: #E5E7EB;
+            font-size: 20px;
+            font-weight: 400;
+            .carHeadr{
+                color: $button-color;
+                font-weight: 600;
+            }
+        }
+        .footer-privacy {
+            gap: 34px;
+            .footer-privacy-items{
+                
+                .footer-privacy-link{
+                    color: #E5E7EB;
+                    transition: all 0.3 linear;
+                
+                    &:hover{
+                    color: $button-color;
+                    }
+                }
+                .line{  
+                    width: 1px;
+                    height: 12px;
+                    background: #4D4D4D;   
+                }
+            }
+        }
+    }
+}

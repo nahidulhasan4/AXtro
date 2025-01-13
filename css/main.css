@@ -886,4 +886,124 @@ a {
   font-weight: 500;
   gap: 5px;
   color: #FFFFFF;
+}
+
+#footer {
+  padding-top: 77px;
+  background-color: #000000;
+}
+#footer .Subscribe {
+  padding: 39px 38px 39px 40px;
+  background-color: #0B0E13;
+  border: 1px solid rgba(255, 255, 255, 0.1019607843);
+  border-radius: 8px;
+}
+#footer .Subscribe .Subscribe-title {
+  font-size: 35px;
+  font-weight: 700;
+  color: #FFFFFF;
+}
+#footer .Subscribe .subscrib-box {
+  gap: 2rem;
+}
+#footer .Subscribe .subscrib-box .subscribe-input {
+  padding: 22px 25px;
+  width: 300px;
+  font-size: 16px;
+  font-weight: 400;
+  border-radius: 4px;
+  color: #ABABAB;
+  background-color: #000000;
+}
+#footer .Subscribe .subscrib-box .offerCard-btn {
+  padding: 17px 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #45F882;
+  color: #000000;
+  gap: 9px;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 5px;
+  border: 1px solid #121313;
+  transition: all 0.3s linear;
+}
+#footer .Subscribe .subscrib-box .offerCard-btn:hover {
+  background-color: #000000;
+  border: 1px solid #F6F8FF;
+  box-shadow: 7px 7px 20px 4px rgba(0, 0, 0, 0.0509803922);
+  color: #FFFFFF;
+}
+#footer .footer-box {
+  padding-top: 39.98px;
+  padding-bottom: 27px;
+  gap: 128px;
+}
+#footer .footer-box .footerbox-item {
+  width: fit-content;
+}
+#footer .footer-box .footerbox-item .discover-info {
+  max-width: 301px;
+  margin-top: 26px;
+  color: #E5E7EB;
+  line-height: 24px;
+}
+#footer .footer-box .footerbox-item .footer-items-title {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 30px;
+  color: #FFFFFF;
+  margin-bottom: 0 !important;
+}
+#footer .footer-box .footerbox-item .footer-menu {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  margin-top: 26px;
+  gap: 12px;
+}
+#footer .footer-box .footerbox-item .footer-menu .footer-menu-items {
+  overflow: hidden;
+}
+#footer .footer-box .footerbox-item .footer-menu .footer-menu-items .menu-item-link {
+  font-size: 16px;
+  font-weight: 400;
+  text-decoration: none;
+  display: block;
+  color: #E5E7EB;
+  transition: all 0.3s linear;
+}
+#footer .footer-box .footer-box-two {
+  max-width: 160px;
+  width: 100%;
+}
+#footer .footer-copyright-box {
+  position: relative;
+  padding-top: 23px;
+  padding-bottom: 6px;
+}
+#footer .footer-copyright-box .copy-right-title {
+  color: #E5E7EB;
+  font-size: 20px;
+  font-weight: 400;
+}
+#footer .footer-copyright-box .copy-right-title .carHeadr {
+  color: #45F882;
+  font-weight: 600;
+}
+#footer .footer-copyright-box .footer-privacy {
+  gap: 34px;
+}
+#footer .footer-copyright-box .footer-privacy .footer-privacy-items .footer-privacy-link {
+  color: #E5E7EB;
+  transition: all 0.3 linear;
+}
+#footer .footer-copyright-box .footer-privacy .footer-privacy-items .footer-privacy-link:hover {
+  color: #45F882;
+}
+#footer .footer-copyright-box .footer-privacy .footer-privacy-items .line {
+  width: 1px;
+  height: 12px;
+  background: #4D4D4D;
 }/*# sourceMappingURL=main.css.map */
