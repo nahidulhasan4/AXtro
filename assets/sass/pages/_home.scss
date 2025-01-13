@@ -1,6 +1,18 @@
 // here start hero seciton design 
 #hero {
-    .hero-benner-box {}
+    .hero-benner-box {
+        height: 100vh;
+        position: relative;
+        .hero-bgImg{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+        .hero-content-box{
+
+        }
+    }
 }
 
 #gift-section {

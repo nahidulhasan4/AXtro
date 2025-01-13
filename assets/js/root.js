@@ -63,26 +63,57 @@ new Swiper(".offer-swiper1", {
 		},
 	},
 });
+// new Swiper(".hero-swiper", {
+// 	spaceBetween: 24,
+// 	slidesPerView: 1,
+// 	loop: true,
+// 	speed: 1000,
+// 	autoplay: {
+// 		delay: 2500,
+// 		disableOnInteraction: false,
+// 	},
+// 	navigation: {
+// 		nextEl: ".btn-next2",
+// 		prevEl: ".btn-prev2",
+// 	},
 
-//   const swiper = new Swiper('.swiper', {
-//     slidesPerView: 4,
-//     centeredSlides: true,
-//     spaceBetween: 30,
-//     pagination: {
-//       el: '.swiper-pagination',
-//       type: 'fraction',
-//     },
-//     navigation: {
-//       nextEl: ".btn-next",
-//       prevEl: ".btn-prev",
-//     },
-//     virtual: {
-//       slides: (function () {
-//         const slides = [];
-//         for (var i = 0; i < 600; i += 1) {
-//           slides.push('Slide ' + (i + 1));
-//         }
-//         return slides;
-//       })(),
-//     },
-//   });
+
+// 	breakpoints: {
+// 		320: {
+// 			slidesPerView: 1,
+// 		},
+// 		425: {
+// 			slidesPerView: 1,
+// 		},
+// 		640: {
+// 			slidesPerView: 1,
+// 		},
+
+// 		1024: {
+// 			slidesPerView: 1,
+// 		},
+// 		1200: {
+// 			slidesPerView: 1,
+// 		},
+// 	},
+// });
+
+window.onscroll = function () {
+	var header = document.querySelector(".header");
+	if (window.scrollY > 0) {
+	  header.classList.add("sticky");
+	 
+	} else {
+	  header.classList.remove("sticky");
+	
+	}
+  };
+  // here input filed js code
+  document.querySelectorAll(".hero-date").forEach((item) => {
+	item.addEventListener("focus", function () {
+	  this.showPicker();
+	});
+  });
+
+
+  
