@@ -1584,23 +1584,255 @@
         
     }
 
-    .game-wepperBox{
-        display: grid;
-        grid-template-columns: repeat(2, minmax(300px, 1fr));
-        grid-column-gap: 3rem;
-        grid-row-gap: 3rem;
+    #recommendtion{
+        margin-top: 30px;
+        margin-bottom: 30px;
+        .offer-card-head {
+           
+    
+            .offer-card-details {
+                .offer-card-subtitle {
+                    font-size: 18px;
+                    font-weight: 500;
+                    color: $button-color;
+                }
+    
+                .offer-card-title {
+                    font-size: 34px;
+                    font-weight: 500;
+                    line-height: 46px;
+                    color: $heading-white;
+                }
+            }
+    
+        
+        }
+        .game-wepperBox{
+            display: grid;
+            grid-template-columns: repeat(2, minmax(300px, 1fr));
+            grid-column-gap: 3rem;
+            grid-row-gap: 3rem;
+        }
+      
+       
+        
     }
 
-
+    #footer{
+        padding-top: 47px;
+        background-color: $section-secoundry;
+        .Subscribe{
+            padding: 20px;
+           
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            .Subscribe-title{
+                font-size: 25px;
+               
+            }
+            .subscrib-box{
+                gap: 2rem;
+                
+                .subscribe-input{
+                    padding: 22px 25px;
+                    max-width: 270px;
+                   
+                   
+                }
+               
+            }
+           
+        }
+        .footer-box{
+            padding-top: 39.98px;
+            padding-bottom: 27px;
+            display: grid !important;
+            grid-template-columns: repeat(2, minmax(250px, 1fr));
+            grid-column-gap: 3rem;
+            grid-row-gap: 3rem;
+            justify-content: center;
+            align-items: center;
+            .footerbox-item{
+                width: 300px !important;
+                .discover-info{
+                    max-width: 301px;
+                    margin-top: 26px;
+                    color: #E5E7EB;
+                    line-height: 24px;
+                }
+                
+    
+                .footer-items-title{
+                    font-size: 18px;
+                    font-weight: 600;
+                    line-height: 30px;
+                    color: #FFFFFF;
+                    margin-bottom: 0 !important;
+                    
+                }
+                .footer-menu{
+                    list-style: none;
+                    display: flex;
+                    flex-direction: column;
+                    margin-top: 26px;
+                    gap: 12px;
+                    .footer-menu-items{
+                        overflow: hidden;
+                        .menu-item-link{
+                            font-size: 16px;
+                            font-weight: 400;
+                            text-decoration: none;
+                            display: block;
+                            color: #E5E7EB;
+                            transition: all 0.3s linear ;
+                        
+                            
+                        }
+                    }
+                }
+               
+             
+               
+            }
+            
+        }
+          .footer-copyright-box{
+            
+           flex-direction: column;
+           
+           
+       
+        }
+    }
 
 
 }
+@media #{$tab-between}{
+    #hero {
+        margin-top: 185px;
+        .hero-content-box{
+            gap: 6px !important;
+        }
+    }
+    #gift-section {
 
+        background-color: $section-primary;
+        
+    
+        .gift-card-box {
+            padding-top: 6rem;
+            padding-bottom: 6rem;
+            display: grid;
+            grid-template-columns: repeat(6, minmax(129px, 1fr));
+            grid-column-gap: 2rem;
+            grid-row-gap: 2rem;
+    
+          
+        }
+    }
+    #games {
+        margin-bottom: 48px;
+        .offer-card-head {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 14px;
+            margin-bottom: 30px;
+    
+            .offerCard-btn {
+                padding: 15px 20px;
+                
+                transition: all 0.3s linear;
+    
+               
+            }
+        }
+       .Games-wepper{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+       }
+        .game-wepperBox{
+            display: grid;
+            grid-template-columns: repeat(3, minmax(220px, 1fr));
+            grid-column-gap: 3rem;
+            grid-row-gap: 3rem;
+            width: 100%;
+        }
+        .games-card{
+           
+            padding: 12px;
+            background-color: $section-secoundry;
+            border: 1px solid #3C3E42;
+            border-radius: 6px;
+            gap: 1.6rem;
+            
+        }
+        .Games-wepper{
+        gap: 3rem;
+        }
+        .game-wepper-img{
+            display: none;
+           
+          
+    
+    
+        }
+    }
+    #latestApp{
+        padding-top: 30px;
+        padding-bottom: 30px;
+        .btn-pav{
+            top: 50%;
+            transform: translateY(-50%);
+            left: -8px;
+            z-index: 200;
+          }
+           .btn-next{
+            top: 50%;
+            transform: translateY(-50%);
+            right: -9px;
+            z-index: 200;
+           }
+    }
+    #UpCamingApp{
+        padding-top: 30px;
+        padding-bottom: 30px;
+        .btn-pav1{
+            top: 50%;
+            transform: translateY(-50%);
+            left: -8px;
+            z-index: 200;
+          }
+           .btn-next1{
+            top: 50%;
+            transform: translateY(-50%);
+            right: -9px;
+            z-index: 200;
+           }
+    }
+    #footer{
+        padding-top: 47px;
+        background-color: $section-secoundry;
+        
+        .footer-box{
+            
+           gap: 65px;
+            
+        }
+       
+    }
+}
 
-
-
-@media #{$pc-small}{
+@media (max-width: 768px) {
     .hero-img{
         display: none;
-    }
+    }  
+}
+
+@media #{$pc-small}{
+   
 }

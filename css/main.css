@@ -2688,14 +2688,195 @@ a {
     grid-column-gap: 3rem;
     grid-row-gap: 3rem;
   }
-  .game-wepperBox {
+  #recommendtion {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  #recommendtion .offer-card-head .offer-card-details .offer-card-subtitle {
+    font-size: 18px;
+    font-weight: 500;
+    color: #45F882;
+  }
+  #recommendtion .offer-card-head .offer-card-details .offer-card-title {
+    font-size: 34px;
+    font-weight: 500;
+    line-height: 46px;
+    color: #FFFFFF;
+  }
+  #recommendtion .game-wepperBox {
     display: grid;
     grid-template-columns: repeat(2, minmax(300px, 1fr));
     grid-column-gap: 3rem;
     grid-row-gap: 3rem;
   }
+  #footer {
+    padding-top: 47px;
+    background-color: #000000;
+  }
+  #footer .Subscribe {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  #footer .Subscribe .Subscribe-title {
+    font-size: 25px;
+  }
+  #footer .Subscribe .subscrib-box {
+    gap: 2rem;
+  }
+  #footer .Subscribe .subscrib-box .subscribe-input {
+    padding: 22px 25px;
+    max-width: 270px;
+  }
+  #footer .footer-box {
+    padding-top: 39.98px;
+    padding-bottom: 27px;
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(250px, 1fr));
+    grid-column-gap: 3rem;
+    grid-row-gap: 3rem;
+    justify-content: center;
+    align-items: center;
+  }
+  #footer .footer-box .footerbox-item {
+    width: 300px !important;
+  }
+  #footer .footer-box .footerbox-item .discover-info {
+    max-width: 301px;
+    margin-top: 26px;
+    color: #E5E7EB;
+    line-height: 24px;
+  }
+  #footer .footer-box .footerbox-item .footer-items-title {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 30px;
+    color: #FFFFFF;
+    margin-bottom: 0 !important;
+  }
+  #footer .footer-box .footerbox-item .footer-menu {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    margin-top: 26px;
+    gap: 12px;
+  }
+  #footer .footer-box .footerbox-item .footer-menu .footer-menu-items {
+    overflow: hidden;
+  }
+  #footer .footer-box .footerbox-item .footer-menu .footer-menu-items .menu-item-link {
+    font-size: 16px;
+    font-weight: 400;
+    text-decoration: none;
+    display: block;
+    color: #E5E7EB;
+    transition: all 0.3s linear;
+  }
+  #footer .footer-copyright-box {
+    flex-direction: column;
+  }
 }
-@media (max-width:1200px) {
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  #hero {
+    margin-top: 185px;
+  }
+  #hero .hero-content-box {
+    gap: 6px !important;
+  }
+  #gift-section {
+    background-color: #0B0E13;
+  }
+  #gift-section .gift-card-box {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    display: grid;
+    grid-template-columns: repeat(6, minmax(129px, 1fr));
+    grid-column-gap: 2rem;
+    grid-row-gap: 2rem;
+  }
+  #games {
+    margin-bottom: 48px;
+  }
+  #games .offer-card-head {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 14px;
+    margin-bottom: 30px;
+  }
+  #games .offer-card-head .offerCard-btn {
+    padding: 15px 20px;
+    transition: all 0.3s linear;
+  }
+  #games .Games-wepper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #games .game-wepperBox {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(220px, 1fr));
+    grid-column-gap: 3rem;
+    grid-row-gap: 3rem;
+    width: 100%;
+  }
+  #games .games-card {
+    padding: 12px;
+    background-color: #000000;
+    border: 1px solid #3C3E42;
+    border-radius: 6px;
+    gap: 1.6rem;
+  }
+  #games .Games-wepper {
+    gap: 3rem;
+  }
+  #games .game-wepper-img {
+    display: none;
+  }
+  #latestApp {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  #latestApp .btn-pav {
+    top: 50%;
+    transform: translateY(-50%);
+    left: -8px;
+    z-index: 200;
+  }
+  #latestApp .btn-next {
+    top: 50%;
+    transform: translateY(-50%);
+    right: -9px;
+    z-index: 200;
+  }
+  #UpCamingApp {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  #UpCamingApp .btn-pav1 {
+    top: 50%;
+    transform: translateY(-50%);
+    left: -8px;
+    z-index: 200;
+  }
+  #UpCamingApp .btn-next1 {
+    top: 50%;
+    transform: translateY(-50%);
+    right: -9px;
+    z-index: 200;
+  }
+  #footer {
+    padding-top: 47px;
+    background-color: #000000;
+  }
+  #footer .footer-box {
+    gap: 65px;
+  }
+}
+@media (max-width: 768px) {
   .hero-img {
     display: none;
   }

@@ -63,40 +63,40 @@ new Swiper(".offer-swiper1", {
 		},
 	},
 });
-// new Swiper(".hero-swiper", {
-// 	spaceBetween: 24,
-// 	slidesPerView: 1,
-// 	loop: true,
-// 	speed: 3000,
-// 	autoplay: {
-// 		delay: 3000,
-// 		disableOnInteraction: false,
-// 	},
-// 	navigation: {
-// 		nextEl: ".btn-next2",
-// 		prevEl: ".btn-prev2",
-// 	},
+new Swiper(".hero-swiper", {
+	spaceBetween: 24,
+	slidesPerView: 1,
+	loop: true,
+	speed: 3000,
+	autoplay: {
+		delay: 3000,
+		disableOnInteraction: false,
+	},
+	navigation: {
+		nextEl: ".btn-next2",
+		prevEl: ".btn-prev2",
+	},
 
 
-// 	breakpoints: {
-// 		320: {
-// 			slidesPerView: 1,
-// 		},
-// 		425: {
-// 			slidesPerView: 1,
-// 		},
-// 		640: {
-// 			slidesPerView: 1,
-// 		},
+	breakpoints: {
+		320: {
+			slidesPerView: 1,
+		},
+		425: {
+			slidesPerView: 1,
+		},
+		640: {
+			slidesPerView: 1,
+		},
 
-// 		1024: {
-// 			slidesPerView: 1,
-// 		},
-// 		1200: {
-// 			slidesPerView: 1,
-// 		},
-// 	},
-// });
+		1024: {
+			slidesPerView: 1,
+		},
+		1200: {
+			slidesPerView: 1,
+		},
+	},
+});
 
 document.addEventListener("DOMContentLoaded", function () {
     const counters = document.querySelectorAll(".counter");
