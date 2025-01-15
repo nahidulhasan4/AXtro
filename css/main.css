@@ -375,6 +375,7 @@ a {
   padding: 21px 20px;
   opacity: 0;
   transition: all 0.4s ease;
+  z-index: 2;
 }
 .header-nav-menu .header-menu-box .header-dropDown-menu #dropdownMenu .drop-link {
   color: #FFFFFF;
@@ -1384,6 +1385,7 @@ a {
   background-color: #000000;
 }
 #footer .Subscribe {
+  justify-content: space-between;
   padding: 39px 38px 39px 40px;
   background-color: #0B0E13;
   border: 1px solid rgba(255, 255, 255, 0.1019607843);
@@ -2998,9 +3000,26 @@ a {
     right: -9px;
     z-index: 200;
   }
+  #recommendtion {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  #recommendtion .game-wepperBox {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(300px, 1fr));
+    grid-column-gap: 3rem;
+    grid-row-gap: 3rem;
+  }
   #footer {
     padding-top: 47px;
     background-color: #000000;
+  }
+  #footer .Subscribe {
+    padding: 20px;
+    justify-content: start !important;
+    gap: 20px;
+    flex-direction: column;
+    align-items: start !important;
   }
   #footer .footer-box {
     gap: 65px;

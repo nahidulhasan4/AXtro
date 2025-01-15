@@ -2053,11 +2053,32 @@
             z-index: 200;
         }
     }
+    #recommendtion {
+        margin-top: 30px;
+        margin-bottom: 30px;
 
+        
+
+        .game-wepperBox {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(300px, 1fr));
+            grid-column-gap: 3rem;
+            grid-row-gap: 3rem;
+        }
+
+
+
+    }
     #footer {
         padding-top: 47px;
         background-color: $section-secoundry;
-
+        .Subscribe {
+            padding:  20px;
+            justify-content: start !important;
+            gap: 20px;
+            flex-direction: column;
+            align-items: start !important;
+        }
         .footer-box {
 
             gap: 65px;

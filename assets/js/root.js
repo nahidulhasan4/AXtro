@@ -23,11 +23,11 @@ new Swiper(".offer-swiper", {
 			spaceBetween: 14,
 		},
 		640: {
-			slidesPerView: 2,
+			slidesPerView: 3,
 		},
 
 		1024: {
-			slidesPerView: 3.5,
+			slidesPerView: 4,
 		},
 		1260: {
 			slidesPerView: 4,
@@ -61,11 +61,11 @@ new Swiper(".offer-swiper1", {
 			spaceBetween: 14,
 		},
 		640: {
-			slidesPerView: 2,
+			slidesPerView: 3,
 		},
 
 		1024: {
-			slidesPerView: 3.5,
+			slidesPerView: 4,
 		},
 		1260: {
 			slidesPerView: 4,
@@ -175,7 +175,7 @@ window.onscroll = function () {
   function myFunction() {
 	 let dropdownMenu = document.getElementById("dropdownMenu"); 
 	 dropdownMenu.style.opacity = "1";
-     let menuVisible = dropdownMenu.style.visibility = "visible"; 
+      dropdownMenu.style.visibility = "visible"; 
 	 console.log(dropdownMenu)
 
 	}
