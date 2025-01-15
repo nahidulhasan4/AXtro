@@ -87,6 +87,11 @@ new Swiper(".hero-swiper", {
 		nextEl: ".btn-next2",
 		prevEl: ".btn-prev2",
 	},
+	pagination: {
+		el: '.swiper-pagination',
+		type: 'bullets',
+		
+	  },
 
 
 	breakpoints: {
