@@ -4,6 +4,10 @@ new Swiper(".offer-swiper", {
 	slidesPerView: 4,
 	loop: true,
 	speed: 1000,
+	autoplay: {
+		delay: 2000,
+		disableOnInteraction: false,
+	},
 
 	navigation: {
 		nextEl: ".btn-next",
@@ -31,11 +35,17 @@ new Swiper(".offer-swiper", {
 		},
 	},
 });
+
+// 
 new Swiper(".offer-swiper1", {
 	spaceBetween: 30,
 	slidesPerView: 4,
 	loop: true,
 	speed: 1000,
+	autoplay: {
+		delay: 2000,
+		disableOnInteraction: false,
+	},
 
 	navigation: {
 		nextEl: ".btn-next1",
@@ -63,6 +73,7 @@ new Swiper(".offer-swiper1", {
 		},
 	},
 });
+// hero benner slider 
 new Swiper(".hero-swiper", {
 	spaceBetween: 24,
 	slidesPerView: 1,

@@ -1,55 +1,60 @@
-
-
 // here start gift card section responsive design 
-@media #{$small-device}{
+@media #{$small-device} {
     .sticky {
         transition: all 0.3s linear;
         margin-top: -99px;
     }
+
     #hero {
         margin-top: 190px;
-     
-        
-       
-        .hero-benner-box {
-           
-          .bg-img{
+
+        .bg-img {
             top: 0;
             left: 0;
             bottom: 0;
             width: 100%;
             height: 100%;
             background-size: cover;
+            object-fit: cover;
             z-index: -2 !important;
-          }
-        
+        }
+
        
-    
-        
-             .hero-content-two{
+
+        .hero-benner-box {
+
+
+         
+
+
+            .hero-content-two {
                 height: 100%;
                 width: 100%;
-               
-                .hero-content{
-                    
+                margin-left: 0 !important ;  
+                .hero-content {
+                  
                     padding-top: 50px;
                     padding-bottom: 50px;
+                    margin: 0 !important;
                     display: flex;
                     flex-direction: column;
-                     width: 610px;
-                    .hero-subTitle{
+                    max-width: 300px;
+
+                    .hero-subTitle {
                         font-size: 18px;
                         font-weight: 500;
                         color: $heading-white;
                         margin-bottom: 12px;
-                  
+
                     }
-                    .hero-title{
+
+                    .hero-title {
                         font-size: 34px;
                         font-weight: 500;
                         line-height: 40px;
                         color: $heading-white;
                     }
+
                     .offerCard-btn {
                         margin-top: 40px;
                         padding: 15px 20px;
@@ -64,32 +69,36 @@
                         font-weight: 500;
                         border-radius: 5px;
                         transition: all 0.3s linear;
-            
+
                         span {
-                             display: inline-flex; 
-                             align-items: center; 
-                             svg path { fill: #333333; 
-                                   transition: fill 0.3s ease;
-                                   } 
-                                }
-                            &:hover { 
-                                    background-color: $section-secoundry;
-                                    box-shadow: 7px 7px 20px 4px #0000000D;
-                                    color: $heading-white;
-                                    border: 1px solid $heading-white;
-                                    
-                                    span svg path { 
-                                        fill: #FFFFFF; 
-                                 } 
+                            display: inline-flex;
+                            align-items: center;
+
+                            svg path {
+                                fill: #333333;
+                                transition: fill 0.3s ease;
                             }
+                        }
+
+                        &:hover {
+                            background-color: $section-secoundry;
+                            box-shadow: 7px 7px 20px 4px #0000000D;
+                            color: $heading-white;
+                            border: 1px solid $heading-white;
+
+                            span svg path {
+                                fill: #FFFFFF;
+                            }
+                        }
                     }
-                    
-                    
-                } 
-             }
-            .hero-content-box{
-                 height: 100%;
-                 width: 100%;
+
+
+                }
+            }
+
+            .hero-content-box {
+                height: 100%;
+                width: 100%;
                 margin-left: auto;
                 margin-right: auto;
                 display: flex;
@@ -97,27 +106,31 @@
                 flex-direction: column-reverse;
                 justify-content: center;
                 align-items: center;
-               gap: 0;
-                .hero-content{
-                    padding: 0 20px ;
+                gap: 0;
+
+                .hero-content {
+                    padding: 0 20px;
                     margin-top: 50px;
                     margin-bottom: 50px;
                     display: flex;
                     flex-direction: column;
-                     max-width: 300px;
-                    .hero-subTitle{
+                    max-width: 300px;
+
+                    .hero-subTitle {
                         font-size: 18px;
                         font-weight: 500;
                         color: $heading-white;
                         margin-bottom: 12px;
-                  
+
                     }
-                    .hero-title{
+
+                    .hero-title {
                         font-size: 34px;
                         font-weight: 500;
                         line-height: 40px;
                         color: $heading-white;
                     }
+
                     .offerCard-btn {
                         margin-top: 40px;
                         padding: 15px 20px;
@@ -132,42 +145,47 @@
                         font-weight: 500;
                         border-radius: 5px;
                         transition: all 0.3s linear;
-            
+
                         span {
-                             display: inline-flex; 
-                             align-items: center; 
-                             svg path { fill: #333333; 
-                                   transition: fill 0.3s ease;
-                                   } 
-                                }
-                            &:hover { 
-                                    background-color: $section-secoundry;
-                                    box-shadow: 7px 7px 20px 4px #0000000D;
-                                    color: $heading-white;
-                                    border: 1px solid $heading-white;
-                                    
-                                    span svg path { 
-                                        fill: #FFFFFF; 
-                                 } 
+                            display: inline-flex;
+                            align-items: center;
+
+                            svg path {
+                                fill: #333333;
+                                transition: fill 0.3s ease;
                             }
+                        }
+
+                        &:hover {
+                            background-color: $section-secoundry;
+                            box-shadow: 7px 7px 20px 4px #0000000D;
+                            color: $heading-white;
+                            border: 1px solid $heading-white;
+
+                            span svg path {
+                                fill: #FFFFFF;
+                            }
+                        }
                     }
-                    
-                    
+
+
                 }
-                .hero-img{
+
+                .hero-img {
                     max-width: 429px;
                     width: 100%;
                     aspect-ratio: 429px/434px;
                 }
-    
+
             }
         }
     }
+
     #gift-section {
 
         background-color: $section-primary;
-        
-    
+
+
         .gift-card-box {
             padding-top: 6rem;
             padding-bottom: 6rem;
@@ -175,27 +193,29 @@
             grid-template-columns: repeat(2, minmax(129px, 1fr));
             grid-column-gap: 2rem;
             grid-row-gap: 2rem;
-    
-          
+
+
         }
     }
+
     #offer-Card {
         background-color: $section-primary;
-      
-        .offer-card{
+
+        .offer-card {
             display: flex;
             justify-content: center;
         }
+
         .offer-card-head {
-           
-    
+
+
             .offer-card-details {
                 .offer-card-subtitle {
                     font-size: 18px;
                     font-weight: 500;
                     color: $button-color;
                 }
-    
+
                 .offer-card-title {
                     font-size: 30px;
                     font-weight: 500;
@@ -203,12 +223,13 @@
                     color: $heading-white;
                 }
             }
-    
+
             .offerCard-btn {
                 display: none !important;
             }
         }
-        .mobile-btn{
+
+        .mobile-btn {
             display: inline-block;
             padding: 15px 20px;
             display: flex;
@@ -221,13 +242,13 @@
             font-weight: 500;
             border-radius: 5px;
             transition: all 0.3s linear;
-    
+
             &:hover {
                 background-color: $section-secoundry;
                 border: 1px solid #F6F8FF;
                 box-shadow: 7px 7px 20px 4px #0000000D;
                 color: $heading-white;
-    
+
                 &span {
                     svg {
                         path {
@@ -237,16 +258,19 @@
                 }
             }
         }
+
         .offer-card-wepper {
             display: grid;
             grid-template-columns: repeat(1, minmax(300px, 1fr)) !important;
             grid-column-gap: 3rem;
             grid-row-gap: 3rem;
-    
+
         }
     }
+
     #games {
         margin-bottom: 48px;
+
         .offer-card-head {
             display: flex;
             align-items: center;
@@ -254,74 +278,81 @@
             flex-wrap: wrap;
             gap: 14px;
             margin-bottom: 30px;
-    
+
             .offerCard-btn {
                 padding: 15px 20px;
-                
+
                 transition: all 0.3s linear;
-    
-               
+
+
             }
         }
-       
-        .game-wepperBox{
+
+        .game-wepperBox {
             display: grid;
             grid-template-columns: repeat(1, minmax(220px, 1fr));
             grid-column-gap: 3rem;
             grid-row-gap: 3rem;
         }
-        .games-card{
-           
+
+        .games-card {
+
             padding: 12px;
             background-color: $section-secoundry;
             border: 1px solid #3C3E42;
             border-radius: 6px;
             gap: 1.6rem;
-            .game-card-head{
-                
+
+            .game-card-head {
+
                 width: 160px;
                 aspect-ratio: 160px/125px;
-    
-                .games-watch-icon{
+
+                .games-watch-icon {
                     padding: 5px;
                     top: 5px;
                     left: 5px;
                     border-radius: 50%;
                     background-color: $heading-white;
                     cursor: pointer;
-                  
+
                 }
-                .games-img{
+
+                .games-img {
                     width: 100%;
                     height: auto;
                     object-fit: cover;
                     border-radius: 6px;
                 }
             }
-            .game-car-body{
+
+            .game-car-body {
                 max-width: 220px;
                 width: 100%;
-                .gameCard-price{
+
+                .gameCard-price {
                     gap: 0.4rem;
                     color: $button-color;
                     font-weight: 700;
                     font-size: 20px;
-                    .games-delate-price{
+
+                    .games-delate-price {
                         font-size: 14px;
                         font-weight: 400;
                         color: #7B7B7B;
                     }
                 }
-                .gameCard-ttile{
+
+                .gameCard-ttile {
                     color: $heading-white;
                     font-size: 20px;
                     font-weight: 600;
-    
+
                 }
-                .gameCard-btn-box{
-    
-                }
-                .gameCard-sles{
+
+                .gameCard-btn-box {}
+
+                .gameCard-sles {
                     font-size: 16px;
                     font-weight: 500;
                     color: #A8ABA9;
@@ -329,7 +360,8 @@
                     background-color: #343434;
                     border-radius: 4px;
                 }
-                .gamecard-rating{
+
+                .gamecard-rating {
                     font-size: 16px;
                     font-weight: 500;
                     gap: 5px;
@@ -337,35 +369,39 @@
                 }
             }
         }
-        .Games-wepper{
+
+        .Games-wepper {
             display: flex;
             flex-direction: column;
             align-items: center;
-        gap: 3rem;
+            gap: 3rem;
         }
-        .game-wepper-img{
+
+        .game-wepper-img {
             margin-top: 20px;
             max-width: 300px;
             width: 100% !important;
-          
-    
-    
+
+
+
         }
     }
-    #latestApp{
+
+    #latestApp {
         background-color: $section-secoundry;
         padding-top: 30px;
         padding-bottom: 30px;
+
         .offer-card-head {
-           
-    
+
+
             .offer-card-details {
                 .offer-card-subtitle {
                     font-size: 18px;
                     font-weight: 500;
                     color: $button-color;
                 }
-    
+
                 .offer-card-title {
                     font-size: 30px;
                     font-weight: 500;
@@ -373,12 +409,13 @@
                     color: $heading-white;
                 }
             }
-    
+
             .offerCard-btn {
                 display: none !important;
             }
         }
-        .mobile-btn{
+
+        .mobile-btn {
             display: inline-block;
             padding: 15px 20px;
             display: flex;
@@ -391,13 +428,13 @@
             font-weight: 500;
             border-radius: 5px;
             transition: all 0.3s linear;
-    
+
             &:hover {
                 background-color: $section-secoundry;
                 border: 1px solid #F6F8FF;
                 box-shadow: 7px 7px 20px 4px #0000000D;
                 color: $heading-white;
-    
+
                 &span {
                     svg {
                         path {
@@ -407,126 +444,59 @@
                 }
             }
         }
-        .lastetApp-card-box{
-            .game-lasted-wepper{
-               
-                padding: 12px ;
-              
-            
+
+        .lastetApp-card-box {
+            .game-lasted-wepper {
+
+                padding: 12px;
+
+
             }
         }
-        .games-card{
-       
+
+        .games-card {
+
             padding: 12px;
             background-color: $section-primary;
             border: 1px solid #3C3E42;
             border-radius: 6px;
             gap: 1.6rem;
-          
-           
-        }
-    
-      .btn-pav{
-        top: 50%;
-        transform: translateY(-50%);
-        left: -8px;
-        z-index: 200;
-      }
-       .btn-next{
-        top: 50%;
-        transform: translateY(-50%);
-        right: -9px;
-        z-index: 200;
-       }
-       
-       
-    }
-    
-     #UpCamingApp{
-  
-    padding-top: 60px;
-    padding-bottom: 60px;
-    .offer-card-head {
-           
-    
-        .offer-card-details {
-            .offer-card-subtitle {
-                font-size: 18px;
-                font-weight: 500;
-                color: $button-color;
-            }
 
-            .offer-card-title {
-                font-size: 30px;
-                font-weight: 500;
-                line-height: 46px;
-                color: $heading-white;
-            }
+
         }
 
-        .offerCard-btn {
-            display: none !important;
+        .btn-pav {
+            top: 50%;
+            transform: translateY(-50%);
+            left: -8px;
+            z-index: 200;
         }
-    }
-   
-    .mobile-btn{
-        display: inline-block;
-        padding: 15px 20px;
-        
-       
-    }
-    .btn-pav1{
-        top: 50%;
-        transform: translateY(-50%);
-        left: -8px;
-        z-index: 200;
-      }
-       .btn-next1{
-        top: 50%;
-        transform: translateY(-50%);
-        right: -9px;
-        z-index: 200;
-       }
-   
-   
-     }
-     #counter{
-        padding-top: 30px;
-        padding-bottom: 30px;
-        background-color: $button-color;
-        .counter-box{
-            display: grid;
-            grid-template-columns: repeat(1, minmax(174px, 1fr));
-            grid-column-gap: 3rem;
-            grid-row-gap: 3rem;
-            .single-counter{
-                gap: 2.5rem;
-                .counter-number{
-                    font-size: 55px;
-                    font-weight: 600;
-                    color: #121313;
-                }
-                .couner-name{
-           font-size: 18px;
-            font-weight: 400;
-                }
-            }
+
+        .btn-next {
+            top: 50%;
+            transform: translateY(-50%);
+            right: -9px;
+            z-index: 200;
         }
-        
+
+
     }
-    #recommendtion{
-        margin-top: 30px;
-        margin-bottom: 30px;
+
+    #UpCamingApp {
+
+        padding-top: 60px;
+        padding-bottom: 60px;
+
         .offer-card-head {
-           
-    
+
+
             .offer-card-details {
                 .offer-card-subtitle {
                     font-size: 18px;
                     font-weight: 500;
                     color: $button-color;
                 }
-    
+
                 .offer-card-title {
                     font-size: 30px;
                     font-weight: 500;
@@ -534,67 +504,155 @@
                     color: $heading-white;
                 }
             }
-    
+
             .offerCard-btn {
                 display: none !important;
             }
         }
-        .game-wepperBox{
+
+        .mobile-btn {
+            display: inline-block;
+            padding: 15px 20px;
+
+
+        }
+
+        .btn-pav1 {
+            top: 50%;
+            transform: translateY(-50%);
+            left: -8px;
+            z-index: 200;
+        }
+
+        .btn-next1 {
+            top: 50%;
+            transform: translateY(-50%);
+            right: -9px;
+            z-index: 200;
+        }
+
+
+    }
+
+    #counter {
+        padding-top: 30px;
+        padding-bottom: 30px;
+        background-color: $button-color;
+
+        .counter-box {
+            display: grid;
+            grid-template-columns: repeat(1, minmax(174px, 1fr));
+            grid-column-gap: 3rem;
+            grid-row-gap: 3rem;
+
+            .single-counter {
+                gap: 2.5rem;
+
+                .counter-number {
+                    font-size: 55px;
+                    font-weight: 600;
+                    color: #121313;
+                }
+
+                .couner-name {
+                    font-size: 18px;
+                    font-weight: 400;
+                }
+            }
+        }
+
+    }
+
+    #recommendtion {
+        margin-top: 30px;
+        margin-bottom: 30px;
+
+        .offer-card-head {
+
+
+            .offer-card-details {
+                .offer-card-subtitle {
+                    font-size: 18px;
+                    font-weight: 500;
+                    color: $button-color;
+                }
+
+                .offer-card-title {
+                    font-size: 30px;
+                    font-weight: 500;
+                    line-height: 46px;
+                    color: $heading-white;
+                }
+            }
+
+            .offerCard-btn {
+                display: none !important;
+            }
+        }
+
+        .game-wepperBox {
             display: grid;
             grid-template-columns: repeat(1, minmax(300px, 1fr));
             grid-column-gap: 3rem;
             grid-row-gap: 3rem;
         }
-        .games-card{
+
+        .games-card {
             padding: 12px;
             background-color: $section-secoundry;
             border-radius: 6px;
             gap: 1.6rem;
-            .game-card-head{
-                
+
+            .game-card-head {
+
                 width: 160px !important;
                 aspect-ratio: 160px/125.85px;
-    
-                .games-watch-icon{
+
+                .games-watch-icon {
                     padding: 5px;
                     top: 5px;
                     left: 5px;
                     border-radius: 50%;
                     background-color: $heading-white;
                     cursor: pointer;
-                  
+
                 }
-                .games-img{
+
+                .games-img {
                     width: 100%;
                     height: auto;
                     object-fit: cover;
                     border-radius: 6px;
                 }
             }
-            .game-car-body{
+
+            .game-car-body {
                 max-width: 170px;
                 width: 100%;
-                .gameCard-price{
+
+                .gameCard-price {
                     gap: 0.4rem;
                     color: $button-color;
                     font-weight: 700;
                     font-size: 20px;
-                    .games-delate-price{
+
+                    .games-delate-price {
                         font-size: 14px;
                         font-weight: 400;
                         color: #7B7B7B;
                     }
                 }
-                .gameCard-ttile{
+
+                .gameCard-ttile {
                     color: $heading-white;
                     font-size: 20px;
                     font-weight: 600;
-    
+
                 }
-                .gameCard-btn-box{
-    
-                }
-                .gameCard-sles{
+
+                .gameCard-btn-box {}
+
+                .gameCard-sles {
                     font-size: 16px;
                     font-weight: 500;
                     color: #A8ABA9;
@@ -602,7 +660,8 @@
                     background-color: #343434;
                     border-radius: 4px;
                 }
-                .gamecard-rating{
+
+                .gamecard-rating {
                     font-size: 16px;
                     font-weight: 500;
                     gap: 5px;
@@ -610,169 +669,190 @@
                 }
             }
         }
-        
-        .mobile-btn{
+
+        .mobile-btn {
             display: inline-block;
             padding: 15px 20px;
-           
-           
+
+
         }
-        
+
     }
-    #footer{
+
+    #footer {
         padding-top: 47px;
         background-color: $section-secoundry;
-        .Subscribe{
+
+        .Subscribe {
             padding: 20px;
-           
+
             display: flex;
             flex-direction: column;
             gap: 20px;
-            .Subscribe-title{
+
+            .Subscribe-title {
                 font-size: 25px;
-               
+
             }
-            .subscrib-box{
+
+            .subscrib-box {
                 gap: 2rem;
                 flex-direction: column;
-                .subscribe-input{
+
+                .subscribe-input {
                     padding: 22px 25px;
                     max-width: 270px;
-                   
-                   
+
+
                 }
-               
+
             }
-           
+
         }
-        .footer-box{
+
+        .footer-box {
             padding-top: 39.98px;
             padding-bottom: 27px;
-           flex-direction: column;
+            flex-direction: column;
             gap: 20px;
-            .footerbox-item{
+
+            .footerbox-item {
                 width: fit-content;
-                .discover-info{
+
+                .discover-info {
                     max-width: 301px;
                     margin-top: 26px;
                     color: #E5E7EB;
                     line-height: 24px;
                 }
-                
-    
-                .footer-items-title{
+
+
+                .footer-items-title {
                     font-size: 18px;
                     font-weight: 600;
                     line-height: 30px;
                     color: #FFFFFF;
                     margin-bottom: 0 !important;
-                    
+
                 }
-                .footer-menu{
+
+                .footer-menu {
                     list-style: none;
                     display: flex;
                     flex-direction: column;
                     margin-top: 26px;
                     gap: 12px;
-                    .footer-menu-items{
+
+                    .footer-menu-items {
                         overflow: hidden;
-                        .menu-item-link{
+
+                        .menu-item-link {
                             font-size: 16px;
                             font-weight: 400;
                             text-decoration: none;
                             display: block;
                             color: #E5E7EB;
-                            transition: all 0.3s linear ;
-                        
-                            
+                            transition: all 0.3s linear;
+
+
                         }
                     }
                 }
-               
-             
-               
+
+
+
             }
-            .footer-box-two{
+
+            .footer-box-two {
                 max-width: 160px;
                 width: 100%;
             }
         }
-          .footer-copyright-box{
-            
-           flex-direction: column;
-           
-            .copy-right-title{
-                
+
+        .footer-copyright-box {
+
+            flex-direction: column;
+
+            .copy-right-title {
+
                 font-size: 16px;
-              
-               
+
+
             }
+
             .footer-privacy {
                 gap: 10px;
-                .footer-privacy-items{
-                    
-                    .footer-privacy-link{
-                       
+
+                .footer-privacy-items {
+
+                    .footer-privacy-link {
+
                         font-size: 16px;
-                        &:hover{
-                        color: $button-color;
+
+                        &:hover {
+                            color: $button-color;
                         }
                     }
-                   
+
                 }
             }
         }
     }
 }
-@media #{$mobile}{
+
+@media #{$mobile} {
     .sticky {
         transition: all 0.3s linear;
         margin-top: -49px;
     }
+
     #hero {
         margin-top: 190px;
-     
+
         
-       
+
         .hero-benner-box {
-           
-          .bg-img{
-            top: 0;
-            left: 0;
-            bottom: 0;
-            width: 100%;
-            height: 100%;
-            background-size: cover;
-            z-index: -2 !important;
-          }
-        
-       
-    
-        
-             .hero-content-two{
+
+            .bg-img {
+                top: 0;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                height: 100%;
+                background-size: cover;
+                z-index: -2 !important;
+            }
+
+
+
+
+            .hero-content-two {
                 height: 100%;
                 width: 100%;
-               
-                .hero-content{
-                    
+
+                .hero-content {
+
                     padding-top: 50px;
                     padding-bottom: 50px;
                     display: flex;
                     flex-direction: column;
-                     width: 610px;
-                    .hero-subTitle{
+                    width: 610px;
+
+                    .hero-subTitle {
                         font-size: 18px;
                         font-weight: 500;
                         color: $heading-white;
                         margin-bottom: 12px;
-                  
+
                     }
-                    .hero-title{
+
+                    .hero-title {
                         font-size: 37px !important;
                         font-weight: 600;
                         line-height: 40px;
                         color: $heading-white;
                     }
+
                     .offerCard-btn {
                         margin-top: 40px;
                         padding: 15px 20px;
@@ -787,32 +867,36 @@
                         font-weight: 500;
                         border-radius: 5px;
                         transition: all 0.3s linear;
-            
+
                         span {
-                             display: inline-flex; 
-                             align-items: center; 
-                             svg path { fill: #333333; 
-                                   transition: fill 0.3s ease;
-                                   } 
-                                }
-                            &:hover { 
-                                    background-color: $section-secoundry;
-                                    box-shadow: 7px 7px 20px 4px #0000000D;
-                                    color: $heading-white;
-                                    border: 1px solid $heading-white;
-                                    
-                                    span svg path { 
-                                        fill: #FFFFFF; 
-                                 } 
+                            display: inline-flex;
+                            align-items: center;
+
+                            svg path {
+                                fill: #333333;
+                                transition: fill 0.3s ease;
                             }
+                        }
+
+                        &:hover {
+                            background-color: $section-secoundry;
+                            box-shadow: 7px 7px 20px 4px #0000000D;
+                            color: $heading-white;
+                            border: 1px solid $heading-white;
+
+                            span svg path {
+                                fill: #FFFFFF;
+                            }
+                        }
                     }
-                    
-                    
-                } 
-             }
-            .hero-content-box{
-                 height: 100%;
-                 width: 100%;
+
+
+                }
+            }
+
+            .hero-content-box {
+                height: 100%;
+                width: 100%;
                 margin-left: auto;
                 margin-right: auto;
                 display: flex;
@@ -820,27 +904,31 @@
                 flex-direction: column-reverse;
                 justify-content: center;
                 align-items: center;
-               gap: 0;
-                .hero-content{
-                    padding: 0 20px ;
+                gap: 0;
+
+                .hero-content {
+                    padding: 0 20px;
                     margin-top: 50px;
                     margin-bottom: 50px;
                     display: flex;
                     flex-direction: column;
-                     max-width: 300px;
-                    .hero-subTitle{
+                    max-width: 300px;
+
+                    .hero-subTitle {
                         font-size: 18px;
                         font-weight: 500;
                         color: $heading-white;
                         margin-bottom: 12px;
-                  
+
                     }
-                    .hero-title{
+
+                    .hero-title {
                         font-size: 34px;
                         font-weight: 500;
                         line-height: 40px;
                         color: $heading-white;
                     }
+
                     .offerCard-btn {
                         margin-top: 40px;
                         padding: 15px 20px;
@@ -855,42 +943,47 @@
                         font-weight: 500;
                         border-radius: 5px;
                         transition: all 0.3s linear;
-            
+
                         span {
-                             display: inline-flex; 
-                             align-items: center; 
-                             svg path { fill: #333333; 
-                                   transition: fill 0.3s ease;
-                                   } 
-                                }
-                            &:hover { 
-                                    background-color: $section-secoundry;
-                                    box-shadow: 7px 7px 20px 4px #0000000D;
-                                    color: $heading-white;
-                                    border: 1px solid $heading-white;
-                                    
-                                    span svg path { 
-                                        fill: #FFFFFF; 
-                                 } 
+                            display: inline-flex;
+                            align-items: center;
+
+                            svg path {
+                                fill: #333333;
+                                transition: fill 0.3s ease;
                             }
+                        }
+
+                        &:hover {
+                            background-color: $section-secoundry;
+                            box-shadow: 7px 7px 20px 4px #0000000D;
+                            color: $heading-white;
+                            border: 1px solid $heading-white;
+
+                            span svg path {
+                                fill: #FFFFFF;
+                            }
+                        }
                     }
-                    
-                    
+
+
                 }
-                .hero-img{
+
+                .hero-img {
                     max-width: 429px;
                     width: 100%;
                     aspect-ratio: 429px/434px;
                 }
-    
+
             }
         }
     }
+
     #gift-section {
 
         background-color: $section-primary;
-        
-    
+
+
         .gift-card-box {
             padding-top: 6rem;
             padding-bottom: 6rem;
@@ -898,24 +991,25 @@
             grid-template-columns: repeat(2, minmax(129px, 1fr));
             grid-column-gap: 2rem;
             grid-row-gap: 2rem;
-    
-          
+
+
         }
     }
+
     #offer-Card {
         background-color: $section-primary;
-      
-    
+
+
         .offer-card-head {
-           
-    
+
+
             .offer-card-details {
                 .offer-card-subtitle {
                     font-size: 18px;
                     font-weight: 500;
                     color: $button-color;
                 }
-    
+
                 .offer-card-title {
                     font-size: 30px;
                     font-weight: 500;
@@ -923,12 +1017,13 @@
                     color: $heading-white;
                 }
             }
-    
+
             .offerCard-btn {
                 display: none !important;
             }
         }
-        .mobile-btn{
+
+        .mobile-btn {
             display: inline-block;
             padding: 15px 20px;
             display: flex;
@@ -941,13 +1036,13 @@
             font-weight: 500;
             border-radius: 5px;
             transition: all 0.3s linear;
-    
+
             &:hover {
                 background-color: $section-secoundry;
                 border: 1px solid #F6F8FF;
                 box-shadow: 7px 7px 20px 4px #0000000D;
                 color: $heading-white;
-    
+
                 &span {
                     svg {
                         path {
@@ -957,16 +1052,19 @@
                 }
             }
         }
+
         .offer-card-wepper {
             display: grid;
             grid-template-columns: repeat(2, minmax(200px, 1fr));
             grid-column-gap: 3rem;
             grid-row-gap: 3rem;
-    
+
         }
     }
+
     #games {
         margin-bottom: 48px;
+
         .offer-card-head {
             display: flex;
             align-items: center;
@@ -974,80 +1072,89 @@
             flex-wrap: wrap;
             gap: 14px;
             margin-bottom: 30px;
-    
+
             .offerCard-btn {
                 padding: 15px 20px;
-                
+
                 transition: all 0.3s linear;
-    
-               
+
+
             }
         }
-       .Games-wepper{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-       }
-        .game-wepperBox{
+
+        .Games-wepper {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .game-wepperBox {
             display: grid;
             grid-template-columns: repeat(1, minmax(220px, 1fr));
             grid-column-gap: 3rem;
             grid-row-gap: 3rem;
             width: 100%;
         }
-        .games-card{
-           
+
+        .games-card {
+
             padding: 12px;
             background-color: $section-secoundry;
             border: 1px solid #3C3E42;
             border-radius: 6px;
             gap: 1.6rem;
-            .game-card-head{
-                
+
+            .game-card-head {
+
                 width: 160px;
                 aspect-ratio: 160px/125px;
-    
-                .games-watch-icon{
+
+                .games-watch-icon {
                     padding: 5px;
                     top: 5px;
                     left: 5px;
                     border-radius: 50%;
                     background-color: $heading-white;
                     cursor: pointer;
-                  
+
                 }
-                .games-img{
+
+                .games-img {
                     width: 100%;
                     height: auto;
                     object-fit: cover;
                     border-radius: 6px;
                 }
             }
-            .game-car-body{
+
+            .game-car-body {
                 max-width: 220px;
                 width: 100%;
-                .gameCard-price{
+
+                .gameCard-price {
                     gap: 0.4rem;
                     color: $button-color;
                     font-weight: 700;
                     font-size: 20px;
-                    .games-delate-price{
+
+                    .games-delate-price {
                         font-size: 14px;
                         font-weight: 400;
                         color: #7B7B7B;
                     }
                 }
-                .gameCard-ttile{
+
+                .gameCard-ttile {
                     color: $heading-white;
                     font-size: 20px;
                     font-weight: 600;
-    
+
                 }
-                .gameCard-btn-box{
-    
-                }
-                .gameCard-sles{
+
+                .gameCard-btn-box {}
+
+                .gameCard-sles {
                     font-size: 16px;
                     font-weight: 500;
                     color: #A8ABA9;
@@ -1055,7 +1162,8 @@
                     background-color: #343434;
                     border-radius: 4px;
                 }
-                .gamecard-rating{
+
+                .gamecard-rating {
                     font-size: 16px;
                     font-weight: 500;
                     gap: 5px;
@@ -1063,32 +1171,36 @@
                 }
             }
         }
-        .Games-wepper{
-        gap: 3rem;
+
+        .Games-wepper {
+            gap: 3rem;
         }
-        .game-wepper-img{
+
+        .game-wepper-img {
             margin-top: 20px;
             max-width: 300px;
             width: 100% !important;
-          
-    
-    
+
+
+
         }
     }
-    #latestApp{
+
+    #latestApp {
         background-color: $section-secoundry;
         padding-top: 30px;
         padding-bottom: 30px;
+
         .offer-card-head {
-           
-    
+
+
             .offer-card-details {
                 .offer-card-subtitle {
                     font-size: 18px;
                     font-weight: 500;
                     color: $button-color;
                 }
-    
+
                 .offer-card-title {
                     font-size: 30px;
                     font-weight: 500;
@@ -1096,12 +1208,13 @@
                     color: $heading-white;
                 }
             }
-    
+
             .offerCard-btn {
                 display: none !important;
             }
         }
-        .mobile-btn{
+
+        .mobile-btn {
             display: inline-block;
             padding: 15px 20px;
             display: flex;
@@ -1114,13 +1227,13 @@
             font-weight: 500;
             border-radius: 5px;
             transition: all 0.3s linear;
-    
+
             &:hover {
                 background-color: $section-secoundry;
                 border: 1px solid #F6F8FF;
                 box-shadow: 7px 7px 20px 4px #0000000D;
                 color: $heading-white;
-    
+
                 &span {
                     svg {
                         path {
@@ -1130,125 +1243,59 @@
                 }
             }
         }
-        .lastetApp-card-box{
-            .game-lasted-wepper{
-               
-                padding: 12px ;
-              
-            
+
+        .lastetApp-card-box {
+            .game-lasted-wepper {
+
+                padding: 12px;
+
+
             }
         }
-        .games-card{
-       
+
+        .games-card {
+
             padding: 12px;
             background-color: $section-primary;
             border: 1px solid #3C3E42;
             border-radius: 6px;
             gap: 1.6rem;
-          
-           
-        }
-    
-      .btn-pav{
-        top: 50%;
-        transform: translateY(-50%);
-        left: -8px;
-        z-index: 200;
-      }
-       .btn-next{
-        top: 50%;
-        transform: translateY(-50%);
-        right: -9px;
-        z-index: 200;
-       }
-       
-       
-    }
-    
-     #UpCamingApp{
-  
-    padding-top: 60px;
-    padding-bottom: 60px;
-    .offer-card-head {
-           
-    
-        .offer-card-details {
-            .offer-card-subtitle {
-                font-size: 18px;
-                font-weight: 500;
-                color: $button-color;
-            }
 
-            .offer-card-title {
-                font-size: 30px;
-                font-weight: 500;
-                line-height: 46px;
-                color: $heading-white;
-            }
+
         }
 
-        .offerCard-btn {
-            display: none !important;
+        .btn-pav {
+            top: 50%;
+            transform: translateY(-50%);
+            left: -8px;
+            z-index: 200;
         }
-    }
-   
-    .mobile-btn{
-        display: inline-block;
-        padding: 15px 20px;
-        
-       
-    }
-    .btn-pav1{
-        top: 50%;
-        transform: translateY(-50%);
-        left: -8px;
-        z-index: 200;
-      }
-       .btn-next1{
-        top: 50%;
-        transform: translateY(-50%);
-        right: -9px;
-        z-index: 200;
-       }
-   
-   
-     }
-     #counter{
-        padding-top: 30px;
-        padding-bottom: 30px;
-        .counter-box{
-            display: grid;
-            grid-template-columns: repeat(1, minmax(174px, 1fr));
-            grid-column-gap: 3rem;
-            grid-row-gap: 3rem;
-            .single-counter{
-                gap: 2.5rem;
-                .counter-number{
-                    font-size: 55px;
-                    font-weight: 600;
-                    color: #121313;
-                }
-                .couner-name{
-           font-size: 18px;
-            font-weight: 400;
-                }
-            }
+
+        .btn-next {
+            top: 50%;
+            transform: translateY(-50%);
+            right: -9px;
+            z-index: 200;
         }
-        
+
+
     }
-    #recommendtion{
-        margin-top: 30px;
-        margin-bottom: 30px;
+
+    #UpCamingApp {
+
+        padding-top: 60px;
+        padding-bottom: 60px;
+
         .offer-card-head {
-           
-    
+
+
             .offer-card-details {
                 .offer-card-subtitle {
                     font-size: 18px;
                     font-weight: 500;
                     color: $button-color;
                 }
-    
+
                 .offer-card-title {
                     font-size: 30px;
                     font-weight: 500;
@@ -1256,67 +1303,154 @@
                     color: $heading-white;
                 }
             }
-    
+
             .offerCard-btn {
                 display: none !important;
             }
         }
-        .game-wepperBox{
+
+        .mobile-btn {
+            display: inline-block;
+            padding: 15px 20px;
+
+
+        }
+
+        .btn-pav1 {
+            top: 50%;
+            transform: translateY(-50%);
+            left: -8px;
+            z-index: 200;
+        }
+
+        .btn-next1 {
+            top: 50%;
+            transform: translateY(-50%);
+            right: -9px;
+            z-index: 200;
+        }
+
+
+    }
+
+    #counter {
+        padding-top: 30px;
+        padding-bottom: 30px;
+
+        .counter-box {
+            display: grid;
+            grid-template-columns: repeat(1, minmax(174px, 1fr));
+            grid-column-gap: 3rem;
+            grid-row-gap: 3rem;
+
+            .single-counter {
+                gap: 2.5rem;
+
+                .counter-number {
+                    font-size: 55px;
+                    font-weight: 600;
+                    color: #121313;
+                }
+
+                .couner-name {
+                    font-size: 18px;
+                    font-weight: 400;
+                }
+            }
+        }
+
+    }
+
+    #recommendtion {
+        margin-top: 30px;
+        margin-bottom: 30px;
+
+        .offer-card-head {
+
+
+            .offer-card-details {
+                .offer-card-subtitle {
+                    font-size: 18px;
+                    font-weight: 500;
+                    color: $button-color;
+                }
+
+                .offer-card-title {
+                    font-size: 30px;
+                    font-weight: 500;
+                    line-height: 46px;
+                    color: $heading-white;
+                }
+            }
+
+            .offerCard-btn {
+                display: none !important;
+            }
+        }
+
+        .game-wepperBox {
             display: grid;
             grid-template-columns: repeat(1, minmax(300px, 1fr));
             grid-column-gap: 3rem;
             grid-row-gap: 3rem;
         }
-        .games-card{
+
+        .games-card {
             padding: 12px;
             background-color: $section-secoundry;
             border-radius: 6px;
             gap: 1.6rem;
-            .game-card-head{
-                
+
+            .game-card-head {
+
                 width: 160px !important;
                 aspect-ratio: 160px/125.85px;
-    
-                .games-watch-icon{
+
+                .games-watch-icon {
                     padding: 5px;
                     top: 5px;
                     left: 5px;
                     border-radius: 50%;
                     background-color: $heading-white;
                     cursor: pointer;
-                  
+
                 }
-                .games-img{
+
+                .games-img {
                     width: 100%;
                     height: auto;
                     object-fit: cover;
                     border-radius: 6px;
                 }
             }
-            .game-car-body{
+
+            .game-car-body {
                 max-width: 170px;
                 width: 100%;
-                .gameCard-price{
+
+                .gameCard-price {
                     gap: 0.4rem;
                     color: $button-color;
                     font-weight: 700;
                     font-size: 20px;
-                    .games-delate-price{
+
+                    .games-delate-price {
                         font-size: 14px;
                         font-weight: 400;
                         color: #7B7B7B;
                     }
                 }
-                .gameCard-ttile{
+
+                .gameCard-ttile {
                     color: $heading-white;
                     font-size: 20px;
                     font-weight: 600;
-    
+
                 }
-                .gameCard-btn-box{
-    
-                }
-                .gameCard-sles{
+
+                .gameCard-btn-box {}
+
+                .gameCard-sles {
                     font-size: 16px;
                     font-weight: 500;
                     color: #A8ABA9;
@@ -1324,7 +1458,8 @@
                     background-color: #343434;
                     border-radius: 4px;
                 }
-                .gamecard-rating{
+
+                .gamecard-rating {
                     font-size: 16px;
                     font-weight: 500;
                     gap: 5px;
@@ -1332,135 +1467,180 @@
                 }
             }
         }
-        
-        .mobile-btn{
+
+        .mobile-btn {
             display: inline-block;
             padding: 15px 20px;
-           
-           
+
+
         }
-        
+
     }
-    #footer{
+
+    #footer {
         padding-top: 47px;
         background-color: $section-secoundry;
-        .Subscribe{
+
+        .Subscribe {
             padding: 20px;
-           
+
             display: flex;
             flex-direction: column;
             gap: 20px;
-            .Subscribe-title{
+
+            .Subscribe-title {
                 font-size: 25px;
-               
+
             }
-            .subscrib-box{
+
+            .subscrib-box {
                 gap: 2rem;
                 flex-direction: column;
-                .subscribe-input{
+
+                .subscribe-input {
                     padding: 22px 25px;
                     max-width: 270px;
-                   
-                   
+
+
                 }
-               
+
             }
-           
+
         }
-        .footer-box{
+
+        .footer-box {
             padding-top: 39.98px;
             padding-bottom: 27px;
-           flex-direction: column;
+            flex-direction: column;
             gap: 20px;
-            .footerbox-item{
+
+            .footerbox-item {
                 width: fit-content;
-                .discover-info{
+
+                .discover-info {
                     max-width: 301px;
                     margin-top: 26px;
                     color: #E5E7EB;
                     line-height: 24px;
                 }
-                
-    
-                .footer-items-title{
+
+
+                .footer-items-title {
                     font-size: 18px;
                     font-weight: 600;
                     line-height: 30px;
                     color: #FFFFFF;
                     margin-bottom: 0 !important;
-                    
+
                 }
-                .footer-menu{
+
+                .footer-menu {
                     list-style: none;
                     display: flex;
                     flex-direction: column;
                     margin-top: 26px;
                     gap: 12px;
-                    .footer-menu-items{
+
+                    .footer-menu-items {
                         overflow: hidden;
-                        .menu-item-link{
+
+                        .menu-item-link {
                             font-size: 16px;
                             font-weight: 400;
                             text-decoration: none;
                             display: block;
                             color: #E5E7EB;
-                            transition: all 0.3s linear ;
-                        
-                            
+                            transition: all 0.3s linear;
+
+
                         }
                     }
                 }
-               
-             
-               
+
+
+
             }
-            .footer-box-two{
+
+            .footer-box-two {
                 max-width: 160px;
                 width: 100%;
             }
         }
-          .footer-copyright-box{
-            
-           flex-direction: column;
-           
-            .copy-right-title{
-                
+
+        .footer-copyright-box {
+
+            flex-direction: column;
+
+            .copy-right-title {
+
                 font-size: 16px;
-              
-               
+
+
             }
+
             .footer-privacy {
                 gap: 10px;
-                .footer-privacy-items{
-                    
-                    .footer-privacy-link{
-                       
+
+                .footer-privacy-items {
+
+                    .footer-privacy-link {
+
                         font-size: 16px;
-                        &:hover{
-                        color: $button-color;
+
+                        &:hover {
+                            color: $button-color;
                         }
                     }
-                   
+
                 }
             }
         }
     }
 }
 
-@media #{$phone-tab}{
+@media #{$phone-tab} {
 
     .sticky {
         transition: all 0.3s linear;
         margin-top: -95px;
     }
+
     #hero {
+       
+
+
         margin-top: 195px;
+        .hero-content-box{
+            margin-left: 10% !important;
+        }
+        .hero-content-two{
+            margin-left: 10% !important;
+            .hero-content{
+                margin: 0 !important;
+                padding-top: 100px;
+                padding-bottom: 100px;
+            
+            }
+            
+        }
+
+        .bg-img {
+            top: 0;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            object-fit: cover;
+            z-index: -2 !important;
+        }
     }
+
     #gift-section {
 
         background-color: $section-primary;
-        
-    
+
+
         .gift-card-box {
             padding-top: 6rem;
             padding-bottom: 6rem;
@@ -1468,26 +1648,29 @@
             grid-template-columns: repeat(3, minmax(129px, 1fr));
             grid-column-gap: 2rem;
             grid-row-gap: 2rem;
-    
-          
+
+
         }
     }
+
     #offer-Card {
         background-color: $section-primary;
-      
-    
-       
-      
+
+
+
+
         .offer-card-wepper {
             display: grid;
             grid-template-columns: repeat(2, minmax(200px, 1fr));
             grid-column-gap: 3rem;
             grid-row-gap: 3rem;
-    
+
         }
     }
+
     #games {
         margin-bottom: 48px;
+
         .offer-card-head {
             display: flex;
             align-items: center;
@@ -1495,108 +1678,122 @@
             flex-wrap: wrap;
             gap: 14px;
             margin-bottom: 30px;
-    
+
             .offerCard-btn {
                 padding: 15px 20px;
-                
+
                 transition: all 0.3s linear;
-    
-               
+
+
             }
         }
-       .Games-wepper{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-       }
-        .game-wepperBox{
+
+        .Games-wepper {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .game-wepperBox {
             display: grid;
             grid-template-columns: repeat(2, minmax(220px, 1fr));
             grid-column-gap: 3rem;
             grid-row-gap: 3rem;
             width: 100%;
         }
-        .games-card{
-           
+
+        .games-card {
+
             padding: 12px;
             background-color: $section-secoundry;
             border: 1px solid #3C3E42;
             border-radius: 6px;
             gap: 1.6rem;
-            
+
         }
-        .Games-wepper{
-        gap: 3rem;
+
+        .Games-wepper {
+            gap: 3rem;
         }
-        .game-wepper-img{
+
+        .game-wepper-img {
             display: none;
             margin-top: 20px;
             max-width: 500px;
             width: 100% !important;
-          
-    
-    
+
+
+
         }
     }
-    #latestApp{
+
+    #latestApp {
         padding-top: 30px;
         padding-bottom: 30px;
-        .btn-pav{
+
+        .btn-pav {
             top: 50%;
             transform: translateY(-50%);
             left: -8px;
             z-index: 200;
-          }
-           .btn-next{
+        }
+
+        .btn-next {
             top: 50%;
             transform: translateY(-50%);
             right: -9px;
             z-index: 200;
-           }
+        }
     }
-    #UpCamingApp{
+
+    #UpCamingApp {
         padding-top: 30px;
         padding-bottom: 30px;
-        .btn-pav1{
+
+        .btn-pav1 {
             top: 50%;
             transform: translateY(-50%);
             left: -8px;
             z-index: 200;
-          }
-           .btn-next1{
+        }
+
+        .btn-next1 {
             top: 50%;
             transform: translateY(-50%);
             right: -9px;
             z-index: 200;
-           }
+        }
     }
-    #counter{
+
+    #counter {
         padding-top: 30px;
         padding-bottom: 30px;
-        .counter-box{
+
+        .counter-box {
             display: grid;
             grid-template-columns: repeat(2, minmax(174px, 1fr));
             grid-column-gap: 3rem;
             grid-row-gap: 3rem;
-          
+
         }
-        
+
     }
 
-    #recommendtion{
+    #recommendtion {
         margin-top: 30px;
         margin-bottom: 30px;
+
         .offer-card-head {
-           
-    
+
+
             .offer-card-details {
                 .offer-card-subtitle {
                     font-size: 18px;
                     font-weight: 500;
                     color: $button-color;
                 }
-    
+
                 .offer-card-title {
                     font-size: 34px;
                     font-weight: 500;
@@ -1604,47 +1801,52 @@
                     color: $heading-white;
                 }
             }
-    
-        
+
+
         }
-        .game-wepperBox{
+
+        .game-wepperBox {
             display: grid;
             grid-template-columns: repeat(2, minmax(300px, 1fr));
             grid-column-gap: 3rem;
             grid-row-gap: 3rem;
         }
-      
-       
-        
+
+
+
     }
 
-    #footer{
+    #footer {
         padding-top: 47px;
         background-color: $section-secoundry;
-        .Subscribe{
+
+        .Subscribe {
             padding: 20px;
-           
+
             display: flex;
             flex-direction: column;
             gap: 20px;
-            .Subscribe-title{
+
+            .Subscribe-title {
                 font-size: 25px;
-               
+
             }
-            .subscrib-box{
+
+            .subscrib-box {
                 gap: 2rem;
-                
-                .subscribe-input{
+
+                .subscribe-input {
                     padding: 22px 25px;
                     max-width: 270px;
-                   
-                   
+
+
                 }
-               
+
             }
-           
+
         }
-        .footer-box{
+
+        .footer-box {
             padding-top: 39.98px;
             padding-bottom: 27px;
             display: grid !important;
@@ -1653,73 +1855,97 @@
             grid-row-gap: 3rem;
             justify-content: center;
             align-items: center;
-            .footerbox-item{
+
+            .footerbox-item {
                 width: 300px !important;
-                .discover-info{
+
+                .discover-info {
                     max-width: 301px;
                     margin-top: 26px;
                     color: #E5E7EB;
                     line-height: 24px;
                 }
-                
-    
-                .footer-items-title{
+
+
+                .footer-items-title {
                     font-size: 18px;
                     font-weight: 600;
                     line-height: 30px;
                     color: #FFFFFF;
                     margin-bottom: 0 !important;
-                    
+
                 }
-                .footer-menu{
+
+                .footer-menu {
                     list-style: none;
                     display: flex;
                     flex-direction: column;
                     margin-top: 26px;
                     gap: 12px;
-                    .footer-menu-items{
+
+                    .footer-menu-items {
                         overflow: hidden;
-                        .menu-item-link{
+
+                        .menu-item-link {
                             font-size: 16px;
                             font-weight: 400;
                             text-decoration: none;
                             display: block;
                             color: #E5E7EB;
-                            transition: all 0.3s linear ;
-                        
-                            
+                            transition: all 0.3s linear;
+
+
                         }
                     }
                 }
-               
-             
-               
+
+
+
             }
-            
+
         }
-          .footer-copyright-box{
-            
-           flex-direction: column;
-           
-           
-       
+
+        .footer-copyright-box {
+
+            flex-direction: column;
+
+
+
         }
     }
 
 
 }
-@media #{$tab-between}{
+
+@media #{$tab-between} {
     #hero {
         margin-top: 185px;
-        .hero-content-box{
+
+        .hero-content-box {
             gap: 6px !important;
+            margin-left: 5% !important;
+        }
+        .hero-img {
+
+            margin-right: 5% !important;
+        }
+        .bg-img {
+            top: 0;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            object-fit: cover;
+            z-index: -2 !important;
         }
     }
+
     #gift-section {
 
         background-color: $section-primary;
-        
-    
+
+
         .gift-card-box {
             padding-top: 6rem;
             padding-bottom: 6rem;
@@ -1727,12 +1953,14 @@
             grid-template-columns: repeat(6, minmax(129px, 1fr));
             grid-column-gap: 2rem;
             grid-row-gap: 2rem;
-    
-          
+
+
         }
     }
+
     #games {
         margin-bottom: 48px;
+
         .offer-card-head {
             display: flex;
             align-items: center;
@@ -1740,99 +1968,147 @@
             flex-wrap: wrap;
             gap: 14px;
             margin-bottom: 30px;
-    
+
             .offerCard-btn {
                 padding: 15px 20px;
-                
+
                 transition: all 0.3s linear;
-    
-               
+
+
             }
         }
-       .Games-wepper{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-       }
-        .game-wepperBox{
+
+        .Games-wepper {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .game-wepperBox {
             display: grid;
             grid-template-columns: repeat(3, minmax(220px, 1fr));
             grid-column-gap: 3rem;
             grid-row-gap: 3rem;
             width: 100%;
         }
-        .games-card{
-           
+
+        .games-card {
+
             padding: 12px;
             background-color: $section-secoundry;
             border: 1px solid #3C3E42;
             border-radius: 6px;
             gap: 1.6rem;
-            
+
         }
-        .Games-wepper{
-        gap: 3rem;
+
+        .Games-wepper {
+            gap: 3rem;
         }
-        .game-wepper-img{
+
+        .game-wepper-img {
             display: none;
-           
-          
-    
-    
+
+
+
+
         }
     }
-    #latestApp{
+
+    #latestApp {
         padding-top: 30px;
         padding-bottom: 30px;
-        .btn-pav{
+
+        .btn-pav {
             top: 50%;
             transform: translateY(-50%);
             left: -8px;
             z-index: 200;
-          }
-           .btn-next{
+        }
+
+        .btn-next {
             top: 50%;
             transform: translateY(-50%);
             right: -9px;
             z-index: 200;
-           }
+        }
     }
-    #UpCamingApp{
+
+    #UpCamingApp {
         padding-top: 30px;
         padding-bottom: 30px;
-        .btn-pav1{
+
+        .btn-pav1 {
             top: 50%;
             transform: translateY(-50%);
             left: -8px;
             z-index: 200;
-          }
-           .btn-next1{
+        }
+
+        .btn-next1 {
             top: 50%;
             transform: translateY(-50%);
             right: -9px;
             z-index: 200;
-           }
+        }
     }
-    #footer{
+
+    #footer {
         padding-top: 47px;
         background-color: $section-secoundry;
-        
-        .footer-box{
-            
-           gap: 65px;
-            
+
+        .footer-box {
+
+            gap: 65px;
+
         }
-       
+
     }
 }
 
-@media (max-width: 768px) {
-    .hero-img{
-        display: none;
-    }  
+@media (max-width: 995px) {
+    
+    .hero-img {
+
+        margin-left: 0 !important;
+        display: none !important;
+    }
 }
 
-@media #{$pc-small}{
+@media #{$pc-small} {
    
+        .hero-content-box{
+            margin-left: 5% !important;
+        }
+        .hero-content-two{
+            
+            margin-left: 5% !important;
+        }
+    
+    .hero-img {
+
+        margin-right: 5% !important;
+        
+    }
+}
+@media #{$pc-xl} {
+   
+    .hero-content-box{
+        margin-left: 5% !important;
+    }
+    .hero-content-two{
+            
+        margin-left: 0% !important;
+        .hero-content{
+            padding-top: 100px;
+            padding-bottom: 100px;
+            margin: 0 !important;
+        }
+    }
+.hero-img {
+
+    margin-right: 5% !important;
+    
+}
 }
