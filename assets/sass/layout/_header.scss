@@ -37,6 +37,7 @@
 
 // header-top---------->
 .header-top {
+  background-color: $section-primary;
   padding: 1.2rem 0;
 
   .header-top-section {
@@ -46,6 +47,35 @@
   .list-item {
     font-weight: 500;
     font-size: 1.6rem;
+  }
+  .price-box{
+
+    .slectbox-body{
+      visibility: hidden;
+      background-color: $section-secoundry;
+      top: 40px;
+      transition: all 0.3s ease;
+      opacity: 0;
+      width: 100px;
+      text-align: center;
+      .country-options{
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      }
+      
+      cursor: pointer;
+      .list-text{
+        font-size: 14px;
+      }
+    }
+    &:hover{
+      .slectbox-body{
+        visibility: visible;
+        opacity: 1;
+      }
+    }
   }
 
   .btn {
@@ -59,6 +89,7 @@
 .header-nav {
   // border: 1px solid rgba($color: $color-white, $alpha: 0.1);
   padding: 1.7rem 0;
+  border-bottom: 1px solid #FFFFFF1A;
 
   .header-nav-section {
     @include flex($justify: space-between);
@@ -73,13 +104,14 @@
     width: 462px;
     border-radius: 4px;
     position: relative;
+    background-color: $section-primary;
 
     .header-search-box {
       width: 100% !important;
       padding-left: 22px;
-      padding-top: 19px;
-      padding-bottom: 16px;
-      font-size: 18px;
+      padding-top: 13px;
+      padding-bottom: 13px;
+      font-size: 14px;
       font-weight: 500;
     }
 
@@ -88,7 +120,7 @@
       top: 50%;
       right: 5px;
       transform: translateY(-50%);
-      padding: 11px 28px;
+      padding: 8px 27px;
       border: 1px solid $button-color;
       background-color: $button-color;
       border-radius: 4px;
@@ -120,7 +152,7 @@
 
     .header-btn {
       .header-menu-btn {
-        padding: 11px 16px ;
+        padding: 11px 14px ;
         background-color: $button-color;
         color: $section-secoundry;
         font-weight: 600;
@@ -147,16 +179,45 @@
         padding: 21px 20px;
         background-color: $section-primary;
         border-radius: 6px;
+       
+        
+       
         .dropdwon-icon{
             gap: 16px;
             .dropDwon-cetagoris{
                 font-size: 14px;
                 font-weight: 400px;
                 color: $heading-white;
+                z-index: 23;
             }
         }
+        .drop-dwonMenu{
+          visibility: hidden;
+          background-color: $section-secoundry;
+          border-radius: 6px;
+          top: 55px;
+          left: 0;
+          padding: 21px 20px;
+          opacity: 0;
+          transition: all 0.4s ease;
+          .drop-link{
+            color: $heading-white;
+            font-size: 14px;
+            font-weight: 400px;
+          }
+        }
+
+        &:hover{
+         
+          .drop-dwonMenu{
+            opacity: 1;
+            visibility: visible;
+          }
+        }
     }
+    
   }
+ 
 }
 
 .sticky{

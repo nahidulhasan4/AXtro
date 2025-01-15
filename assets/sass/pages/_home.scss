@@ -161,7 +161,15 @@
         }
     }
     .swiper-pagination{
-        svg 
+        .swiper-pagination-bullet{
+            background: #FFFFFF !important;
+            margin: 8px !important;
+        }
+        .swiper-pagination-bullet-active{
+            background: #FFFFFF !important;
+            outline: 1px solid #FFFFFF;
+            outline-offset: 10px ;
+        }
     }
 }
 

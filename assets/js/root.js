@@ -161,7 +161,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-
 window.onscroll = function () {
 	var header = document.querySelector(".header");
 	if (window.scrollY > 0) {
@@ -173,10 +172,16 @@ window.onscroll = function () {
 	}
   };
   // here input filed js code
-  document.querySelectorAll(".hero-date").forEach((item) => {
-	item.addEventListener("focus", function () {
-	  this.showPicker();
-	});
-  });
+  
+ 
+//   let menu = document.getElementsByClassName("header-dropDown-menu");
+//   let dropDow = document.getElementsByClassName("drop-dwonMenu");
+  
+//   menu.addEventListener("click", ()=>{
+// 	 dropDow.style.visibility= "visible";
+// 	 dropDow.style.opacity = " 1 ";
+// 	 console.log("hello Nahid")
+//   });
+//   console.log("hello Nahid")
  
   
