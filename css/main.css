@@ -1512,9 +1512,6 @@ a {
     transition: all 0.3s linear;
     margin-top: -99px;
   }
-  #hero {
-    margin-top: 190px;
-  }
   #hero .bg-img {
     top: 0;
     left: 0;
@@ -2096,9 +2093,6 @@ a {
     transition: all 0.3s linear;
     margin-top: -49px;
   }
-  #hero {
-    margin-top: 190px;
-  }
   #hero .hero-benner-box .bg-img {
     top: 0;
     left: 0;
@@ -2676,9 +2670,6 @@ a {
     transition: all 0.3s linear;
     margin-top: -95px;
   }
-  #hero {
-    margin-top: 195px;
-  }
   #hero .hero-content-box {
     margin-left: 10% !important;
   }
@@ -2896,9 +2887,6 @@ a {
   }
 }
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
-  #hero {
-    margin-top: 185px;
-  }
   #hero .hero-content-box {
     gap: 6px !important;
     margin-left: 5% !important;
