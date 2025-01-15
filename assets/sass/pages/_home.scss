@@ -46,7 +46,7 @@
             }
             .offerCard-btn {
                 margin-top: 40px;
-                padding: 17px 25px;
+                padding: 13px 24px;
                 max-width: 196px;
                 border: 1px solid $button-color;
                 display: flex;
@@ -74,6 +74,7 @@
                             border: 1px solid $heading-white;
                             
                             span svg path { 
+                                transition: all 0.3s linear;
                                 fill: #FFFFFF; 
                          } 
                     }
@@ -114,7 +115,7 @@
                 }
                 .offerCard-btn {
                     margin-top: 40px;
-                    padding: 17px 25px;
+                    padding: 13px 24px;
                     max-width: 196px;
                     border: 1px solid $button-color;
                     display: flex;
@@ -142,6 +143,7 @@
                                 border: 1px solid $heading-white;
                                 
                                 span svg path { 
+                                    transition: all 0.3s linear;
                                     fill: #FFFFFF; 
                              } 
                         }
@@ -241,7 +243,7 @@
         }
 
         .offerCard-btn {
-            padding: 17px 25px;
+            padding: 13px 24px;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -261,6 +263,7 @@
                 color: $heading-white;
 
                 span svg path { 
+                    transition: all 0.3s linear;
                     fill: #FFFFFF; 
              } 
             }
@@ -316,13 +319,14 @@
         margin-bottom: 30px;
 
         .offerCard-btn {
-            padding: 17px 25px;
+            padding: 15px 20px;
             display: flex;
             align-items: center;
             justify-content: center;
             background-color: $section-secoundry;
             color: $heading-white;
             gap: 9px;
+            line-height: 19.8px;
             border: 1px solid #F6F8FF;
             font-size: 16px;
             font-weight: 500;
@@ -334,9 +338,7 @@
                 box-shadow: 7px 7px 20px 4px #0000000D;
                 color: $section-secoundry;
                 border: 1px solid $button-color;
-                span svg path { 
-                    fill: #FFFFFF; 
-             } 
+                
             }
         }
     }
@@ -470,7 +472,7 @@
         }
 
         .offerCard-btn {
-            padding: 17px 25px;
+            padding: 13px 24px;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -490,6 +492,7 @@
                 color: $heading-white;
 
                 span svg path { 
+                    transition: all 0.3s linear;
                     fill: #FFFFFF; 
              } 
             }
@@ -612,6 +615,7 @@
     &:hover{
         background-color: #333333 !important;
         span svg path{
+            transition: all 0.3s linear;
             stroke: white;
         }
     }
@@ -628,6 +632,7 @@
     &:hover{
         background-color: #333333 !important;
         span svg path{
+            transition: all 0.3s linear;
             stroke: white;
         }
     }
@@ -664,7 +669,7 @@
         }
 
         .offerCard-btn {
-            padding: 17px 25px;
+            padding: 13px 24px;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -684,12 +689,57 @@
                 color: $heading-white;
 
                 span svg path { 
+                    transition: all 0.3s linear;
                     fill: #FFFFFF; 
              } 
             }
         }
     }
-    .mible-btn{
+   
+
+    .btn-pav1{
+        padding: 14px 11px;
+        border-radius: 50%;
+        background-color: #333333 !important;
+        top: 50%;
+        transform: translateY(-50%);
+        left: -50px;
+        z-index: 200;
+        transition: all 0.3s linear;
+        span svg path{
+            stroke: white;
+        }
+        &:hover{
+            background-color:  $button-color !important;
+            span svg path{
+                transition: all 0.3s linear;
+                stroke: #333333;
+            }
+        }
+      }
+       .btn-next1{
+        padding: 14px 11px;
+        border-radius: 50%;
+        background-color: #333333 !important;
+        top: 50%;
+        transform: translateY(-50%);
+        right: -50px;
+        z-index: 200;
+        transition: all 0.3s linear;
+        span svg path{
+            stroke: white;
+        }
+        &:hover{
+            background-color:  $button-color !important;
+            span svg path{
+                transition: all 0.3s linear;
+                stroke: #333333;
+            }
+        }
+       }
+   
+}
+ .mible-btn{
         margin-top: 30px;
         display: flex;
         justify-content: center;
@@ -796,47 +846,6 @@
             }
         }
     }
-
-    .btn-pav1{
-        padding: 14px 11px;
-        border-radius: 50%;
-        background-color: #333333 !important;
-        top: 50%;
-        transform: translateY(-50%);
-        left: -50px;
-        z-index: 200;
-        transition: all 0.3s linear;
-        span svg path{
-            stroke: white;
-        }
-        &:hover{
-            background-color:  $button-color !important;
-            span svg path{
-                stroke: #333333;
-            }
-        }
-      }
-       .btn-next1{
-        padding: 14px 11px;
-        border-radius: 50%;
-        background-color: #333333 !important;
-        top: 50%;
-        transform: translateY(-50%);
-        right: -50px;
-        z-index: 200;
-        transition: all 0.3s linear;
-        span svg path{
-            stroke: white;
-        }
-        &:hover{
-            background-color:  $button-color !important;
-            span svg path{
-                stroke: #333333;
-            }
-        }
-       }
-   
-}
 // here counter section 
 #counter{
     padding-top: 60px;
@@ -888,7 +897,7 @@
         }
 
         .offerCard-btn {
-            padding: 17px 25px;
+            padding: 14px 25px;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -907,6 +916,7 @@
                 color: $heading-white;
 
                 span svg path { 
+                    transition: all 0.3s linear;
                     fill: #FFFFFF; 
              } 
             }
@@ -1045,7 +1055,7 @@
                 background-color: $section-secoundry;
             }
              .offerCard-btn {
-                padding: 17px 25px;
+                padding: 15px 38px;
                 display: flex;
                 align-items: center;
                 justify-content: center;
@@ -1064,6 +1074,7 @@
                     box-shadow: 7px 7px 20px 4px #0000000D;
                     color: $heading-white;
                     span svg path { 
+                        transition: all 0.3s linear;
                         fill: #FFFFFF; 
                  } 
                    

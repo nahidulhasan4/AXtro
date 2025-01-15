@@ -4,7 +4,25 @@
         transition: all 0.3s linear;
         margin-top: -99px;
     }
-
+ .product-content-box{
+    justify-content: center;
+    align-items: center;
+ }
+ .product-side-bar {
+ max-width: 300px !important;
+ }
+   
+    .product-content-box{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .product-box {
+        display: grid;
+        grid-template-columns: repeat(1, minmax(170px, 1fr)) !important;
+        grid-column-gap: 3rem;
+        grid-row-gap: 3rem;
+    
+    }
     #hero {
        
 
@@ -678,7 +696,7 @@
         }
 
     }
-
+ 
     #footer {
         padding-top: 47px;
         background-color: $section-secoundry;
@@ -798,6 +816,7 @@
             }
         }
     }
+    
 }
 
 @media #{$mobile} {
@@ -805,7 +824,24 @@
         transition: all 0.3s linear;
         margin-top: -49px;
     }
-
+    .product-content-box{
+        justify-content: center ;
+        align-items: center;
+     }
+     .product-side-bar {
+        max-width: 300px !important;
+        }
+    .product-content-box{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .product-box {
+        display: grid;
+        grid-template-columns: repeat(1, minmax(170px, 1fr)) !important;
+        grid-column-gap: 3rem;
+        grid-row-gap: 3rem;
+    
+    }
     #hero {
      
 
@@ -1596,15 +1632,25 @@
             }
         }
     }
+   
 }
 
 @media #{$phone-tab} {
-
+    .product-content-box{
+       
+        gap: 20px;
+    }
     .sticky {
         transition: all 0.3s linear;
         margin-top: -95px;
     }
-
+    .product-box {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(170px, 1fr)) !important;
+        grid-column-gap: 3rem;
+        grid-row-gap: 3rem;
+    
+    }
     #hero {
        
 
@@ -1918,6 +1964,13 @@
 }
 
 @media #{$tab-between} {
+    .product-box {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(170px, 1fr)) !important;
+        grid-column-gap: 3rem;
+        grid-row-gap: 3rem;
+    
+    }
     #hero {
         
 
