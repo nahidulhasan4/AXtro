@@ -1,6 +1,6 @@
 // header-------------------->
 .header {
-  position: fixed;
+  
 
   width: 100%;
   z-index: 10;
@@ -191,8 +191,8 @@
                 z-index: 23;
             }
         }
-        .drop-dwonMenu{
-          visibility: hidden;
+        #dropdownMenu{
+       
           background-color: $section-secoundry;
           border-radius: 6px;
           top: 55px;
@@ -207,13 +207,7 @@
           }
         }
 
-        &:hover{
-         
-          .drop-dwonMenu{
-            opacity: 1;
-            visibility: visible;
-          }
-        }
+       
     }
     
   }

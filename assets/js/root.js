@@ -172,16 +172,20 @@ window.onscroll = function () {
 	}
   };
   // here input filed js code
-  
+  function myFunction() {
+	 let dropdownMenu = document.getElementById("dropdownMenu"); 
+	 dropdownMenu.style.opacity = "1";
+     let menuVisible = dropdownMenu.style.visibility = "visible"; 
+	 console.log(dropdownMenu)
+
+	}
+	
+	
+
+
  
-//   let menu = document.getElementsByClassName("header-dropDown-menu");
-//   let dropDow = document.getElementsByClassName("drop-dwonMenu");
-  
 //   menu.addEventListener("click", ()=>{
-// 	 dropDow.style.visibility= "visible";
-// 	 dropDow.style.opacity = " 1 ";
+	 
 // 	 console.log("hello Nahid")
 //   });
-//   console.log("hello Nahid")
- 
-  
+
