@@ -191,8 +191,8 @@
                 z-index: 23;
             }
         }
-        #dropdownMenu{
-       
+        .drop-dwonMenu{
+          visibility: hidden;
           background-color: $section-secoundry;
           border-radius: 6px;
           top: 55px;
@@ -205,6 +205,12 @@
             color: $heading-white;
             font-size: 14px;
             font-weight: 400px;
+          }
+        }
+        &:hover{
+          .drop-dwonMenu{
+          opacity: 1;
+          visibility: visible;
           }
         }
 

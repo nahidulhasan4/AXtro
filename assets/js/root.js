@@ -171,14 +171,21 @@ window.onscroll = function () {
 	
 	}
   };
-  // here input filed js code
-  function myFunction() {
-	 let dropdownMenu = document.getElementById("dropdownMenu"); 
-	 dropdownMenu.style.opacity = "1";
-      dropdownMenu.style.visibility = "visible"; 
-	 console.log(dropdownMenu)
 
-	}
+
+
+
+
+
+  
+  // here input filed js code
+//   function myFunction() {
+// 	 let dropdownMenu = document.getElementById("dropdownMenu"); 
+// 	 dropdownMenu.style.opacity = "1";
+//       dropdownMenu.style.visibility = "visible"; 
+// 	 console.log(dropdownMenu)
+
+// 	}
 	
 	
 
