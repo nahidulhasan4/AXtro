@@ -1,0 +1,140 @@
+#product-details{
+    margin-top: 60px ;
+    .product-seller-sideber{
+        max-width: 370px !important;
+        width: 100%;
+       }
+       .product-heroBox{
+    
+       }
+      .product-content{
+        max-width: 769px;
+      }
+      .product-price-card{
+       margin-top: 12px;
+       padding: 20px;
+       gap: 20px;
+      }
+      .product-siwper{
+        padding: 20px;
+      }
+}
+
+
+
+.hero-imgbox{
+    .product-details-img{
+        max-width: 769px;
+        aspect-ratio: 769px/ 605px;
+        object-fit: cover;
+       }
+       .product-acocunt-name{
+        font-size: 24px;
+        line-height: 34px;
+        font-weight: 700;
+        margin-top: 30px;
+        color: $heading-white;
+       }
+       .product-info{
+        color: $heading-white;
+        margin-top: 12px;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+       }
+}
+
+.product-silder-card{
+    background-color: $section-secoundry;
+   
+    margin-top: 19px;
+    border-radius: 8px;
+}
+.silder-card{
+    max-width: 142px;
+    width: 100%;
+    border: 2px solid #333333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    padding: 3.34px;
+    background-color: $section-primary;
+    transition: all 0.3s linear;
+    position: relative;
+    &:hover{
+        border: 2px solid #45F882
+    }
+    
+ .acoount-name{
+ 
+  
+    color: $heading-white;
+   
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px;
+     padding-top: 6.68px ;
+     padding-bottom: 7px;
+     width: 100% !important;
+  
+ }
+ .imgBox{
+    max-width: 135.32px;
+    aspect-ratio: 135.32px/123.6px;
+ }
+ &::after{
+    position: absolute;
+    content: "";
+    width: 22px;
+    height: 11px;
+    bottom: -12px;
+    background-color: #45F882;
+    z-index: 1000;
+ }
+
+}
+
+.price-card{
+    padding: 15px 18px;
+    background-color: $section-primary;
+    border-radius: 6px;
+    .subtitle{
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 21px;
+        color: $button-color;
+    }
+    .price{
+        font-size: 22px;
+        font-weight: 500;
+        line-height: 26px;
+        color: $heading-white;
+    }
+}
+
+.product-details{
+    margin-top: 30px;
+    .details-title{
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 32px;
+        color: $heading-white;
+        margin-bottom: 17px;
+       
+    }
+    .product-details-info{
+        color: $heading-white;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 26px;
+        
+    }
+    .details-gap{
+        gap: 33px;
+    }
+    .red-more{
+        color: $button-color;
+    }
+}

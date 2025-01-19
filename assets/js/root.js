@@ -112,6 +112,40 @@ new Swiper(".hero-swiper", {
   },
 });
 
+// here add product details swiper js
+new Swiper(".product-siwper", {
+	spaceBetween: 0,
+	slidesPerView: 4,
+	loop: true,
+	speed: 1000,
+
+	// navigation: {
+	// 	nextEl: ".btn-next1",
+	// 	prevEl: ".btn-prev1",
+	// },
+
+	breakpoints: {
+		320: {
+			slidesPerView: 2,
+		},
+		375: {
+			slidesPerView: 2,
+			spaceBetween: 0,
+		},
+		640: {
+			slidesPerView: 3.5,
+		},
+
+		1024: {
+			slidesPerView: 4,
+		},
+		1260: {
+			slidesPerView: 4.5,
+			spaceBetween: 10,
+		},
+	},
+});
+
 document.addEventListener("DOMContentLoaded", function () {
   const counters = document.querySelectorAll(".counter");
   const counterBox = document.querySelector(".counter-box");
