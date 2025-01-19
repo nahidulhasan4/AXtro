@@ -17,6 +17,7 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+           
 
             .product-hero-ttile {
                 font-size: 42px;
@@ -112,6 +113,7 @@
         display: flex;
         height: fit-content;
         gap: 30px;
+       
     }
 
     .product-side-bar {
@@ -260,7 +262,7 @@
         display: flex;
         flex-direction: column;
         gap: 44px;
-
+        width: 100%;
         .product-slect {
             display: flex;
             justify-content: end;
@@ -487,3 +489,34 @@
           
        }
    }
+
+
+//    here seller empty page scss
+.product-imgbox{
+   
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .product-img{
+        width: 100%;
+        max-width: 492px;
+        aspect-ratio: 492px/345px;
+        object-fit: cover;
+    }
+}
+.seller-emptyTitle{
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 57px;
+    align-self: center;
+    color: $heading-white;
+    margin-bottom: 23px;
+}
+.empty-product{
+    flex-direction: column;
+    justify-content: center !important;
+    .offerCard-btn{
+        align-self: center;
+    }
+}

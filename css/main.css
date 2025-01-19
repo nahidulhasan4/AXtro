@@ -1748,6 +1748,7 @@ a {
   display: flex;
   flex-direction: column;
   gap: 44px;
+  width: 100%;
 }
 #all-product .product-content .product-slect {
   display: flex;
@@ -1928,6 +1929,36 @@ a {
 }
 .sidebar-range .example-val {
   font-size: 2rem;
+}
+
+.product-imgbox {
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.product-imgbox .product-img {
+  width: 100%;
+  max-width: 492px;
+  aspect-ratio: 492px/345px;
+  object-fit: cover;
+}
+
+.seller-emptyTitle {
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 57px;
+  align-self: center;
+  color: #FFFFFF;
+  margin-bottom: 23px;
+}
+
+.empty-product {
+  flex-direction: column;
+  justify-content: center !important;
+}
+.empty-product .offerCard-btn {
+  align-self: center;
 }
 
 @media only screen and (min-width: 320px) and (max-width: 447px) {
