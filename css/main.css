@@ -83,6 +83,14 @@ html {
   overflow-x: hidden;
 }
 
+tr,
+th,
+td {
+  background-color: transparent !important;
+  border: none !important;
+  color: #FFFFFF;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -2428,30 +2436,18 @@ a {
   cursor: pointer;
 }
 
-#cart-view .row {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  gap: 30px;
-  padding: 20px;
+#cart-view .cart-table {
   width: 100%;
-  color: #fff;
-  align-items: start;
 }
-#cart-view .table-header {
-  font-weight: bold;
-  text-align: center;
+#cart-view .cart-table .table-header {
+  padding: 25px 38px 26px 40px;
 }
-#cart-view .table-item {
-  text-align: center;
-  padding: 10px;
-}
-#cart-view .span-3 {
-  grid-column: span 5;
-}
-@media (max-width: 600px) {
-  #cart-view .table-container {
-    grid-template-columns: repeat(3, 1fr);
-  }
+#cart-view .cart-table .table-header .table-heading {
+  background-color: #000000 !important;
+  padding: 25px 38px 26px 40px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 19px;
 }
 
 .payment-detalis {

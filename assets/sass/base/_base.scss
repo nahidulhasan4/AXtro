@@ -13,6 +13,13 @@ html {
     font-size: 62.5%;
     overflow-x: hidden;
 }
+tr,
+th,
+td{
+    background-color: transparent !important;
+    border: none !important;
+    color: $heading-white;
+}
 
 body {
     margin: 0;
