@@ -1406,6 +1406,7 @@ a {
   color: #45F882;
   font-weight: 700;
   font-size: 20px;
+  margin-bottom: 6px;
 }
 #recommendtion .games-card .game-car-body .gameCard-price .games-delate-price {
   font-size: 14px;
@@ -1416,6 +1417,9 @@ a {
   color: #FFFFFF;
   font-size: 20px;
   font-weight: 600;
+}
+#recommendtion .games-card .game-car-body .gameCard-btn-box {
+  padding-top: 23px;
 }
 #recommendtion .games-card .game-car-body .gameCard-sles {
   font-size: 16px;
@@ -2424,6 +2428,32 @@ a {
   cursor: pointer;
 }
 
+#cart-view .row {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 30px;
+  padding: 20px;
+  width: 100%;
+  color: #fff;
+  align-items: start;
+}
+#cart-view .table-header {
+  font-weight: bold;
+  text-align: center;
+}
+#cart-view .table-item {
+  text-align: center;
+  padding: 10px;
+}
+#cart-view .span-3 {
+  grid-column: span 5;
+}
+@media (max-width: 600px) {
+  #cart-view .table-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
 .payment-detalis {
   margin-bottom: 132px;
   margin-top: 60px;
@@ -2587,30 +2617,112 @@ a {
   color: #FFFFFF;
 }
 
-#cart-view .row {
+#our-prodcut {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+#our-prodcut .section-title {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 32px;
+  color: #FFFFFF;
+}
+#our-prodcut .product-content {
+  gap: 17px;
+}
+#our-prodcut .product-box {
   display: grid;
-  grid-template-columns: repeat(12, 1fr);
+  grid-template-columns: repeat(4, minmax(170px, 1fr));
+  grid-column-gap: 3rem;
+  grid-row-gap: 3rem;
+}
+
+#seller-public-profile {
+  margin-top: 60px;
+}
+#seller-public-profile .profile-view-box {
+  border-radius: 8px;
+  padding: 40px;
+  background-color: #000000;
+}
+#seller-public-profile .profile-name-box {
+  margin-bottom: 30px;
+}
+#seller-public-profile .profile-name-box .seller-profilebox .seller-id-details .seller-name {
+  color: #FFFFFF;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  margin-bottom: 12px;
+  margin-top: 12px;
+  gap: 10px;
+}
+#seller-public-profile .profile-name-box .seller-profilebox .seller-id-details .seller-experice {
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19px;
+}
+#seller-public-profile .profile-name-box .seller-profilebox .seller-id-details .seller-rating {
+  margin-top: 5px;
+}
+#seller-public-profile .profile-name-box .seller-profilebox .seller-id-details .seller-rating-potin {
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 19px;
+}
+#seller-public-profile .profile-name-box .seller-profile-img {
+  max-width: 112px;
+  aspect-ratio: 112px/112px;
+  align-self: center;
+}
+#seller-public-profile .profile-review-box {
+  flex-wrap: wrap;
   gap: 30px;
-  padding: 20px;
+}
+#seller-public-profile .profile-review-box .profile-view-card {
+  max-width: 340px;
   width: 100%;
-  color: #fff;
-  align-items: start;
+  background-color: #0B0E13;
+  border-radius: 8px;
+  padding: 27px 0px 28px 20px;
+  gap: 14px;
 }
-#cart-view .table-header {
-  font-weight: bold;
-  text-align: center;
+#seller-public-profile .profile-review-box .profile-view-card .profile-viewCard-icon {
+  padding: 12px;
+  background-color: rgba(69, 248, 129, 0.2588235294);
+  border-radius: 50%;
 }
-#cart-view .table-item {
-  text-align: center;
-  padding: 10px;
+#seller-public-profile .profile-review-box .profile-view-card .profile-viewCard-detals {
+  gap: 9px;
 }
-#cart-view .span-3 {
-  grid-column: span 5;
+#seller-public-profile .profile-review-box .profile-view-card .profile-viewCard-detals .profile-viewCard-ttile {
+  color: #FFFFFF;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 27px;
 }
-@media (max-width: 600px) {
-  #cart-view .table-container {
-    grid-template-columns: repeat(3, 1fr);
-  }
+#seller-public-profile .profile-review-box .profile-view-card .profile-viewCard-detals .profile-viewCard-reviewNumber {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 28px;
+  color: #FFFFFF;
+}
+#seller-public-profile .profile-about {
+  margin-top: 30px;
+}
+#seller-public-profile .profile-about .profile-view-ttile {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+  color: #FFFFFF;
+}
+#seller-public-profile .profile-about .profileview-info {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  color: #FFFFFF;
 }
 
 @media only screen and (min-width: 320px) and (max-width: 447px) {
@@ -2628,6 +2740,13 @@ a {
     grid-template-columns: repeat(1, minmax(140px, 1fr)) !important;
     grid-column-gap: 2rem;
     grid-row-gap: 2rem;
+  }
+  .profile-view-box .profile-name-box .seller-profilebox {
+    flex-direction: column;
+    align-items: center;
+  }
+  .profile-view-box .profile-name-box .seller-profilebox .seller-id-details {
+    align-items: center !important;
   }
   .product-side-bar {
     max-width: 300px !important;
@@ -3898,6 +4017,12 @@ a {
     grid-column-gap: 3rem;
     grid-row-gap: 3rem;
   }
+  #our-prodcut .product-box {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(170px, 1fr));
+    grid-column-gap: 3rem;
+    grid-row-gap: 3rem;
+  }
   #hero .hero-content-box {
     margin-left: 10% !important;
   }
@@ -4151,6 +4276,12 @@ a {
   }
   .payment-detalis .product-content-box {
     flex-direction: column;
+  }
+  #our-prodcut .product-box {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(170px, 1fr)) !important;
+    grid-column-gap: 3rem;
+    grid-row-gap: 3rem;
   }
   #hero .hero-content-box {
     gap: 6px !important;

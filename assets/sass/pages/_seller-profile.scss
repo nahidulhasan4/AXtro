@@ -1,0 +1,129 @@
+#our-prodcut{
+    margin-top: 60px;
+    margin-bottom: 60px;
+    .section-title{
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 32px;
+        color: $heading-white;
+    }
+    .product-content{
+        gap: 17px;
+    }
+    .product-box{
+   
+    display: grid;
+    grid-template-columns: repeat(4, minmax(170px, 1fr));
+    grid-column-gap: 3rem;
+    grid-row-gap: 3rem;
+    }
+   
+   
+}
+#seller-public-profile{
+    margin-top: 60px;
+    
+    .profile-view-box{
+        border-radius: 8px;
+        padding: 40px;
+        background-color: $section-secoundry;
+    }
+    .profile-name-box{
+        margin-bottom: 30px;
+      
+            .seller-profilebox{
+                .seller-id-details{
+                    .seller-name{
+                        color: $heading-white;
+                        font-size: 20px;
+                        font-weight: 700;
+                        line-height: 24px;
+                        margin-bottom: 12px;
+                        margin-top: 12px;
+                        gap: 10px;
+                    }
+                    .seller-experice{
+                        color: $heading-white;
+                        font-size: 16px;
+                        font-weight: 500;
+                        line-height: 19px;
+        
+        
+                    }
+                    .seller-rating{
+                        margin-top: 5px;
+                        
+                    }
+                    .seller-rating-potin{
+                        color: $heading-white;
+                        font-size: 16px;
+                        font-weight: 600;
+                        line-height: 19px;
+                        
+                    }
+                }
+            }
+            .seller-profile-img{
+                max-width: 112px;
+                aspect-ratio: 112px/112px;
+                align-self: center;
+            }
+           
+        
+            
+    }
+    .profile-review-box{
+        flex-wrap: wrap;
+        gap: 30px;
+        .profile-view-card{
+            max-width: 340px;
+            width: 100%;
+            background-color: $section-primary;
+            border-radius: 8px;
+            padding: 27px 0px 28px 20px;
+            gap: 14px;
+            .profile-viewCard-icon{
+                padding: 12px;
+                background-color: #45f88142;
+                border-radius: 50%;
+               
+            }
+            .profile-viewCard-detals{
+                gap: 9px;
+                .profile-viewCard-ttile{
+                    color: $heading-white;
+                    font-size: 18px;
+                    font-weight: 500;
+                    line-height: 27px;
+
+                }
+                .profile-viewCard-reviewNumber{
+                    font-size: 24px;
+                    font-weight: 600;
+                    line-height: 28px;
+                    color: $heading-white;
+
+
+                }
+            }
+
+        }
+    }
+    .profile-about{
+        margin-top: 30px;
+        .profile-view-ttile{
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 32px;
+            color: $heading-white;
+        }
+        .profileview-info{
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 26px;
+            color: $heading-white;
+
+        }
+    }
+    
+}

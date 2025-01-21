@@ -384,6 +384,10 @@
         .game-car-body{
             max-width: 220px;
             width: 100%;
+            .gameCard-btn-box{
+               
+            }
+            
             .gameCard-price{
                 gap: 0.4rem;
                 color: $button-color;
@@ -401,9 +405,7 @@
                 font-weight: 600;
 
             }
-            .gameCard-btn-box{
-
-            }
+           
             .gameCard-sles{
                 font-size: 16px;
                 font-weight: 500;
@@ -962,6 +964,7 @@
                 color: $button-color;
                 font-weight: 700;
                 font-size: 20px;
+                margin-bottom: 6px;
                 .games-delate-price{
                     font-size: 14px;
                     font-weight: 400;
@@ -975,6 +978,7 @@
 
             }
             .gameCard-btn-box{
+                padding-top: 23px;
 
             }
             .gameCard-sles{

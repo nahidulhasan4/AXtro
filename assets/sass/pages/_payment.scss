@@ -1,0 +1,170 @@
+.payment-detalis{
+    margin-bottom: 132px;
+    margin-top: 60px;
+}
+.payment-content-box{
+    width: 100%;
+}
+.payment-input-box{
+    border-radius: 8px;
+    padding: 30px;
+    background-color: $section-secoundry;
+    max-width: 771px;
+    width: 100%;
+    height: fit-content;
+    color: $heading-white;
+    gap: 20px;
+    .modal1-body{
+        gap: 31px;
+    }
+  
+}
+.payment-waybox{
+    border-radius: 8px;
+    margin-top: 30px;
+    max-width: 771px;
+    width: 100%;
+    border: 1px solid #1E2126;
+    .payment-way{
+        max-width: 596px;
+        padding: 30px 26px 46px 26px;
+    }
+    .payment-card-box{
+        margin-top: 30px;
+        display: grid;
+        grid-template-columns: repeat(3, minmax(181px, 1fr)) !important;
+        grid-column-gap: 2rem;
+        grid-row-gap: 2rem;
+    }
+    .payment-card{
+        padding: 14px 29px 15px 29px;
+        background-color: $heading-white;
+        max-width: 181px;
+        border: 1px solid transparent;
+        border-radius: 3px;
+        transition: all 0.3s linear;
+        &:hover{
+            border: 1px solid $button-color;
+        }
+    }
+    .payment-card-img{
+        max-width: 111px;
+    }
+}
+.payment-siderber{
+    max-width: 370px;
+    width: 100%;
+    background-color: $section-secoundry;
+    border-radius: 6px;
+}
+
+.payment-product-cardbox{
+ padding: 24px 16px 63px 24px;
+ gap: 24px;
+}
+.payment-product-card{
+    gap: 10px;
+ 
+}
+.payment-card-content{
+    .payment-card-ttile{
+ font-size: 20px;
+ font-weight: 500;
+ line-height: 24px;
+ color: $heading-white;
+    }
+    .payment-price{
+        margin-top: 13px;
+        font-size: 16px;
+       font-weight: 600;
+       line-height: 19px;
+       gap: 7px;
+       color: $button-color;
+       .payment-items-view{
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 19px;
+        color: #E5E7EB;
+       }
+
+    }
+}
+.line{
+    width:100%;
+    height: 1px ;
+    border: 1px solid  #1E2126;
+}
+.paymentcrad-img{
+    max-width: 116px;
+    aspect-ratio: 116px/92px;
+
+}
+.return-box{
+    padding: 0 24px 19px 24px;
+    .Subtotal{
+        gap: 24px;
+        border-bottom: 1px solid #1E2126;
+        padding-bottom: 19px;
+        
+
+       
+    }
+    .subotal-price{
+        .price-name{
+            color: $heading-white;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 19px;
+        }
+        .price-amonnt{
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 19px;
+            color: $heading-white;
+        }
+        .discount-price{
+            color: $button-color;
+        }
+
+      
+    }
+    .total-price{
+        margin-top: 16px;
+    }
+    .return-btn{
+        margin-top: 25px;
+        width: 100%;
+        background-color: #FFB321;
+        padding-top: 22px;
+        padding-bottom: 22px;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 19px;
+        border-radius: 4px;
+    }
+}
+.privacy-box{
+    padding: 19px 24px 24px 24px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    color: $heading-white;
+    .trams{
+        color: $button-color;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 24px;
+    }
+}
+
+.input-name{
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 34px;
+    color: $heading-white;
+}
+
+// here modal
+.succes-modal{
+    
+}

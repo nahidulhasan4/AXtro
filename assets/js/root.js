@@ -158,7 +158,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   const observer = new IntersectionObserver(handleIntersect, options);
 
-  // observer.observe(counterBox);
+  observer.observe(counterBox);
 
   function handleIntersect(entries, observer) {
     entries.forEach((entry) => {
@@ -262,4 +262,7 @@ hideModal.addEventListener("click", function(){
   modal.classList.remove("open");
 
 });
+
+// here success modal
+
 
