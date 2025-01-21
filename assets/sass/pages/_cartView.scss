@@ -1,0 +1,29 @@
+#cart-view {
+  .row{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 30px;
+    padding: 20px;
+    width: 100%;
+    color: #fff;
+    align-items: start;
+  }
+  .table-header {
+   
+    font-weight: bold;
+    text-align: center;
+  }
+  .table-item {
+   
+    text-align: center;
+    padding: 10px;
+  }
+  .span-3 {
+    grid-column: span 5;
+  }
+  @media (max-width: 600px) {
+    .table-container {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+}

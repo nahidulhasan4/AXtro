@@ -8,6 +8,16 @@
     justify-content: center;
     align-items: center;
  }
+ .payment-waybox{
+    .payment-card-box{
+        margin-top: 30px;
+        display: grid;
+        grid-template-columns: repeat(1, minmax(140px, 1fr)) !important;
+        grid-column-gap: 2rem;
+        grid-row-gap: 2rem;
+    }
+ }
+ 
  .product-side-bar {
  max-width: 300px !important;
  }
@@ -862,6 +872,12 @@ flex-direction: column;
         transition: all 0.3s linear;
         margin-top: -49px;
     }
+    .payment-detalis{
+        .product-content-box{
+            flex-direction: column;
+
+        }
+    }
     .modal1-footer{
         flex-direction: column;
          .button-grop{
@@ -870,6 +886,15 @@ flex-direction: column;
             }
            
          }
+         }
+         .payment-waybox{
+            .payment-card-box{
+                margin-top: 30px;
+                display: grid;
+                grid-template-columns: repeat(2, minmax(140px, 1fr)) !important;
+                grid-column-gap: 2rem;
+                grid-row-gap: 2rem;
+            }
          }
     .product-content-box{
         justify-content: center ;
@@ -1719,6 +1744,12 @@ flex-direction: column;
        
         gap: 20px;
     }
+    .payment-detalis{
+        .product-content-box{
+            flex-direction: column;
+
+        }
+    }
     .sticky {
         transition: all 0.3s linear;
         margin-top: -95px;
@@ -2087,6 +2118,12 @@ flex-direction: column;
         grid-column-gap: 3rem;
         grid-row-gap: 3rem;
     
+    }
+    .payment-detalis{
+        .product-content-box{
+            flex-direction: column;
+
+        }
     }
     #hero {
         
