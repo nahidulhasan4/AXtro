@@ -114,7 +114,7 @@ new Swiper(".hero-swiper", {
 
 // here add product details swiper js
 new Swiper(".product-siwper", {
-	spaceBetween: 0,
+	spaceBetween: 10,
 	slidesPerView: 4,
 	loop: true,
 	speed: 1000,
@@ -127,10 +127,11 @@ new Swiper(".product-siwper", {
 	breakpoints: {
 		320: {
 			slidesPerView: 2,
+      spaceBetween: 20,
 		},
 		375: {
 			slidesPerView: 2,
-			spaceBetween: 0,
+			spaceBetween: 10,
 		},
 		640: {
 			slidesPerView: 3.5,
@@ -141,7 +142,7 @@ new Swiper(".product-siwper", {
 		},
 		1260: {
 			slidesPerView: 4.5,
-			spaceBetween: 10,
+			spaceBetween: 40,
 		},
 	},
 });
@@ -157,7 +158,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   const observer = new IntersectionObserver(handleIntersect, options);
 
-  observer.observe(counterBox);
+  // observer.observe(counterBox);
 
   function handleIntersect(entries, observer) {
     entries.forEach((entry) => {
@@ -232,35 +233,33 @@ function priceslider() {
 }
 priceslider();
 
-// here all product sclect dropDown menu js
-function toggleDropdown() {
-  document.getElementById("myDropdown").classList.toggle("show");
-}
-window.onclick = function (event) {
-  if (!event.target.matches(".dropdown button")) {
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-    for (var i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains("show")) {
-        openDropdown.classList.remove("show");
-      }
-    }
-  }
-};
+
+
+// here incriment and dicriment counter 
+let count = 0; 
+const counter = document.getElementById('counter1'); 
+const plusButton = document.getElementById('plus'); 
+const minusButton = document.getElementById('minus'); 
+plusButton.addEventListener('click', () => { count++; counter.textContent = count; }); 
+minusButton.addEventListener('click', () => { count--; counter.textContent = count; });
 
 
 
 
-// here input filed js code
-//   function myFunction() {
-// 	 let dropdownMenu = document.getElementById("dropdownMenu");
-// 	 dropdownMenu.style.opacity = "1";
-//       dropdownMenu.style.visibility = "visible";
-// 	 console.log(dropdownMenu)
 
-// 	}
 
-//   menu.addEventListener("click", ()=>{
+// here create modal js
 
-// 	 console.log("hello Nahid")
-//   });
+let modal = document.querySelector(".modal-main")
+let hideModal = document.querySelector("#hideModal")
+let showModal = document.querySelector(".showModal")
+showModal.addEventListener("click", function(){
+  modal.classList.add("open");
+
+console.log("hello Nhaid")
+});
+hideModal.addEventListener("click", function(){
+  modal.classList.remove("open");
+
+});
+

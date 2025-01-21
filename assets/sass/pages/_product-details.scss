@@ -3,6 +3,9 @@
     .product-seller-sideber{
         max-width: 370px !important;
         width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
        }
        .product-heroBox{
     
@@ -18,6 +21,31 @@
       .product-siwper{
         padding: 20px;
       }
+      .product-details{
+        margin-top: 30px;
+        .details-title{
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 32px;
+            color: $heading-white;
+            margin-bottom: 17px;
+           
+        }
+      
+        .product-details-info{
+            color: $heading-white;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 26px;
+            
+        }
+        .details-gap{
+            gap: 33px;
+        }
+        .red-more{
+            color: $button-color;
+        }
+    }
 }
 
 
@@ -63,9 +91,7 @@
     background-color: $section-primary;
     transition: all 0.3s linear;
     position: relative;
-    &:hover{
-        border: 2px solid #45F882
-    }
+  
     
  .acoount-name{
  
@@ -84,15 +110,21 @@
     max-width: 135.32px;
     aspect-ratio: 135.32px/123.6px;
  }
- &::after{
-    position: absolute;
-    content: "";
-    width: 22px;
-    height: 11px;
-    bottom: -12px;
-    background-color: #45F882;
-    z-index: 1000;
+ .hover-img{
+    max-width: 22px;
+    aspect-ratio: 22px/11px;
+    bottom: -13px;
+    opacity: 0;
+    transition: all 0.3s linear;
+
  }
+ &:hover{
+    border: 2px solid #45F882;
+    .hover-img{
+        opacity: 1;
+    }
+   
+}
 
 }
 
@@ -114,27 +146,386 @@
     }
 }
 
-.product-details{
+
+
+.product-review{
+
     margin-top: 30px;
+    .review-head{
+        .rating-icon{
+            display: flex;
+            align-items: center;
+            gap: 2px;
+        } 
+        .rating{
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 21px;
+            color: $heading-white;
+
+        }
+    }
     .details-title{
         font-size: 24px;
         font-weight: 700;
         line-height: 32px;
         color: $heading-white;
-        margin-bottom: 17px;
+        margin-bottom: 10px;
        
     }
-    .product-details-info{
-        color: $heading-white;
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 26px;
+}
+
+.review-cardbox{
+   margin-top: 20px;
+   display: grid;
+   grid-template-columns: repeat(2, minmax(129px, 1fr));
+   grid-column-gap: 3rem;
+   grid-row-gap: 3rem;
+
+}
+.review-card{
+   
+    background-color: $section-secoundry;
+    max-width: 370px;
+    border-radius: 8px ;
+    border: 1px solid #333333;
+
+    .reviewcard-head{
+        padding: 20px 20px 14px 20px;
+        .review-details{
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 25px;
+            color: $heading-white;
+        }
+        border-bottom: 1px solid #333333;
+
+    }
+    .review-card-body{
+        padding: 20px;
+        .review-castumer{
+            .castomer-img{
+                max-width: 38px;
+                aspect-ratio: 38px/38px;
+            }
+            .customer-details{
+                color: $heading-white;
+                .castomer-name{
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 28px;
+                }
+                .castomer-location{
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 20px;
+                }
+            }
+        }
         
     }
-    .details-gap{
-        gap: 33px;
+}
+
+.seller-profile{
+    padding: 30px;
+    width: 100%;
+    background-color: $section-secoundry;
+    border-radius: 6px;
+    .seller-profilebox{
+        .seller-id-details{
+            .seller-name{
+                color: $heading-white;
+                font-size: 24px;
+                font-weight: 700;
+                line-height: 24px;
+                margin-bottom: 14px;
+            }
+            .seller-experice{
+                color: $heading-white;
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 19px;
+
+
+            }
+            .seller-rating{
+                margin-top: 12px;
+            }
+            .seller-rating-potin{
+                color: $heading-white;
+                font-size: 16px;
+                font-weight: 600;
+                line-height: 19px;
+            }
+        }
     }
-    .red-more{
+    .seller-profile-img{
+        max-width: 112px;
+        aspect-ratio: 112px/112px;
+        align-self: center;
+    }
+}
+
+.btn-see-profile{
+    margin-top: 30px;
+    max-width: 310px;
+    width: 100% ;
+}
+.why-chose{
+   
+    width: 100%;
+    padding: 30px;
+    background-color: $section-secoundry;
+    border-radius: 6px;
+    color: $heading-white;
+    .seller-choce-ttile{
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 24px;
+    }
+    .seller-support{
+     margin-top: 20px;
+      gap: 20px;
+        
+    }
+    .secour-paymetn{
+        padding: 11px 12px;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 18px;
+        background-color: #05140A;
+        border-radius: 4px;
+    }
+    .support{
+        border-radius: 4px;
+        padding: 11px 12px;
+        background-color: #05140A;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 18px;
+
+    }
+}
+.add-imgbox{
+  
+    
+    max-width: 370px;
+    width: 100%;
+    height: auto;
+   
+    .add-img{
+        aspect-ratio: 370px/520px;
+        object-fit: cover;
+    }
+}
+
+// modal design here  essensial data
+.modal-main{
+ opacity: 0;
+ visibility: hidden;
+ width: 100%;
+ height: 100%;
+}
+ .open{
+   opacity: 1;
+   visibility: visible;
+ }
+
+.modal1{
+    border-radius: 8px;
+    padding: 30px;
+    background-color: $section-secoundry;
+    max-width: 771px;
+    width: 100%;
+   
+    height: fit-content;
+    color: $heading-white;
+    z-index: 22;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 50%;
+    transform: translateX(-50%);
+    
+    .modal1-body{
+        gap: 30px;
+        margin-top: 30px;
+    }
+    
+   
+}
+
+
+.modal1-level{
+    top: -0px;
+    color: $heading-white;
+    left: 15px;
+    font-size: 16px;
+    font-weight: 500;
+    transform: translateY(-50%);
+  
+    background-color: $section-primary;
+
+   
+
+}
+.modal1-input1{
+    background-color: $section-primary;
+    padding: 14px 16px 10px 16px;
+    max-width: 711px;
+    font-family: 16px;
+    color: #FFFF;
+    border: 1px solid #1E2126;
+    transition: all 0.3s linear;
+    border-radius: 4px;
+    font-size: 14px;
+    height: 50px;
+    &::placeholder {
+         color: #616161;
+          font-style: italic; 
+        }
+    &:hover{
+        border: 1px solid #45F882;
+        .modal1-level{
+            color: $heading-white;
+            top: -7px;
+        }
+    }
+    
+        
+       
+   
+}
+.modal1-input2{
+    background-color: $section-primary;
+    padding: 14px 16px 10px 16px;
+    max-width: 711px;
+    font-family: 16px;
+    color: #616161;
+    border: 1px solid #1E2126;
+    transition: all 0.3s linear;
+    border-radius: 4px;
+    font-size: 14px;
+    height: 84px;
+    &:hover{
+        border: 1px solid #45F882;
+    }
+}
+.modal1-footer{
+    margin-top: 24px;
+    .counter-incriment{
+        padding: 14px 32.31px;
+        background-color: $section-primary;
+        border-radius: 4px;
+        border: 1px solid #FFFFFF14;
+        #minus{
+           
+            svg line {
+                stroke: #636973;
+                transition: all 0.3s linear;
+                &:hover{
+                    stroke: $button-color;
+                }
+            }
+
+        }
+        #plus{
+           
+            svg path{
+                fill: #636973;
+                transition: all 0.3s linear;
+                &:hover{
+                    fill: $button-color;
+                }
+            }
+           
+        }
+        .counter1 { 
+            font-size: 18px ;
+            font-weight: 700;
+            line-height: 21px;
+            color: $heading-white;
+           
+            }
+
+    }
+    .buynow-btn{
+        gap: 18px;
+        .price-discount{
+            .product-mianprice{
+                font-size: 30px;
+                font-weight: 700;
+                line-height: 36px;
+                color: #EB5757;
+            }
+            .discoun-pirceProduct{
+
+                font-size: 20px;
+                font-weight: 500;
+                line-height: 24px;
+                color: #636973;
+            }
+            .offer-persent{
+                padding: 0px 5.5px;
+                background-color: #FFB321;
+                font-size: 13px;
+                font-weight: 600;
+                line-height: 18px;
+                color: #000000;
+                border-radius: 4px;
+
+            }
+        }
+        .button-grop{
+            .offerCard-btn {
+                padding: 13px   37px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: $button-color;
+                color: $section-secoundry;
+                gap: 9px;
+                font-size: 16px;
+                font-weight: 500;
+                border-radius: 5px;
+                border: 1px solid $button-color;
+                transition: all 0.3s ease;
+    
+                &:hover {
+                    background-color: $section-secoundry;
+                    border: 1px solid $button-color;
+                    color: $button-color;
+                  
+                   
+                }
+            }
+            .button-grop-one{
+                padding: 13px 27px;
+                background-color: $section-secoundry ;
+                color: $button-color;
+                &:hover {
+                    background-color: $button-color;
+                    border: 1px solid $button-color;
+                    color: $section-secoundry
+                  
+                   
+                }
+            }
+        }
+
+    }
+    .avabile{
         color: $button-color;
     }
+   
+}
+
+// here modal backgorund overlay
+.anywhere-away{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.37);
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
 }

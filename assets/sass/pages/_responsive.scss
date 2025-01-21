@@ -11,7 +11,16 @@
  .product-side-bar {
  max-width: 300px !important;
  }
+ .modal1-footer{
+flex-direction: column;
+ .button-grop{
+    .offerCard-btn{
+        padding: 13px 23px !important;
+    }
    
+ }
+ }
+ 
     .product-content-box{
         flex-direction: column;
         gap: 20px;
@@ -816,6 +825,35 @@
             }
         }
     }
+
+    #product-details{
+        .imgBox{
+            max-width: 124.32px;
+            aspect-ratio: 124.32px/123.6px;
+         }
+         .price-card{
+            flex-direction: column;
+            gap: 20px;
+         }
+         .price-details{
+            align-items: center !important;
+         }
+         .hero-imgbox{
+            max-width: 560px;
+            .product-details-img{
+                width: 100%;
+                object-fit: cover;
+            }
+         }
+         .review-cardbox{
+            margin-top: 20px;
+            display: grid;
+            grid-template-columns: repeat(1, minmax(129px, 1fr));
+          
+            grid-row-gap: 3rem;
+         
+         }
+    }
     
 }
 
@@ -824,6 +862,15 @@
         transition: all 0.3s linear;
         margin-top: -49px;
     }
+    .modal1-footer{
+        flex-direction: column;
+         .button-grop{
+            .offerCard-btn{
+                padding: 13px 23px !important;
+            }
+           
+         }
+         }
     .product-content-box{
         justify-content: center ;
         align-items: center;
@@ -1632,6 +1679,38 @@
             }
         }
     }
+    #product-details{
+        .imgBox{
+            max-width: 124.32px;
+            aspect-ratio: 124.32px/123.6px;
+         }
+         .product-content-box{
+            flex-direction: column;
+          
+         }
+         .price-card{
+           
+            gap: 20px;
+         }
+         .price-details{
+          
+         }
+         .hero-imgbox{
+            max-width: 100%;
+            .product-details-img{
+                width: 100%;
+                object-fit: cover;
+            }
+         }
+         .review-cardbox{
+            margin-top: 20px;
+            display: grid;
+            grid-template-columns: repeat(1, minmax(129px, 1fr));
+          
+            grid-row-gap: 3rem;
+         
+         }
+    }
    
 }
 
@@ -1959,7 +2038,45 @@
 
         }
     }
-
+    #product-details{
+       
+        .imgBox{
+            max-width: 124.32px;
+            aspect-ratio: 124.32px/123.6px;
+         }
+         .product-content-box{
+            flex-direction: column;
+          
+         }
+         .price-card{
+           
+            gap: 20px;
+         }
+         .price-details{
+          
+         }
+         .hero-imgbox{
+            max-width: 100%;
+            .product-details-img{
+                width: 100%;
+                object-fit: cover;
+            }
+         }
+         .product-seller-sideber{
+            display: grid;
+            grid-template-columns: repeat(2, minmax(370px, 1fr));
+          
+            grid-row-gap: 3rem;
+         }
+         .review-cardbox{
+            margin-top: 20px;
+            display: grid;
+            grid-template-columns: repeat(2, minmax(129px, 1fr));
+          
+            grid-row-gap: 3rem;
+         
+         }
+    }
 
 }
 
@@ -2138,6 +2255,52 @@
 
         }
 
+    }
+    #product-details{
+        .imgBox{
+            max-width: 124.32px;
+            aspect-ratio: 124.32px/123.6px;
+         }
+         .product-content-box{
+            flex-direction: column;
+          
+         }
+         .product-seller-sideber{
+            display: grid;
+            grid-template-columns: repeat(2, minmax(370px, 1fr));
+          
+            grid-row-gap: 3rem;
+         }
+         .price-card{
+           
+            gap: 20px;
+         }
+         .price-details{
+          
+         }
+         .hero-imgbox{
+            max-width: 100%;
+            .product-details-img{
+                width: 100%;
+                object-fit: cover;
+            }
+         }
+         .review-cardbox{
+            margin-top: 20px;
+            display: grid;
+            grid-template-columns: repeat(2, minmax(129px, 1fr));
+          
+            grid-row-gap: 3rem;
+         
+         }
+         .product-details-img {
+            max-width: 1024px;
+            aspect-ratio: 769px / 605px;
+            object-fit: cover;
+        }
+         .product-content{
+            max-width: 1024px !important;
+        }
     }
 }
 
