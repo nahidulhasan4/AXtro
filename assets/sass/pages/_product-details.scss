@@ -77,6 +77,9 @@
    
     margin-top: 19px;
     border-radius: 8px;
+    .btn-see-profile{
+
+    }
 }
 .silder-card{
     max-width: 142px;
@@ -231,7 +234,11 @@
     width: 100%;
     background-color: $section-secoundry;
     border-radius: 6px;
+    .offerCard-btn{
+        padding: 11px 24px !important;
+    }
     .seller-profilebox{
+       
         .seller-id-details{
             .seller-name{
                 color: $heading-white;
@@ -258,6 +265,7 @@
                 line-height: 19px;
             }
         }
+       
     }
     .seller-profile-img{
         max-width: 112px;
@@ -265,6 +273,7 @@
         align-self: center;
     }
 }
+
 
 .btn-see-profile{
     margin-top: 30px;

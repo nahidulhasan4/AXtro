@@ -2049,7 +2049,6 @@ a {
   margin-top: 19px;
   border-radius: 8px;
 }
-
 .silder-card {
   max-width: 142px;
   width: 100%;
@@ -2181,6 +2180,9 @@ a {
   width: 100%;
   background-color: #000000;
   border-radius: 6px;
+}
+.seller-profile .offerCard-btn {
+  padding: 11px 24px !important;
 }
 .seller-profile .seller-profilebox .seller-id-details .seller-name {
   color: #FFFFFF;
