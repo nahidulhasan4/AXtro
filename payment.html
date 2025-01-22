@@ -721,7 +721,7 @@
         </div>
       </nav>
     </header>
-    <main >
+    <main class="position-relative" >
       <!-- here start the hero seciton  -->
        
     
@@ -837,7 +837,7 @@
                 <span class="price-name">Total</span>
                 <span class="price-amonnt">$ 09.10</span>
               </div>
-              <button class="return-btn">Return to Shopping</button>
+              <button class="return-btn showModal"  data-target="modal1">Return to Shopping</button>
 
              </div>
              <div class="privacy-box">
@@ -866,29 +866,39 @@
 
 
      <!-- here create payment successful modal -->
-     <div class="modal-main">
-      <div class="anywhere-away" id="hideModal"></div>
-      <div class="succes-modal  position-absolute">
+     
+     <div class="container">
+      <div class="succes-modal position-absolute">
         <div class="success-modal-content">
-          <div class="succes-modal-imgbox">
-            <img src="./assets/img/product/Group 1000006679.png" alt="" srcset="">
-            <div class="success-modal-detal">
+          <div class="succes-modal-imgbox d-flex flex-column align-items-center position-relative">
+            <img class="sucess-img" src="./assets/img/product/Group 1000006679.png" alt="" srcset="">
+            <div class="success-modal-detal d-flex flex-column align-content-around ">
               <h5 class="seccess-message">Order Successfully Done </h5>
               <p class="success-info">
-                Check your payment address. Hope you go it payment. <span>Thanks</span>
+                Check your payment address. Hope you go it payment. <span class="thaks">Thanks</span>
               </p>
             </div>
-          </div>
+            <span class="succesmodal-close position-absolute">
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5.31106 7.02111C3.67952 5.39805 2.1069 3.832 0.532319 2.2682C0.142041 1.88069 -0.132922 1.45836 0.0761053 0.877935C0.423175 -0.085787 1.44419 -0.286563 2.21857 0.478631C3.6582 1.90147 5.10343 3.31981 6.49845 4.7859C6.92772 5.23715 7.13395 5.16246 7.52114 4.76147C8.92653 3.30521 10.3648 1.88041 11.8038 0.457008C12.5675 -0.298638 13.6225 -0.0779251 13.9387 0.886921C14.1281 1.46482 13.8531 1.88743 13.4623 2.27691C12.0434 3.6902 10.6324 5.11079 9.21384 6.52408C9.06065 6.67684 8.87575 6.79758 8.67177 6.96017C10.3347 8.61551 11.9304 10.1889 13.5077 11.7805C14.2894 12.5692 14.063 13.6301 13.0706 13.9477C12.4814 14.1361 12.074 13.8214 11.6922 13.4386C10.2623 12.006 8.81599 10.5893 7.41256 9.13107C7.05763 8.76209 6.89574 8.82219 6.57617 9.15017C5.1486 10.6157 3.69299 12.0534 2.24635 13.5001C1.85803 13.8885 1.44222 14.1507 0.854979 13.9109C-0.0925194 13.5237 -0.292289 12.592 0.456564 11.8201C1.51741 10.7269 2.60239 9.65702 3.68429 8.58406C4.20728 8.06514 4.74682 7.56222 5.31106 7.02111Z" fill="#EB5757"/>
+                </svg>
+                
+            </span>
            
-
+          </div>
+         <div class="d-flex w-100 align-items-lg-center justify-content-center">
+          <button class="offerCard-btn">That’s Nice</button>
+         </div>
+  
         </div>
          
       
         
       </div>
      </div>
- 
 
+
+   
     </main>
     <!-- here start the footer -->
     <footer id="footer">

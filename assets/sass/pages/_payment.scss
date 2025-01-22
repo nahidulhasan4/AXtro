@@ -166,5 +166,56 @@
 
 // here modal
 .succes-modal{
+    opacity: 0 !important;
+    visibility: hidden;
+    top: 20%;
+    transform: translateY(-80%);
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: $section-secoundry;
+    max-width: 600px;
+    width: 100%;
+    border-radius: 6px;
+    .succes-modal-imgbox{
+        padding: 40px 92px;
+
+    }
+    .sucess-img{
+        max-width: 174px;
+        aspect-ratio: 174px/174px;
+        object-fit: cover;
+    }
+    .success-modal-detal{
+        max-width: 416px;
+        color: $heading-white;
+        text-align: center;
+        .seccess-message{
+            font-weight: 700;
+            line-height: 49px;
+            font-size: 36px;
+        }
+        .success-info{
+            font-weight: 400;
+            line-height: 32px;
+            font-size: 24px;
+        }
+        .thaks{
+            color: #FFB321;
+        }
+    }
+    .succesmodal-close{
+        padding: 11px;
+        background-color: #F9173824;
+        top: 24px;
+        right: 24px;
+        border-radius: 6px;
+        cursor: pointer;
+    }
+    .offerCard-btn{
+        max-width: 535px;
+       margin-bottom: 29px;
+    
+        width: 100%;
+    }
     
 }

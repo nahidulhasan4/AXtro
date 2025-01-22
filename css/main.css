@@ -2367,7 +2367,7 @@ a {
   color: #000000;
   border-radius: 4px;
 }
-.modal1-footer .buynow-btn .button-grop .offerCard-btn {
+.modal1-footer .buynow-btn .button-group .offerCard-btn {
   padding: 13px 37px;
   display: flex;
   align-items: center;
@@ -2381,22 +2381,22 @@ a {
   border: 1px solid #45F882;
   transition: all 0.3s ease;
 }
-.modal1-footer .buynow-btn .button-grop .offerCard-btn:hover {
+.modal1-footer .buynow-btn .button-group .offerCard-btn:hover {
   background-color: #000000;
   border: 1px solid #45F882;
   color: #45F882;
 }
-.modal1-footer .buynow-btn .button-grop .button-grop-one {
+.modal1-footer .buynow-btn .button-group .button-grop-one {
   padding: 13px 27px;
   background-color: #000000;
   color: #45F882;
 }
-.modal1-footer .buynow-btn .button-grop .button-grop-one:hover {
+.modal1-footer .buynow-btn .button-group .button-grop-one:hover {
   background-color: #45F882;
   border: 1px solid #45F882;
   color: #000000;
 }
-.modal1-footer .avabile {
+.modal1-footer .available {
   color: #45F882;
 }
 
@@ -2442,6 +2442,7 @@ a {
 
 #cart-view {
   margin-top: 60px;
+  margin-bottom: 60px;
 }
 #cart-view .cart-table {
   margin-bottom: 40px;
@@ -2504,6 +2505,14 @@ a {
 }
 #cart-view .cart-table .discount-cart-price {
   color: #45F882;
+}
+#cart-view .return-box {
+  max-width: 370px;
+  width: 100%;
+  border: 1px solid rgba(255, 255, 255, 0.1176470588);
+}
+#cart-view .return-box .Subtotal {
+  padding-top: 24px;
 }
 
 .counter-increment {
@@ -2695,6 +2704,58 @@ a {
   font-weight: 700;
   line-height: 34px;
   color: #FFFFFF;
+}
+
+.succes-modal {
+  opacity: 0 !important;
+  visibility: hidden;
+  top: 20%;
+  transform: translateY(-80%);
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #000000;
+  max-width: 600px;
+  width: 100%;
+  border-radius: 6px;
+}
+.succes-modal .succes-modal-imgbox {
+  padding: 40px 92px;
+}
+.succes-modal .sucess-img {
+  max-width: 174px;
+  aspect-ratio: 174px/174px;
+  object-fit: cover;
+}
+.succes-modal .success-modal-detal {
+  max-width: 416px;
+  color: #FFFFFF;
+  text-align: center;
+}
+.succes-modal .success-modal-detal .seccess-message {
+  font-weight: 700;
+  line-height: 49px;
+  font-size: 36px;
+}
+.succes-modal .success-modal-detal .success-info {
+  font-weight: 400;
+  line-height: 32px;
+  font-size: 24px;
+}
+.succes-modal .success-modal-detal .thaks {
+  color: #FFB321;
+}
+.succes-modal .succesmodal-close {
+  padding: 11px;
+  background-color: rgba(249, 23, 56, 0.1411764706);
+  top: 24px;
+  right: 24px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.succes-modal .offerCard-btn {
+  max-width: 535px;
+  margin-bottom: 29px;
+  width: 100%;
 }
 
 #our-prodcut {

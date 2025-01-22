@@ -457,8 +457,9 @@
     </section>
     <section id="cart-view">
       <div class="container">
+       <div class="d-flex flex-column align-items-end">
         <table class="cart-table" >
-          <tr class="table-header">
+          <tr class="table-header ">
             <th class="table-heading first-data">Product</th>
             <th class="table-heading">Quantity</th>
             <th class="table-heading">Price</th>
@@ -472,7 +473,6 @@
               <p class="cart-card-title">Hotstar + TV Subscription </p>
             </td>
             <td class="table-data">
-
               <div class="counter-increment  d-flex align-items-center gap-3">
                 <button class="minus" >
                   <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -486,9 +486,6 @@
                   </svg>
                 </button> 
               </div>
-              
-            
-
             </td>
             <td class="table-data">$12.00</td>
             <td class="table-data discount-cart-price">-$2.10</td>
@@ -533,6 +530,27 @@
           </tr>
          
         </table>
+
+        <div class="return-box">
+          <div class="Subtotal d-flex flex-column ">
+            <div class="subotal-price d-flex justify-content-between align-content-center"> 
+              <span class="price-name">Subtotal</span>
+              <span class="price-amonnt">$13.60</span>
+            </div>
+            <div class="subotal-price d-flex justify-content-between align-content-center"> 
+              <span class="price-name">Discount</span>
+              <span class="price-amonnt discount-price">(-) $ 04.50</span>
+            </div>
+
+          </div>
+          <div class="subotal-price total-price d-flex justify-content-between align-content-center"> 
+            <span class="price-name">Total</span>
+            <span class="price-amonnt">$ 09.10</span>
+          </div>
+          <button class="return-btn">Proceed to Checkout</button>
+
+         </div>
+       </div>
       </div>
     </section>
   </main>

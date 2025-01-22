@@ -158,7 +158,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   const observer = new IntersectionObserver(handleIntersect, options);
 
-  observer.observe(counterBox);
+  // observer.observe(counterBox);
 
   function handleIntersect(entries, observer) {
     entries.forEach((entry) => {
@@ -236,12 +236,7 @@ priceslider();
 
 
 // here incriment and dicriment counter 
-// let count = 0; 
-// const counter = document.getElementById('counter1'); 
-// const plusButton = document.getElementById('plus'); 
-// const minusButton = document.getElementById('minus'); 
-// plusButton.addEventListener('click', () => { count++; counter.textContent = count; }); 
-// minusButton.addEventListener('click', () => { count--; counter.textContent = count; });
+
 
 function initializeCounter(counterElement) {
   let count = 0;
@@ -268,23 +263,59 @@ document.querySelectorAll('.counter-increment').forEach(initializeCounter);
 
 // here create modal js
 
-let modal = document.querySelector(".modal-main")
-let hideModal = document.querySelector("#hideModal")
-let showModal = document.querySelector(".showModal")
-showModal.addEventListener("click", function(){
-  modal.classList.add("open");
-
-console.log("hello Nhaid")
-});
-hideModal.addEventListener("click", function(){
-  modal.classList.remove("open");
-
-});
 
 
-function initializeModal(moadalElement) {
+function createModal(id) {
+  const template = document.getElementById('modal-template').content.cloneNode(true);
+  const modal = template.querySelector('.modal-main');
+  modal.id = id;
   
+  modal.querySelector('.hideModal').addEventListener('click', () => {
+    modal.classList.remove('open');
+  });
+
+  initializeCounter(modal.querySelector('.counter-increment'));
+
+  return modal;
 }
+
+function initializeCounter(counterElement) {
+  let count = 0;
+  const counterDisplay = counterElement.querySelector('.counter-display');
+  const plusButton = counterElement.querySelector('.plus');
+  const minusButton = counterElement.querySelector('.minus');
+
+  plusButton.addEventListener('click', () => {
+    count++;
+    counterDisplay.textContent = count;
+  });
+
+  minusButton.addEventListener('click', () => {
+    count--;
+    counterDisplay.textContent = count;
+  });
+}
+
+function initializeModals() {
+  const modalContainer = document.getElementById('modal-container');
+  modalContainer.appendChild(createModal('modal1'));
+  modalContainer.appendChild(createModal('modal2'));
+  modalContainer.appendChild(createModal('modal3'));
+
+  document.querySelectorAll('.showModal').forEach(button => {
+    button.addEventListener('click', function() {
+      const modalId = this.getAttribute('data-target');
+      const modal = document.getElementById(modalId);
+      modal.classList.add('open');
+    });
+  });
+}
+
+document.addEventListener('DOMContentLoaded', initializeModals);
+
+
+
+
 
 // here success modal
 

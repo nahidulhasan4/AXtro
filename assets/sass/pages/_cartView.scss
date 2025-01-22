@@ -1,5 +1,6 @@
 #cart-view {
   margin-top: 60px;
+  margin-bottom: 60px;
   .cart-table{
     margin-bottom: 40px;
     width: 100%;
@@ -72,6 +73,15 @@
     color: $button-color;
    }
   }
+.return-box{
+  max-width: 370px;
+  width: 100%;
+  border: 1px solid #ffffff1e;
+  .Subtotal{
+    padding-top: 24px;
+  }
+}
+
 }
 .counter-increment{
   padding: 14px 32.31px;
