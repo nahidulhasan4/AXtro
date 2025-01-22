@@ -412,42 +412,7 @@
 }
 .modal1-footer{
     margin-top: 24px;
-    .counter-incriment{
-        padding: 14px 32.31px;
-        background-color: $section-primary;
-        border-radius: 4px;
-        border: 1px solid #FFFFFF14;
-        #minus{
-           
-            svg line {
-                stroke: #636973;
-                transition: all 0.3s linear;
-                &:hover{
-                    stroke: $button-color;
-                }
-            }
-
-        }
-        #plus{
-           
-            svg path{
-                fill: #636973;
-                transition: all 0.3s linear;
-                &:hover{
-                    fill: $button-color;
-                }
-            }
-           
-        }
-        .counter1 { 
-            font-size: 18px ;
-            font-weight: 700;
-            line-height: 21px;
-            color: $heading-white;
-           
-            }
-
-    }
+   
     .buynow-btn{
         gap: 18px;
         .price-discount{
@@ -518,7 +483,45 @@
     }
    
 }
-
+.counter-increment{
+    padding: 14px 32.31px;
+    background-color: $section-primary;
+    border-radius: 4px;
+    border: 1px solid #FFFFFF14;
+    max-width: 138px !important;
+    font-size: 16px !important;
+    font-weight: 600;
+    .minus{
+       
+        svg line {
+            stroke: #636973;
+            transition: all 0.3s linear;
+            &:hover{
+                stroke: $button-color;
+            }
+        }
+  
+    }
+    .plus{
+       
+        svg path{
+            fill: #636973;
+            transition: all 0.3s linear;
+            &:hover{
+                fill: $button-color;
+            }
+        }
+       
+    }
+    .counter1 { 
+        font-size: 18px ;
+        font-weight: 700;
+        line-height: 21px;
+        color: $heading-white;
+       
+        }
+  
+  }
 // here modal backgorund overlay
 .anywhere-away{
     position: fixed;

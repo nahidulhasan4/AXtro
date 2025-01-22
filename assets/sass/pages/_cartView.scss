@@ -1,16 +1,112 @@
 #cart-view {
+  margin-top: 60px;
   .cart-table{
+    margin-bottom: 40px;
     width: 100%;
     .table-header{
-      padding: 25px 38px 26px 40px;
+     
      
       .table-heading{
+       
         background-color: $section-secoundry !important;
-        padding: 25px 38px 26px 40px;
+        padding: 25px 0 26px 0;
         font-size: 16px;
         font-weight: 600;
         line-height: 19px;
+        &:first-child{
+          border-top-left-radius: 8px;
+          border-bottom-left-radius: 8px;
+          padding-left: 40px;
+        }
+        &:last-child{
+          border-top-right-radius: 8px;
+          border-bottom-right-radius: 8px;
+
+        }
       }
     }
+    .table-data{
+      font-weight: 600 !important;
+      font-size: 16px !important;
+      line-height: 19px !important ;
+      padding-top: 16px ;
+      padding-bottom: 16px;
+     
+      &:first-child{
+        padding-left: 40px;
+      }
+      &:last-child{
+        padding-right: 40px;
+      }
+    }
+    .last-row{
+      background-color: $section-secoundry !important;
+      &:first-child{
+        border-top-left-radius: 8px;
+        border-bottom-left-radius: 8px;
+        padding-left: 40px;
+      }
+      &:last-child{
+        border-top-right-radius: 8px;
+        border-bottom-right-radius: 8px;
+
+      }
+    }
+    .first-data{
+      width: 465px !important;
+      gap: 18px;
+      .cart-card-title{
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 24px;
+      }
+      .cart-card-img{
+        max-width: 132px;
+        aspect-ratio: 132px/104px;
+        object-fit: cover;
+
+      }
+
+    }
+   .discount-cart-price{
+    color: $button-color;
+   }
   }
+}
+.counter-increment{
+  padding: 14px 32.31px;
+  background-color: $section-primary;
+  border-radius: 4px;
+  border: 1px solid #FFFFFF14;
+  max-width: 138px !important;
+  .minus{
+     
+      svg line {
+          stroke: #636973;
+          transition: all 0.3s linear;
+          &:hover{
+              stroke: $button-color;
+          }
+      }
+
+  }
+  .plus{
+     
+      svg path{
+          fill: #636973;
+          transition: all 0.3s linear;
+          &:hover{
+              fill: $button-color;
+          }
+      }
+     
+  }
+  .counter1 { 
+      font-size: 18px ;
+      font-weight: 700;
+      line-height: 21px;
+      color: $heading-white;
+     
+      }
+
 }

@@ -236,13 +236,31 @@ priceslider();
 
 
 // here incriment and dicriment counter 
-let count = 0; 
-const counter = document.getElementById('counter1'); 
-const plusButton = document.getElementById('plus'); 
-const minusButton = document.getElementById('minus'); 
-plusButton.addEventListener('click', () => { count++; counter.textContent = count; }); 
-minusButton.addEventListener('click', () => { count--; counter.textContent = count; });
+// let count = 0; 
+// const counter = document.getElementById('counter1'); 
+// const plusButton = document.getElementById('plus'); 
+// const minusButton = document.getElementById('minus'); 
+// plusButton.addEventListener('click', () => { count++; counter.textContent = count; }); 
+// minusButton.addEventListener('click', () => { count--; counter.textContent = count; });
 
+function initializeCounter(counterElement) {
+  let count = 0;
+  const counterDisplay = counterElement.querySelector('.counter-display');
+  const plusButton = counterElement.querySelector('.plus');
+  const minusButton = counterElement.querySelector('.minus');
+
+  plusButton.addEventListener('click', () => {
+    count++;
+    counterDisplay.textContent = count;
+  });
+
+  minusButton.addEventListener('click', () => {
+    count--;
+    counterDisplay.textContent = count;
+  });
+}
+
+document.querySelectorAll('.counter-increment').forEach(initializeCounter);
 
 
 
@@ -262,6 +280,11 @@ hideModal.addEventListener("click", function(){
   modal.classList.remove("open");
 
 });
+
+
+function initializeModal(moadalElement) {
+  
+}
 
 // here success modal
 
