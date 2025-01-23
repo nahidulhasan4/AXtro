@@ -1334,7 +1334,7 @@ a {
   font-weight: 600;
   color: #121313;
 }
-#counter .single-counter .couner-name {
+#counter .single-counter .counter-name {
   font-size: 18px;
   font-weight: 400;
 }
@@ -3215,6 +3215,169 @@ a {
   color: #45F882;
 }
 
+#about-us {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+#about-us .about-us-hero {
+  gap: 50px;
+}
+#about-us .about-us-hero .about-us-content .line {
+  margin-top: 30px;
+  max-width: 521px;
+}
+#about-us .about-us-hero .about-us-content .about-us-detailsbox .about-us-subHeading {
+  color: #45F882;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 32px;
+  text-align: left;
+}
+#about-us .about-us-hero .about-us-content .about-us-detailsbox .about-us-heading {
+  max-width: 501px;
+  color: #FFFFFF;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 34px;
+  text-align: left;
+}
+#about-us .about-us-hero .about-us-content .about-us-detailsbox .about-us-infobox {
+  gap: 35px;
+  margin-top: 14px;
+  max-width: 570px;
+}
+#about-us .about-us-hero .about-us-content .about-us-detailsbox .about-us-infobox .about-us-info {
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  text-align: left;
+}
+#about-us .about-us-hero .about-us-content .web-owner-box {
+  margin-top: 8px;
+}
+#about-us .about-us-hero .about-us-content .web-owner-box .owner-img {
+  aspect-ratio: 72px/72px;
+  object-fit: cover;
+}
+#about-us .about-us-hero .about-us-content .web-owner-box .wowner-cdetails .owner-name {
+  color: #FFFFFF;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 32px;
+  text-align: left;
+}
+#about-us .about-us-hero .about-us-content .web-owner-box .wowner-cdetails .owner-positon {
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  text-align: left;
+}
+#about-us .about-us-hero .about-us-imgbox {
+  max-width: 586px;
+}
+#about-us .about-us-hero .about-us-imgbox .about-us-img {
+  width: 100%;
+  aspect-ratio: 586px/479px;
+}
+
+#about-counter .counter-box {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(174px, 1fr));
+  grid-column-gap: 3rem;
+  grid-row-gap: 3rem;
+}
+#about-counter .single-counter {
+  gap: 2.5rem;
+}
+#about-counter .single-counter .counter-number {
+  color: #FFFFFF;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 35px;
+  text-align: center;
+}
+#about-counter .single-counter .counter-name {
+  color: #FFFFFF !important;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 35px;
+  text-align: center;
+}
+
+#beCame-seller {
+  margin-top: 60px;
+}
+#beCame-seller .became-seller-box {
+  background-image: url("../assets/img/logo/about-vendor-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
+  width: 100%;
+}
+#beCame-seller .became-seller-box .vendor-box {
+  max-width: 470px;
+  padding: 61px 0 62px 50px;
+}
+#beCame-seller .became-seller-box .vendor-box .vendor-invite {
+  color: #FFFFFF;
+  font-size: 42px;
+  font-weight: 500;
+  line-height: 56.8px;
+  text-align: left;
+}
+#beCame-seller .became-seller-box .vendor-box .vendor-details {
+  color: #FFFFFF;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 32px;
+  text-align: left;
+}
+#beCame-seller .became-seller-box .vendor-box .offerCard-btn {
+  margin-top: 31px;
+  padding: 18px 28px 19px 26px;
+  background-color: #FFB321;
+  color: #000000;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18.96px;
+  text-align: left;
+  border-radius: 5px;
+  transition: all 0.3s linear;
+  border: 1px solid transparent;
+}
+#beCame-seller .became-seller-box .vendor-box .offerCard-btn:hover {
+  background-color: #f5a002;
+}
+
+#review {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+#review .review-cardbox {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(129px, 1fr));
+  grid-column-gap: 3rem;
+  grid-row-gap: 3rem;
+}
+#review .review-head .product-review-subheading {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 21.6px;
+  text-align: left;
+  color: #45F882;
+}
+#review .review-head .pruduct-review-heading {
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 56.8px;
+  letter-spacing: -0.02em;
+  text-align: left;
+  color: #FFFFFF;
+}
+
 @media only screen and (min-width: 320px) and (max-width: 447px) {
   .sticky {
     transition: all 0.3s linear;
@@ -3903,6 +4066,42 @@ a {
     gap: 20px;
     width: 100%;
   }
+  #about-counter .counter-box {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(174px, 1fr));
+    grid-column-gap: 3rem;
+    grid-row-gap: 3rem;
+  }
+  .vendor-box {
+    max-width: 470px;
+    padding: 31px 0 32px 20px !important;
+  }
+  .vendor-box .vendor-invite {
+    color: #FFFFFF;
+    font-size: 32px !important;
+    font-weight: 500;
+    line-height: 46.8px !important;
+    text-align: left;
+  }
+  #review {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+  #review .review-cardbox {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(1, minmax(129px, 1fr));
+    grid-column-gap: 3rem;
+    grid-row-gap: 3rem;
+  }
+  #review .review-head .pruduct-review-heading {
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 36.8px;
+    letter-spacing: -0.02em;
+    text-align: center;
+    color: #FFFFFF;
+  }
 }
 @media only screen and (min-width: 448px) and (max-width: 576px) {
   .sticky {
@@ -4578,6 +4777,31 @@ a {
   #blog-Details .comment-card .coment-writer {
     text-align: center;
   }
+  #review {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+  #review .review-cardbox {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(1, minmax(129px, 1fr));
+    grid-column-gap: 3rem;
+    grid-row-gap: 3rem;
+  }
+  #review .review-head .pruduct-review-heading {
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 36.8px;
+    letter-spacing: -0.02em;
+    text-align: center;
+    color: #FFFFFF;
+  }
+  #about-counter .counter-box {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(174px, 1fr));
+    grid-column-gap: 3rem;
+    grid-row-gap: 3rem;
+  }
 }
 @media only screen and (min-width: 577px) and (max-width: 768px) {
   .product-content-box {
@@ -4871,6 +5095,23 @@ a {
   #our-Blog .blog-card .blog-card-body {
     padding-bottom: 24px;
     max-width: 300px;
+  }
+  #review {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+  #review .review-cardbox {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(129px, 1fr));
+    grid-column-gap: 3rem;
+    grid-row-gap: 3rem;
+  }
+  #about-counter .counter-box {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(174px, 1fr));
+    grid-column-gap: 3rem;
+    grid-row-gap: 3rem;
   }
 }
 @media only screen and (min-width: 769px) and (max-width: 1024px) {

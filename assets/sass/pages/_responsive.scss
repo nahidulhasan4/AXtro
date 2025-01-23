@@ -927,6 +927,49 @@ flex-direction: column;
         gap: 20px;
         width: 100%;
     }
+    #about-counter{
+
+        .counter-box{
+            display: grid;
+            grid-template-columns: repeat(1, minmax(174px, 1fr));
+            grid-column-gap: 3rem;
+            grid-row-gap: 3rem;
+        }
+    }
+    .vendor-box{
+        max-width: 470px;
+        padding: 31px 0 32px 20px !important;
+        .vendor-invite{
+            color: $heading-white;
+            font-size: 32px !important;
+            font-weight: 500;
+            line-height: 46.8px !important;
+            text-align: left;
+        }
+    }
+    #review{
+        margin-top: 60px;
+        margin-bottom: 60px;
+        .review-cardbox{
+            margin-top: 20px;
+            display: grid;
+            grid-template-columns: repeat(1, minmax(129px, 1fr));
+            grid-column-gap: 3rem;
+            grid-row-gap: 3rem;
+         
+         }
+         .review-head{
+           
+            .pruduct-review-heading{
+                font-size: 28px;
+                font-weight: 500;
+                line-height: 36.8px;
+                letter-spacing: -0.02em;
+                text-align: center;
+                color: $heading-white;
+            }
+         }
+        }
 }
 
 @media #{$mobile} {
@@ -1845,6 +1888,38 @@ flex-direction: column;
         }
 
     }
+    #review{
+        margin-top: 60px;
+        margin-bottom: 60px;
+        .review-cardbox{
+            margin-top: 20px;
+            display: grid;
+            grid-template-columns: repeat(1, minmax(129px, 1fr));
+            grid-column-gap: 3rem;
+            grid-row-gap: 3rem;
+         
+         }
+         .review-head{
+           
+            .pruduct-review-heading{
+                font-size: 28px;
+                font-weight: 500;
+                line-height: 36.8px;
+                letter-spacing: -0.02em;
+                text-align: center;
+                color: $heading-white;
+            }
+         }
+        }
+        #about-counter{
+
+            .counter-box{
+                display: grid;
+                grid-template-columns: repeat(2, minmax(174px, 1fr));
+                grid-column-gap: 3rem;
+                grid-row-gap: 3rem;
+            }
+        }
    
 }
 
@@ -2256,6 +2331,28 @@ flex-direction: column;
             padding-bottom: 24px;
             max-width: 300px;
         }
+    }
+    #review{
+        margin-top: 60px;
+        margin-bottom: 60px;
+        .review-cardbox{
+            margin-top: 20px;
+            display: grid;
+            grid-template-columns: repeat(2, minmax(129px, 1fr));
+            grid-column-gap: 3rem;
+            grid-row-gap: 3rem;
+         
+         }
+     
+        }
+    #about-counter{
+
+            .counter-box{
+                display: grid;
+                grid-template-columns: repeat(3, minmax(174px, 1fr));
+                grid-column-gap: 3rem;
+                grid-row-gap: 3rem;
+            }
     }
 
 }
