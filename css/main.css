@@ -197,6 +197,54 @@ a {
   font-weight: 500;
 }
 
+.mt-30 {
+  margin-top: 30;
+}
+
+.mt-20 {
+  margin-top: 20;
+}
+
+.gap-45 {
+  display: flex;
+  flex-direction: column;
+  gap: 45px;
+}
+
+.gap-30 {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.gap-20 {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+.mb-15 {
+  margin-bottom: 15px;
+}
+
+.mb-30 {
+  margin-bottom: 30px;
+}
+
+.flex-15 {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.text-center {
+  text-align: center;
+}
+
 .header {
   width: 100%;
   z-index: 10;
@@ -3448,6 +3496,114 @@ a {
   margin-bottom: 15px;
 }
 
+#Terms-conditon {
+  margin-top: 60px;
+}
+#Terms-conditon .tram-section-title {
+  color: #FFFFFF;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 21.6px;
+  text-align: left;
+}
+#Terms-conditon .tram-section-info {
+  color: #CCCCCC;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  text-align: left;
+}
+
+#Contact-Us {
+  margin-top: 60px;
+  margin-bottom: 40px;
+}
+#Contact-Us .product-content-box .contact-us-box {
+  width: 100% !important;
+}
+#Contact-Us .product-content-box .frombox {
+  margin-top: 0px;
+}
+#Contact-Us .blog-subtitle {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 32px;
+  text-align: left;
+  color: #FFFFFF;
+}
+#Contact-Us .offerCard-btn {
+  max-width: 219px;
+  width: 100%;
+}
+#Contact-Us .contact-imgbox {
+  max-width: 370px;
+}
+#Contact-Us .contact-imgbox .contact-img {
+  width: 100%;
+  aspect-ratio: 370px/266px;
+  object-fit: cover;
+}
+#Contact-Us .support-box {
+  max-width: 370px;
+  width: 100%;
+  padding-top: 45px;
+}
+#Contact-Us .support-box .support-details {
+  text-align: center;
+  color: #FFFFFF;
+}
+#Contact-Us .support-box .support-details .support-time {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  text-align: center;
+}
+#Contact-Us .support-box .support-details .support-houre {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 32px;
+  text-align: center;
+}
+#Contact-Us .payment-siderber {
+  gap: 45px;
+}
+
+#support-type {
+  margin-bottom: 40px;
+}
+#support-type .support-typeBox {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(170px, 1fr));
+  grid-column-gap: 3rem;
+  grid-row-gap: 3rem;
+}
+#support-type .support-typeBox .support-card {
+  max-width: 370px;
+  width: 100%;
+  background-color: #000000;
+  padding-top: 46px;
+  padding-bottom: 46px;
+  border-radius: 5px;
+}
+#support-type .support-typeBox .support-card .support-way {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+  color: #FFFFFF;
+}
+#support-type .contact-iframe {
+  margin-top: 40px;
+  width: 100%;
+  height: 426px;
+  background-color: black;
+  border-radius: 5px;
+  padding: 30px;
+}
+#support-type .contact-iframe iframe {
+  width: 100%;
+  height: 100%;
+}
+
 @media only screen and (min-width: 320px) and (max-width: 447px) {
   .sticky {
     transition: all 0.3s linear;
@@ -4191,6 +4347,15 @@ a {
     max-width: 570px;
     width: 100%;
   }
+  #support-type {
+    margin-bottom: 40px;
+  }
+  #support-type .support-typeBox {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(170px, 1fr));
+    grid-column-gap: 3rem;
+    grid-row-gap: 3rem;
+  }
 }
 @media only screen and (min-width: 448px) and (max-width: 576px) {
   .sticky {
@@ -4891,6 +5056,15 @@ a {
     grid-column-gap: 3rem;
     grid-row-gap: 3rem;
   }
+  #support-type {
+    margin-bottom: 40px;
+  }
+  #support-type .support-typeBox {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(170px, 1fr));
+    grid-column-gap: 3rem;
+    grid-row-gap: 3rem;
+  }
 }
 @media only screen and (min-width: 577px) and (max-width: 768px) {
   .product-content-box {
@@ -5202,6 +5376,15 @@ a {
     grid-column-gap: 3rem;
     grid-row-gap: 3rem;
   }
+  #support-type {
+    margin-bottom: 40px;
+  }
+  #support-type .support-typeBox {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(170px, 1fr));
+    grid-column-gap: 3rem;
+    grid-row-gap: 3rem;
+  }
 }
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
   .product-box {
@@ -5409,6 +5592,15 @@ a {
   #our-Blog .blog-card .blog-card-body {
     padding-bottom: 24px;
     max-width: 360px;
+  }
+  #support-type {
+    margin-bottom: 40px;
+  }
+  #support-type .support-typeBox {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(170px, 1fr));
+    grid-column-gap: 3rem;
+    grid-row-gap: 3rem;
   }
 }
 @media (max-width: 995px) {
