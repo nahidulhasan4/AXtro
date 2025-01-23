@@ -167,22 +167,23 @@
         grid-row-gap: 3rem;
      
      }
-     .review-head{
-        .product-review-subheading{
-            font-size: 18px;
-            font-weight: 500;
-            line-height: 21.6px;
-            text-align: left;
-            color: $button-color;
-
-        }
-        .pruduct-review-heading{
-            font-size: 36px;
-            font-weight: 500;
-            line-height: 56.8px;
-            letter-spacing: -0.02em;
-            text-align: left;
-            color: $heading-white;
-        }
-     }
+   
 }
+.review-head{
+    .product-review-subheading{
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 21.6px;
+        text-align: left;
+        color: $button-color;
+
+    }
+    .pruduct-review-heading{
+        font-size: 36px;
+        font-weight: 500;
+        line-height: 56.8px;
+        letter-spacing: -0.02em;
+        text-align: left;
+        color: $heading-white;
+    }
+ }

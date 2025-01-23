@@ -1,0 +1,88 @@
+#faq{
+    margin-top: 60px;
+    .review-head{
+        margin-top: 60px;
+        margin-bottom: 48px;
+        .pruduct-review-heading{
+            max-width: 527px ;
+            text-align: center;
+        }
+
+    }
+    .faq-box-wepper{
+        display: flex;
+        
+        gap: 30px;
+       .faq-box{
+        max-width: 570px;
+        width: 100%;
+       }
+
+    }
+  
+    
+.faq-accordion-item {
+    list-style: none;
+    background: $section-secoundry;
+    border-radius: 5px !important;
+}
+
+ .faq-accordion-header {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: left;
+    color: $heading-white;
+    padding: 20px 30px;
+    background: transparent !important;
+    box-shadow: none;
+}
+
+ .accordion-button::after {
+    content: "";
+    display: inline-block;
+    width: 1.6rem; 
+    height: 1.6rem; 
+    background-image: url('../assets/img/logo/angle-right.svg');
+    background-repeat: no-repeat;
+    object-fit: cover;
+    position: absolute;
+    right: 20px; 
+    transform: rotate(0);
+}
+
+.accordion-button:not(.collapsed)::after {
+    background-image: url('../assets/img/logo/angle-right.svg');
+    transform: rotate(-90deg);
+}
+
+.faq-accordion-body {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 32px;
+    text-align: left;
+    padding: 0;
+    margin: 0 30px;
+    padding-top: 20px !important;
+    padding-bottom: 25px;
+    color: $heading-white;
+}
+
+    /* General FAQ Styles */
+.faq-accordion-item {
+    list-style: none;
+    background: $section-secoundry;
+    border-radius: 5px !important;
+    margin-bottom: 15px;
+}
+
+
+
+
+
+
+
+    
+    
+   
+}
