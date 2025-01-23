@@ -4,6 +4,12 @@
         transition: all 0.3s linear;
         margin-top: -99px;
     }
+    .tablebox{    
+           overflow-x: scroll;
+           .cart-table{
+            margin-bottom: 20px !important;
+           }
+      }
  .product-content-box{
     justify-content: center;
     align-items: center;
@@ -904,6 +910,12 @@ flex-direction: column;
         transition: all 0.3s linear;
         margin-top: -49px;
     }
+    .tablebox{    
+        overflow-x: scroll;
+        .cart-table{
+         margin-bottom: 20px !important;
+        }
+   }
     .payment-detalis{
         .product-content-box{
             flex-direction: column;
@@ -1798,6 +1810,12 @@ flex-direction: column;
        
         gap: 20px;
     }
+    .tablebox{    
+        overflow-x: scroll;
+        .cart-table{
+         margin-bottom: 20px !important;
+        }
+   }
     .payment-detalis{
         .product-content-box{
             flex-direction: column;
@@ -2213,6 +2231,12 @@ flex-direction: column;
 
         }
     }
+    .tablebox{    
+        overflow-x: scroll;
+        .cart-table{
+         margin-bottom: 20px !important;
+        }
+   }
     #our-prodcut{
       
         .product-box{

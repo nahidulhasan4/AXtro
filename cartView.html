@@ -458,78 +458,80 @@
     <section id="cart-view">
       <div class="container">
        <div class="d-flex flex-column align-items-end">
-        <table class="cart-table" >
-          <tr class="table-header ">
-            <th class="table-heading first-data">Product</th>
-            <th class="table-heading">Quantity</th>
-            <th class="table-heading">Price</th>
-            <th class="table-heading">Discount</th>
-            <th class="table-heading">Total</th>
-            <th class="table-heading">Action</th>
-          </tr>
-          <tr class="">
-            <td class=" table-data first-data d-flex align-items-center">
-              <img class="cart-card-img" src="./assets/img/product/imgcart.png" alt="">
-              <p class="cart-card-title">Hotstar + TV Subscription </p>
-            </td>
-            <td class="table-data">
-              <div class="counter-increment  d-flex align-items-center gap-3">
-                <button class="minus" >
-                  <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <line x1="6.3" y1="11.7" x2="17.7" y2="11.7" stroke="#636973" stroke-width="1.6" stroke-linecap="round"/>
-                  </svg>
-                </button>
-                <div class="counter-display">0</div>
-                <button class="plus" >
-                  <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M6 11.6875C5.6203 11.6875 5.3125 11.3797 5.3125 11C5.3125 10.6203 5.6203 10.3125 6 10.3125L10.8125 10.3125L10.8125 5.5C10.8125 5.1203 11.1203 4.8125 11.5 4.8125C11.8797 4.8125 12.1875 5.1203 12.1875 5.5L12.1875 10.3125L17 10.3125C17.3797 10.3125 17.6875 10.6203 17.6875 11C17.6875 11.3797 17.3797 11.6875 17 11.6875L12.1875 11.6875L12.1875 16.5C12.1875 16.8797 11.8797 17.1875 11.5 17.1875C11.1203 17.1875 10.8125 16.8797 10.8125 16.5L10.8125 11.6875L6 11.6875Z" fill="#636973"/>
-                  </svg>
-                </button> 
-              </div>
-            </td>
-            <td class="table-data">$12.00</td>
-            <td class="table-data discount-cart-price">-$2.10</td>
-            <td class="table-data">$3..10</td>
-            <td class="table-data">
-              <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M12.6371 0.36C12.154 -0.12 11.4294 -0.12 10.9463 0.36L6.96066 4.32L2.97506 0.36C2.49196 -0.12 1.7673 -0.12 1.2842 0.36C0.801099 0.84 0.801099 1.56 1.2842 2.04L5.2698 6L1.2842 9.96C0.801099 10.44 0.801099 11.16 1.2842 11.64C1.7673 12.12 2.49196 12.12 2.97506 11.64L6.96066 7.68L10.9463 11.64C11.4294 12.12 12.154 12.12 12.6371 11.64C13.1202 11.16 13.1202 10.44 12.6371 9.96L8.65152 6L12.6371 2.04C13.1202 1.56 13.1202 0.84 12.6371 0.36Z" fill="#F40C29"/>
+    <div class="tablebox">
+      <table class="cart-table" >
+        <tr class="table-header ">
+          <th class="table-heading first-data">Product</th>
+          <th class="table-heading">Quantity</th>
+          <th class="table-heading">Price</th>
+          <th class="table-heading">Discount</th>
+          <th class="table-heading">Total</th>
+          <th class="table-heading">Action</th>
+        </tr>
+        <tr class="">
+          <td class=" table-data first-data d-flex align-items-center">
+            <img class="cart-card-img" src="./assets/img/product/imgcart.png" alt="">
+            <p class="cart-card-title">Hotstar + TV Subscription </p>
+          </td>
+          <td class="table-data">
+            <div class="counter-increment  d-flex align-items-center gap-3">
+              <button class="minus" >
+                <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <line x1="6.3" y1="11.7" x2="17.7" y2="11.7" stroke="#636973" stroke-width="1.6" stroke-linecap="round"/>
                 </svg>
-                
-            </td>
-          </tr>
-          <tr>
-            <td class=" table-data last-row first-data d-flex align-items-center">
-              <img class="cart-card-img" src="./assets/img/product/cart2.png" alt="">
-              <p class="cart-card-title">Canva Pro Subscription  </p>
-            </td>
-            <td class="table-data last-row">
+              </button>
+              <div class="counter-display">0</div>
+              <button class="plus" >
+                <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M6 11.6875C5.6203 11.6875 5.3125 11.3797 5.3125 11C5.3125 10.6203 5.6203 10.3125 6 10.3125L10.8125 10.3125L10.8125 5.5C10.8125 5.1203 11.1203 4.8125 11.5 4.8125C11.8797 4.8125 12.1875 5.1203 12.1875 5.5L12.1875 10.3125L17 10.3125C17.3797 10.3125 17.6875 10.6203 17.6875 11C17.6875 11.3797 17.3797 11.6875 17 11.6875L12.1875 11.6875L12.1875 16.5C12.1875 16.8797 11.8797 17.1875 11.5 17.1875C11.1203 17.1875 10.8125 16.8797 10.8125 16.5L10.8125 11.6875L6 11.6875Z" fill="#636973"/>
+                </svg>
+              </button> 
+            </div>
+          </td>
+          <td class="table-data">$12.00</td>
+          <td class="table-data discount-cart-price">-$2.10</td>
+          <td class="table-data">$3..10</td>
+          <td class="table-data">
+            <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12.6371 0.36C12.154 -0.12 11.4294 -0.12 10.9463 0.36L6.96066 4.32L2.97506 0.36C2.49196 -0.12 1.7673 -0.12 1.2842 0.36C0.801099 0.84 0.801099 1.56 1.2842 2.04L5.2698 6L1.2842 9.96C0.801099 10.44 0.801099 11.16 1.2842 11.64C1.7673 12.12 2.49196 12.12 2.97506 11.64L6.96066 7.68L10.9463 11.64C11.4294 12.12 12.154 12.12 12.6371 11.64C13.1202 11.16 13.1202 10.44 12.6371 9.96L8.65152 6L12.6371 2.04C13.1202 1.56 13.1202 0.84 12.6371 0.36Z" fill="#F40C29"/>
+              </svg>
               
-              <div class="counter-increment d-flex align-items-center gap-3">
-                <button class="minus">
-                  <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <line x1="6.3" y1="11.7" x2="17.7" y2="11.7" stroke="#636973" stroke-width="1.6" stroke-linecap="round"/>
-                  </svg>
-                </button>
-                <div class="counter-display">0</div>
-                <button class="plus">
-                  <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M6 11.6875C5.6203 11.6875 5.3125 11.3797 5.3125 11C5.3125 10.6203 5.6203 10.3125 6 10.3125L10.8125 10.3125L10.8125 5.5C10.8125 5.1203 11.1203 4.8125 11.5 4.8125C11.8797 4.8125 12.1875 5.1203 12.1875 5.5L12.1875 10.3125L17 10.3125C17.3797 10.3125 17.6875 10.6203 17.6875 11C17.6875 11.3797 17.3797 11.6875 17 11.6875L12.1875 11.6875L12.1875 16.5C12.1875 16.8797 11.8797 17.1875 11.5 17.1875C11.1203 17.1875 10.8125 16.8797 10.8125 16.5L10.8125 11.6875L6 11.6875Z" fill="#45F882"/>
-                  </svg>
-                </button> 
-              </div>
-            </td>
-            <td class="table-data last-row">$12.00</td>
-            <td class="table-data last-row discount-cart-price">-$2.10</td>
-            <td class="table-data last-row">$3..10</td>
-            <td class="table-data last-row">
-              <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M12.6371 0.36C12.154 -0.12 11.4294 -0.12 10.9463 0.36L6.96066 4.32L2.97506 0.36C2.49196 -0.12 1.7673 -0.12 1.2842 0.36C0.801099 0.84 0.801099 1.56 1.2842 2.04L5.2698 6L1.2842 9.96C0.801099 10.44 0.801099 11.16 1.2842 11.64C1.7673 12.12 2.49196 12.12 2.97506 11.64L6.96066 7.68L10.9463 11.64C11.4294 12.12 12.154 12.12 12.6371 11.64C13.1202 11.16 13.1202 10.44 12.6371 9.96L8.65152 6L12.6371 2.04C13.1202 1.56 13.1202 0.84 12.6371 0.36Z" fill="#F40C29"/>
+          </td>
+        </tr>
+        <tr>
+          <td class=" table-data last-row first-data d-flex align-items-center">
+            <img class="cart-card-img" src="./assets/img/product/cart2.png" alt="">
+            <p class="cart-card-title">Canva Pro Subscription  </p>
+          </td>
+          <td class="table-data last-row">
+            
+            <div class="counter-increment d-flex align-items-center gap-3">
+              <button class="minus">
+                <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <line x1="6.3" y1="11.7" x2="17.7" y2="11.7" stroke="#636973" stroke-width="1.6" stroke-linecap="round"/>
                 </svg>
-                
-            </td>
-          </tr>
-         
-        </table>
+              </button>
+              <div class="counter-display">0</div>
+              <button class="plus">
+                <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M6 11.6875C5.6203 11.6875 5.3125 11.3797 5.3125 11C5.3125 10.6203 5.6203 10.3125 6 10.3125L10.8125 10.3125L10.8125 5.5C10.8125 5.1203 11.1203 4.8125 11.5 4.8125C11.8797 4.8125 12.1875 5.1203 12.1875 5.5L12.1875 10.3125L17 10.3125C17.3797 10.3125 17.6875 10.6203 17.6875 11C17.6875 11.3797 17.3797 11.6875 17 11.6875L12.1875 11.6875L12.1875 16.5C12.1875 16.8797 11.8797 17.1875 11.5 17.1875C11.1203 17.1875 10.8125 16.8797 10.8125 16.5L10.8125 11.6875L6 11.6875Z" fill="#45F882"/>
+                </svg>
+              </button> 
+            </div>
+          </td>
+          <td class="table-data last-row">$12.00</td>
+          <td class="table-data last-row discount-cart-price">-$2.10</td>
+          <td class="table-data last-row">$3..10</td>
+          <td class="table-data last-row">
+            <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12.6371 0.36C12.154 -0.12 11.4294 -0.12 10.9463 0.36L6.96066 4.32L2.97506 0.36C2.49196 -0.12 1.7673 -0.12 1.2842 0.36C0.801099 0.84 0.801099 1.56 1.2842 2.04L5.2698 6L1.2842 9.96C0.801099 10.44 0.801099 11.16 1.2842 11.64C1.7673 12.12 2.49196 12.12 2.97506 11.64L6.96066 7.68L10.9463 11.64C11.4294 12.12 12.154 12.12 12.6371 11.64C13.1202 11.16 13.1202 10.44 12.6371 9.96L8.65152 6L12.6371 2.04C13.1202 1.56 13.1202 0.84 12.6371 0.36Z" fill="#F40C29"/>
+              </svg>
+              
+          </td>
+        </tr>
+       
+      </table>
+    </div>
 
         <div class="return-box">
           <div class="Subtotal d-flex flex-column ">

@@ -98,6 +98,7 @@ body {
   overflow-x: hidden;
   background: #0B0E13;
   font-family: "Urbanist", serif;
+  scroll-behavior: smooth;
 }
 
 ul {
@@ -2453,6 +2454,9 @@ a {
   margin-top: 60px;
   margin-bottom: 60px;
 }
+#cart-view .tablebox {
+  width: 100%;
+}
 #cart-view .cart-table {
   margin-bottom: 40px;
   width: 100%;
@@ -2479,12 +2483,14 @@ a {
   line-height: 19px !important;
   padding-top: 16px;
   padding-bottom: 16px;
+  min-width: 150px !important;
 }
 #cart-view .cart-table .table-data:first-child {
   padding-left: 40px;
 }
 #cart-view .cart-table .table-data:last-child {
   padding-right: 40px;
+  min-width: 50px !important;
 }
 #cart-view .cart-table .last-row {
   background-color: #000000 !important;
@@ -2516,6 +2522,7 @@ a {
   color: #45F882;
 }
 #cart-view .return-box {
+  margin-top: 20px;
   max-width: 370px;
   width: 100%;
   border: 1px solid rgba(255, 255, 255, 0.1176470588);
@@ -3213,6 +3220,12 @@ a {
     transition: all 0.3s linear;
     margin-top: -99px;
   }
+  .tablebox {
+    overflow-x: scroll;
+  }
+  .tablebox .cart-table {
+    margin-bottom: 20px !important;
+  }
   .product-content-box {
     justify-content: center;
     align-items: center;
@@ -3876,6 +3889,12 @@ a {
     transition: all 0.3s linear;
     margin-top: -49px;
   }
+  .tablebox {
+    overflow-x: scroll;
+  }
+  .tablebox .cart-table {
+    margin-bottom: 20px !important;
+  }
   .payment-detalis .product-content-box {
     flex-direction: column;
   }
@@ -4529,6 +4548,12 @@ a {
   .product-content-box {
     gap: 20px;
   }
+  .tablebox {
+    overflow-x: scroll;
+  }
+  .tablebox .cart-table {
+    margin-bottom: 20px !important;
+  }
   .payment-detalis .product-content-box {
     flex-direction: column;
   }
@@ -4822,6 +4847,12 @@ a {
   }
   .payment-detalis .product-content-box {
     flex-direction: column;
+  }
+  .tablebox {
+    overflow-x: scroll;
+  }
+  .tablebox .cart-table {
+    margin-bottom: 20px !important;
   }
   #our-prodcut .product-box {
     display: grid;
