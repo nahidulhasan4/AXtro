@@ -337,7 +337,7 @@
 }
  .open{
    opacity: 1;
-   visibility: visible;
+   visibility: visible; 
  }
 
 .modal1{
@@ -346,7 +346,6 @@
     background-color: $section-secoundry;
     max-width: 771px;
     width: 100%;
-   
     height: fit-content;
     color: $heading-white;
     z-index: 22;

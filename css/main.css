@@ -140,6 +140,73 @@ button {
   background: transparent;
 }
 
+.chabox {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.chabox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.chabox:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.chabox input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.chabox input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.chabox .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
 @media (max-width: 1600px) {
   .container {
     padding: 0 1rem;
@@ -217,6 +284,11 @@ a {
   gap: 30px;
 }
 
+.gap-14 {
+  display: flex;
+  gap: 14px;
+}
+
 .gap-20 {
   display: flex;
   flex-direction: column;
@@ -232,11 +304,19 @@ a {
 }
 
 .mb-30 {
-  margin-bottom: 30px;
+  margin-bottom: 30px !important;
+}
+
+.mb-40 {
+  margin-bottom: 40px !important;
 }
 
 .mt-40 {
-  margin-top: 40px;
+  margin-top: 40px !important;
+}
+
+.mb-44 {
+  margin-bottom: 44px !important;
 }
 
 .flex-15 {
@@ -247,6 +327,10 @@ a {
 
 .text-center {
   text-align: center;
+}
+
+.btn-color {
+  color: #45F882;
 }
 
 .header {
@@ -2815,8 +2899,6 @@ a {
 }
 
 .succes-modal {
-  opacity: 0 !important;
-  visibility: hidden;
   top: 20%;
   transform: translateY(-80%);
   left: 50%;
@@ -2825,6 +2907,7 @@ a {
   max-width: 600px;
   width: 100%;
   border-radius: 6px;
+  z-index: 22;
 }
 .succes-modal .succes-modal-imgbox {
   padding: 40px 92px;
@@ -3540,17 +3623,17 @@ a {
   margin-bottom: 15px;
 }
 
-#Terms-conditon {
+#trams-conditon {
   margin-top: 60px;
 }
-#Terms-conditon .tram-section-title {
+#trams-conditon .tram-section-title {
   color: #FFFFFF;
   font-size: 18px;
   font-weight: 600;
   line-height: 21.6px;
   text-align: left;
 }
-#Terms-conditon .tram-section-info {
+#trams-conditon .tram-section-info {
   color: #CCCCCC;
   font-size: 16px;
   font-weight: 400;
@@ -3646,6 +3729,147 @@ a {
 #support-type .contact-iframe iframe {
   width: 100%;
   height: 100%;
+}
+
+#sing-up {
+  margin-top: 60px !important;
+  margin-bottom: 60px;
+}
+#sing-up .sing-up-box {
+  width: 100%;
+}
+#sing-up .blog-subtitle {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+  text-align: center;
+  color: #FFFFFF;
+}
+#sing-up .frombox {
+  max-width: 770px;
+  width: 100%;
+  margin-top: 0 !important;
+}
+#sing-up .frombox .coment-form .name-input-box {
+  max-width: 690px;
+  width: 100%;
+}
+#sing-up .frombox .coment-form .email-box {
+  max-width: 690px;
+  width: 100%;
+}
+#sing-up .frombox .coment-form .name-input {
+  max-width: 690px;
+  width: 100%;
+}
+#sing-up .frombox .coment-form .eye-icon {
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+#sing-up .frombox .agree-all {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 20px;
+  height: 20px;
+  background: #000000 !important;
+  border: 1px solid #45F882 !important;
+}
+#sing-up .frombox .agree-lebal {
+  font-family: Urbanist;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  text-align: left;
+  color: #FFFFFF;
+}
+#sing-up .frombox .offerCard-btn {
+  max-width: 690px;
+  width: 100%;
+  font-weight: 600;
+}
+#sing-up .frombox .checkmark {
+  width: 20px;
+  height: 20px;
+  background-color: #000000;
+  border: 1px solid #45F882;
+}
+#sing-up .frombox .chabox input:checked ~ .checkmark {
+  background-color: #45F882;
+}
+#sing-up .frombox .have-acount {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 26px;
+  text-align: left;
+  color: #FFFFFF;
+}
+#sing-up .frombox .logIn-google {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: center;
+  width: 100%;
+  border-radius: 5px;
+  padding-top: 19px;
+  padding-bottom: 18px;
+  color: #FFFFFF;
+  border: 1px solid rgba(255, 255, 255, 0.158);
+}
+
+.logIn-invite {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  text-align: left;
+  color: #CCCCCC;
+}
+
+.login .name-input-box {
+  margin-bottom: 17px;
+}
+.login .Forget-pass {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  text-align: left;
+  text-decoration-line: underline;
+  color: #FF4040;
+}
+
+.verify .email-box {
+  max-width: 242px !important;
+  height: auto;
+}
+.verify .email-box .code-input {
+  max-width: 50px;
+  background-color: #0B0E13;
+  color: #FFFFFF;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 26px;
+  text-align: left;
+  padding: 12px 16px;
+  border-radius: 5px;
+  border: 1px solid rgba(255, 255, 255, 0.1019607843);
+}
+
+.change-pass .name-filed {
+  max-width: 690px !important;
+}
+.change-pass .succes-modal {
+  opacity: 1 !important;
+  visibility: visible !important;
+  top: 20%;
+  transform: translateY(-80%);
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #000000;
+  max-width: 600px;
+  width: 100%;
+  border-radius: 6px;
 }
 
 @media only screen and (min-width: 320px) and (max-width: 447px) {

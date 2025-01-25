@@ -1,0 +1,169 @@
+#sing-up{
+  margin-top: 60px !important;
+  margin-bottom: 60px;
+    .sing-up-box{
+        width: 100%;
+    }
+  
+    .blog-subtitle{
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 32px;
+      text-align: center;   
+      color: $heading-white;
+
+    }
+      .frombox{
+        max-width: 770px;
+        width: 100%;
+        margin-top: 0 !important;
+
+        .coment-form{
+          .name-input-box{
+            max-width: 690px;
+            width: 100%;
+          }
+            
+              .email-box{
+                max-width: 690px;
+                width: 100%
+              }
+              .name-input{
+                max-width: 690px;
+                width: 100%;
+              }
+              .eye-icon{
+                right: 10px;
+                top: 50%;
+                transform: translateY(-50%);
+              }
+
+        }
+        .agree-all{
+          -webkit-user-select: none;
+          -moz-user-select: none;
+          -ms-user-select: none;
+          user-select: none;
+          width: 20px;
+          height: 20px;
+          background: $section-secoundry !important;
+          border: 1px solid $button-color !important;
+        }
+        .agree-lebal{
+          font-family: Urbanist;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 26px;
+          text-align: left;
+          color: $heading-white;
+        }
+        .offerCard-btn{
+          max-width: 690px;
+          width: 100%;
+          font-weight: 600;
+
+        }
+        .checkmark {
+          width: 20px;
+          height: 20px;
+          background-color: $section-secoundry;
+          border: 1px solid $button-color;
+        }
+        .chabox input:checked ~ .checkmark {
+          background-color: $button-color;
+      }
+      .have-acount{
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 26px;
+        text-align: left;
+        color: $heading-white;
+      }
+      .logIn-google{
+    
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 24px;
+      text-align: center;
+      width: 100%;
+      border-radius: 5px;
+      padding-top: 19px;
+      padding-bottom: 18px;
+      color: $heading-white;
+      border: 1px solid rgba(255, 255, 255, 0.158);
+
+      }
+      }
+}
+
+// here deign log in page 
+.logIn-invite{
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  text-align: left;
+  color: #CCCCCC;
+  
+}
+.login{
+  .name-input-box{
+    margin-bottom: 17px;
+  }
+  .chabox{
+    
+  }
+  .Forget-pass{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: left;
+    text-decoration-line: underline;
+    color: #FF4040;
+    
+
+  }
+ 
+  
+}
+
+// here verify page design
+
+.verify{
+  .email-box{
+    max-width: 242px !important;
+    height: auto;
+    .code-input{
+      max-width: 50px;
+      background-color: $section-primary;
+      color: $heading-white;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 26px;
+      text-align: left;
+      padding: 12px 16px;
+      border-radius: 5px;
+      border: 1px solid #FFFFFF1A;
+    }
+  }
+
+}
+
+// chage password 
+.change-pass{
+  .name-filed{
+    max-width: 690px !important;
+  }
+  .succes-modal {
+    opacity: 1 !important;
+    visibility: visible !important;
+    top: 20%;
+    transform: translateY(-80%);
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #000000;
+    max-width: 600px;
+    width: 100%;
+    border-radius: 6px;
+}
+
+}

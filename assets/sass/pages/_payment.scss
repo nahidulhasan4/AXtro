@@ -166,8 +166,7 @@
 
 // here modal
 .succes-modal{
-    opacity: 0 !important;
-    visibility: hidden;
+    
     top: 20%;
     transform: translateY(-80%);
     left: 50%;
@@ -176,6 +175,7 @@
     max-width: 600px;
     width: 100%;
     border-radius: 6px;
+    z-index: 22;
     .succes-modal-imgbox{
         padding: 40px 92px;
 
