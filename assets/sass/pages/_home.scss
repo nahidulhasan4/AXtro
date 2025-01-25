@@ -1180,3 +1180,50 @@
     }
 }
 
+
+// here design server erorr file and others
+.server-maintenace{
+    width: 100vw;
+    height: 100vh;
+}
+.main-maintenacebox{
+    max-width: 740px;
+    height: auto;
+    .maintenace-Img{
+        width: 100%;
+        aspect-ratio: 739px/415px;
+        object-fit: cover;
+
+    }
+    .mianten-heading{
+        font-size: 48px;
+        font-weight: 500;
+        line-height: 57.6px;
+        text-align: center;
+        color: $heading-white;
+    }
+}
+// .server-errorbox{
+//     width: 100vw;
+//     height: 100vh;
+// }
+.server-error{
+    max-width: 570px;
+    height: auto;
+    margin-top: 60px;
+    margin-bottom: 60px ;
+    .maintenace-Img{
+        width: 100%;
+        aspect-ratio: 570px/450px;
+        object-fit: cover;
+
+    }
+    .mianten-heading{
+        font-size: 48px;
+        font-weight: 500;
+        line-height: 57.6px;
+        text-align: center;
+        color: $heading-white;
+    }
+
+}

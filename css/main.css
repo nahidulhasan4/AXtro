@@ -235,6 +235,10 @@ a {
   margin-bottom: 30px;
 }
 
+.mt-40 {
+  margin-top: 40px;
+}
+
 .flex-15 {
   display: flex;
   align-items: center;
@@ -1656,6 +1660,47 @@ a {
   background: #4D4D4D;
 }
 
+.server-maintenace {
+  width: 100vw;
+  height: 100vh;
+}
+
+.main-maintenacebox {
+  max-width: 740px;
+  height: auto;
+}
+.main-maintenacebox .maintenace-Img {
+  width: 100%;
+  aspect-ratio: 739px/415px;
+  object-fit: cover;
+}
+.main-maintenacebox .mianten-heading {
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 57.6px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.server-error {
+  max-width: 570px;
+  height: auto;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+.server-error .maintenace-Img {
+  width: 100%;
+  aspect-ratio: 570px/450px;
+  object-fit: cover;
+}
+.server-error .mianten-heading {
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 57.6px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
 #product-hero {
   background-image: url("../assets/img/product/productbg.png");
   border-radius: 8px;
@@ -1819,7 +1864,6 @@ a {
 .product-content {
   display: flex;
   flex-direction: column;
-  gap: 44px;
   width: 100%;
 }
 .product-content .product-slect {
@@ -3615,6 +3659,13 @@ a {
   .tablebox .cart-table {
     margin-bottom: 20px !important;
   }
+  .mianten-heading {
+    font-size: 38px !important;
+    font-weight: 500;
+    line-height: 40.6px !important;
+    text-align: center;
+    color: #FFFFFF;
+  }
   .product-content-box {
     justify-content: center;
     align-items: center;
@@ -5065,6 +5116,13 @@ a {
     grid-column-gap: 3rem;
     grid-row-gap: 3rem;
   }
+  .mianten-heading {
+    font-size: 38px;
+    font-weight: 500;
+    line-height: 40.6px;
+    text-align: center;
+    color: #FFFFFF;
+  }
 }
 @media only screen and (min-width: 577px) and (max-width: 768px) {
   .product-content-box {
@@ -5385,6 +5443,13 @@ a {
     grid-column-gap: 3rem;
     grid-row-gap: 3rem;
   }
+  .mianten-heading {
+    font-size: 38px;
+    font-weight: 500;
+    line-height: 40.6px;
+    text-align: center;
+    color: #FFFFFF;
+  }
 }
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
   .product-box {
@@ -5601,6 +5666,13 @@ a {
     grid-template-columns: repeat(2, minmax(170px, 1fr));
     grid-column-gap: 3rem;
     grid-row-gap: 3rem;
+  }
+  .mianten-heading {
+    font-size: 38px;
+    font-weight: 500;
+    line-height: 40.6px;
+    text-align: center;
+    color: #FFFFFF;
   }
 }
 @media (max-width: 995px) {
