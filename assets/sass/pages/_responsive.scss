@@ -1013,6 +1013,34 @@ flex-direction: column;
                 grid-row-gap: 3rem;
             }
      }
+     #user-profile{
+        .user-box{
+            flex-direction: column;
+        }
+        .user-siderBar{
+            max-width: 600px;
+            width: 100%;
+        }
+        .user-profile-box{
+            flex-direction: column;
+            .user-details{
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                .user-name{
+                    text-align: center;
+                }
+            }
+            
+        }
+        .user-rating{
+            flex-direction: column;
+            .avarage-rating{
+                text-align: center;
+            }
+        }
+
+     }
 }
 
 @media #{$mobile} {
@@ -1980,6 +2008,34 @@ flex-direction: column;
             text-align: center;
             color: $heading-white;
         }
+        #user-profile{
+            .user-box{
+                flex-direction: column;
+            }
+            .user-siderBar{
+                max-width: 600px;
+                width: 100%;
+            }
+            .user-profile-box{
+                flex-direction: column;
+                .user-details{
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    .user-name{
+                        text-align: center;
+                    }
+                }
+                
+            }
+            .user-rating{
+                flex-direction: column;
+                .avarage-rating{
+                    text-align: center;
+                }
+            }
+    
+         }
 }
 
 @media #{$phone-tab} {
@@ -2430,6 +2486,34 @@ flex-direction: column;
         text-align: center;
         color: $heading-white;
     }
+    #user-profile{
+        .user-box{
+            flex-direction: column;
+        }
+        .user-siderBar{
+            max-width: 765px;
+            width: 100%;
+        }
+        .user-profile-box{
+            flex-direction: column;
+            .user-details{
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                .user-name{
+                    text-align: center;
+                }
+            }
+            
+        }
+        .user-rating{
+            flex-direction: column;
+            .avarage-rating{
+                text-align: center;
+            }
+        }
+
+     }
 }
 
 @media #{$tab-between} {

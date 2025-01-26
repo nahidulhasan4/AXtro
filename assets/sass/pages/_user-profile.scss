@@ -1,0 +1,246 @@
+#user-profile{
+    margin-top: 60px;
+    margin-bottom: 60px;
+    .user-box{
+        gap: 30px;
+      
+       
+    }
+}
+.user-siderBar{
+    max-width: 270px;
+    width: 100%;
+    .user-menu{
+        width: 100%;
+        border: 1px solid #FFFFFF1A;
+        .user-menu-active{
+            border-bottom: 1px solid #45F882;
+                .user-items-link{
+                    color: $button-color;
+
+                }
+                .user-link-icon{
+                    background: #45F882 !important;
+                    svg path{
+                        fill: rgb(18 18 19 / 77%);
+                        stroke: rgb(18 18 19 / 77%);
+                    }
+                }
+
+        }
+        .user-menu-items{
+
+            padding: 20px 0px 14px 24px;
+            border-bottom: 1px solid #FFFFFF1A;
+            transition: all 0.3s ease-in;
+            .user-items-link{
+                width: 100%;
+                display: flex;
+                align-items: center;
+                gap: 10px;
+               font-size: 18px;
+               font-weight: 500;
+               line-height: 21.6px;
+               text-align: left;
+                color: $heading-white;
+                transition: all 0.3s ease-in;
+
+                .user-link-icon{
+                    padding: 7px;
+                    background: #45f88138;
+                    border-radius: 50%;
+                    text-align: center;
+                    transition: all 0.3s ease-in;
+                    
+
+                }
+
+            }
+            &:hover{
+                border-bottom: 1px solid #45F882;
+                .user-items-link{
+                    color: $button-color;
+
+                }
+                .user-link-icon{
+                    background: #45F882;
+                    svg path{
+                        fill: rgb(18 18 19 / 77%);
+                        stroke: rgb(18 18 19 / 77%);
+                    }
+                }
+
+            }
+        }
+        
+    }
+}
+ .user-content{
+    border-radius: 6px;
+    width: 100%;
+    background-color: $section-secoundry;
+    .user-profile-box{
+        padding: 40px 41px 30px 40px;
+       
+        gap: 16px;
+        width: 100%;
+        .user-profile{
+
+        }
+        .user-content-box{
+            max-width: 625px;
+            width: 100%;
+        }
+        .user-details{
+           
+            .user-namebox{
+                margin-bottom: 11px;
+                .user-name{
+                    font-size: 24px;
+                    font-weight: 700;
+                    line-height: 35px;
+                    text-align: left;
+                    color: $heading-white;
+                }
+                .user-date{
+                    font-size: 20px;
+                    font-weight: 400;
+                    text-align: left;
+                    line-height: 32px;
+                    color: $heading-white;
+
+                }
+                
+            }
+            .offerCard-btn{
+                max-width: 131px;
+                height: 52px;
+                margin-bottom: 30px;
+                padding: 18px 27px;
+
+            }
+
+        }
+
+    }
+    .about-user-box{
+        padding-left: 40px;
+        padding-bottom: 30px;
+        .about-me{
+            font-size: 24px;
+            font-weight: 600;
+            line-height: 30px;
+            text-align: left;
+            color: $heading-white;
+        }
+        .user-about-info{     
+            max-width: 713px;  
+            width: 100%;    
+            font-family: Urbanist;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 26px;
+            text-align: left;
+            color: #CCCCCC;
+        }
+    }
+
+}
+
+// here design user-profile-edit page
+.user-profile-edit{
+   
+    margin-top: 60px;
+    margin-bottom: 60px;
+    .user-box{
+        gap: 30px;
+      
+       
+    }
+
+    .user-content{
+        .upload-profile-box{
+            padding: 35px 40px;
+            padding-bottom: 0 ;
+            .upload-pic{
+             font-size: 24px;
+             font-weight: 600;
+             line-height: 32px;
+             text-align: left;
+             color: $heading-white;
+            }
+            .profile-img-upload{
+                max-width: 120px;
+                width: 100%;
+                margin-top: 12px;
+                .profile-edit{
+                    width: 100%;
+                    aspect-ratio: 120px/120px;
+
+                }
+                .edit-img-overly{                
+                    opacity: 0;
+                    width: 100%;
+                    height: 100%;
+                    background: #00000099;
+                    transition: all 0.3s ease-in;
+                    cursor: pointer;
+                    transform: translateY(-240px);
+                  
+
+                }
+                &:hover{
+                    .edit-img-overly{  
+                        bottom: 0;                     
+                        opacity: 1;
+                        width: 100%;
+                        height: 100%;
+                        border: 999px;
+                        background: #00000099;
+                        transform: translateY(0px);
+                    }
+
+                }
+            }
+        }
+
+        .frombox{
+            margin-top: 0;
+            .coment-form{
+                padding: 40px;
+                .blog-subtitle{
+                    font-size: 18px;
+                    font-weight: 500;
+                    line-height: 32px;
+                    text-align: left;
+                    color: $heading-white;
+                }
+                .name-input-box{
+                    gap: 27px;
+                }
+               .meassge-filed {
+                    margin-top: 26px;
+                    max-width: 788px !important;
+                    width: 100%;
+                    height: 170px;
+                }
+                .name-filed{
+                    max-width: 788px;
+                    width: 100%;
+                    .name-input{
+                        max-width: 788px;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+
+    .blog-subtitle{
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 32px;
+        text-align: left;
+        color: $heading-white;
+    }
+}

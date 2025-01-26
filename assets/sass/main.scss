@@ -2,14 +2,11 @@
 // abstract-------------------->
 @import "./abstract/mixing";
 @import "./abstract/variable";
-
 // base-------------------->
 @import"./base/animation";
 @import"./base/base";
 @import"./base/typography";
 @import"./base/utilities";
-
-
 // components-------------------->
 @import"./component/buttons";
 @import"./component/carousel";
@@ -18,14 +15,11 @@
 @import"./component/hero";
 @import"./component/modal";
 @import"./component/wrapper-box";
-
 // layout-------------------->
 @import"./layout/footer";
 @import "./layout/header";
-
-
 // pages-------------------->
-
+@import "./pages/sing-up.scss";
 @import"./pages/home";
 @import "./pages/Allproduct";
 @import "./pages/product-details";
@@ -37,6 +31,6 @@
 @import "./pages/faq";
 @import"./pages/trams-condition";
 @import "./pages/contact-us";
-@import "./pages/sing-up.scss";
+@import "./pages/user-profile";
 @import"./pages/responsive";
 

@@ -39,8 +39,20 @@
 .mt-40{
 margin-top: 40px !important;
 }
+.mt-10{
+    margin-top: 10;
+}
+.mt-11{
+    margin-top: 11px;
+}
 .mb-44{
     margin-bottom: 44px !important;
+}
+.color-white{
+    color: $heading-white;
+}
+.color-btn{
+    color: $button-color;
 }
 .flex-15{
     display: flex;
