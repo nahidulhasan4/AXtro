@@ -3908,7 +3908,7 @@ a {
   border-bottom: 1px solid #45F882;
 }
 .user-siderBar .user-menu .user-menu-active .user-items-link {
-  color: #45F882;
+  color: #45F882 !important;
 }
 .user-siderBar .user-menu .user-menu-active .user-link-icon {
   background: #45F882 !important;
@@ -4094,6 +4094,84 @@ a {
   font-weight: 500;
   line-height: 32px;
   text-align: left;
+  color: #FFFFFF;
+}
+
+.user-order-ceontent .order-title {
+  padding-top: 24px;
+  padding-left: 40px;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 26px;
+  text-align: left;
+  color: #FFFFFF;
+}
+.user-order-ceontent .user-card-box {
+  padding: 34px 30px;
+  gap: 20px;
+}
+
+.user-card {
+  gap: 16px;
+  border: 1px solid #3C3E42;
+  border-radius: 6px;
+}
+.user-card .user-card-head {
+  max-width: 160px;
+  width: 100%;
+}
+.user-card .user-card-head .user-orderCard-img {
+  width: 100%;
+  aspect-ratio: 160px/125.88px;
+  object-fit: cover;
+}
+.user-card .user-card-head .pavorite-icon {
+  padding: 4px 4px;
+  background-color: #FFFFFF;
+  top: 10px;
+  left: 10px;
+  border-radius: 50%;
+}
+.user-card .user-card-body {
+  max-width: 620px;
+  width: 100%;
+}
+.user-card .game-car-body {
+  max-width: 220px;
+  width: 100%;
+}
+.user-card .game-car-body .gameCard-price {
+  gap: 0.4rem;
+  color: #45F882;
+  font-weight: 700;
+  font-size: 20px;
+}
+.user-card .game-car-body .gameCard-price .games-delate-price {
+  font-size: 14px;
+  font-weight: 400;
+  color: #7B7B7B;
+}
+.user-card .game-car-body .gameCard-ttile {
+  color: #FFFFFF;
+  font-size: 20px;
+  font-weight: 600;
+}
+.user-card .game-car-body .order-cade {
+  margin-top: 23px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19.2px;
+}
+.user-card .order-btn-box {
+  gap: 14px;
+}
+.user-card .order-btn-box .oder-btn-one {
+  background-color: #0B0E13;
+  border: 1px solid #45F882;
+  color: #45F882;
+}
+.user-card .order-btn-box .oder-btn-one:hover {
+  border: 1px solid #FFFFFF;
   color: #FFFFFF;
 }
 
@@ -4880,6 +4958,31 @@ a {
   #user-profile .user-rating .avarage-rating {
     text-align: center;
   }
+  .user-order .user-card-box {
+    padding: 34px 30px;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+  .user-order .user-card {
+    max-width: 500px;
+    width: 100%;
+    flex-direction: column;
+    padding: 10px;
+  }
+  .user-order .user-card .user-card-head {
+    max-width: 260px;
+    width: 100%;
+  }
+  .user-order .user-card .user-card-head .user-orderCard-img {
+    width: 100%;
+    aspect-ratio: 260px/225.88px;
+    object-fit: cover;
+  }
+  .user-order .user-card .user-card-body {
+    flex-direction: column;
+    gap: 20px;
+  }
 }
 @media only screen and (min-width: 448px) and (max-width: 576px) {
   .sticky {
@@ -5620,6 +5723,31 @@ a {
   #user-profile .user-rating .avarage-rating {
     text-align: center;
   }
+  .user-order .user-card-box {
+    padding: 34px 30px;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+  .user-order .user-card {
+    width: 100%;
+  }
+  .user-order .user-card .user-card-head {
+    width: 100%;
+  }
+  .user-order .user-card .user-card-head .user-orderCard-img {
+    width: 100%;
+    aspect-ratio: 260px/225.88px;
+    object-fit: cover;
+  }
+  .user-order .user-card .user-card-body {
+    flex-direction: column;
+    padding: 10px;
+    gap: 20px;
+  }
+  .user-order .user-card .user-card-body .game-car-body {
+    max-width: 360px;
+  }
 }
 @media only screen and (min-width: 577px) and (max-width: 768px) {
   .product-content-box {
@@ -5970,6 +6098,25 @@ a {
   }
   #user-profile .user-rating .avarage-rating {
     text-align: center;
+  }
+  .user-order .user-card-box {
+    padding: 34px 30px;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+  .user-order .user-card {
+    width: 100%;
+  }
+  .user-order .user-card .user-card-head {
+    width: 100%;
+  }
+  .user-order .user-card .user-card-head .user-orderCard-img {
+    width: 100%;
+    object-fit: cover;
+  }
+  .user-order .user-card .user-card-body {
+    padding: 10px;
   }
 }
 @media only screen and (min-width: 769px) and (max-width: 1024px) {

@@ -1,0 +1,95 @@
+.user-order{
+     .user-content{
+       
+     }
+}
+.user-order-ceontent{
+    .order-title{
+        padding-top: 24px;
+        padding-left: 40px;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 26px;
+        text-align: left;
+        color: $heading-white;
+       
+    }
+    .user-card-box{
+        padding: 34px 30px ;
+        gap: 20px;
+
+    }
+}
+.user-card{
+    gap: 16px;
+    border: 1px solid #3C3E42;
+    border-radius: 6px;
+    .user-card-head{
+        max-width: 160px;
+        width: 100%;
+        .user-orderCard-img{
+            width: 100%;
+            aspect-ratio: 160px/125.88px;
+            object-fit: cover;
+        }
+        .pavorite-icon{
+            padding: 4px 4px;
+            background-color: #FFFFFF;
+            top: 10px;
+            left: 10px;
+            border-radius: 50%;
+        }
+    }
+    .user-card-body{
+        max-width: 620px;
+        width: 100%;
+    }
+    .game-car-body{
+        max-width: 220px;
+        width: 100%;
+        .gameCard-btn-box{
+           
+        }
+        
+        .gameCard-price{
+            gap: 0.4rem;
+            color: $button-color;
+            font-weight: 700;
+            font-size: 20px;
+            .games-delate-price{
+                font-size: 14px;
+                font-weight: 400;
+                color: #7B7B7B;
+            }
+        }
+        .gameCard-ttile{
+            color: $heading-white;
+            font-size: 20px;
+            font-weight: 600;
+
+        }
+        .order-cade{
+            margin-top: 23px;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 19.2px;
+        }
+       
+        
+       
+    }
+    .order-btn-box{
+        gap: 14px;
+        .oder-btn-one{
+            background-color: #0B0E13;
+            border: 1px solid $button-color;
+            color: $button-color;
+            
+            &:hover{
+                border: 1px solid $heading-white;
+                color: $heading-white;
+            }
+        }
+    }
+
+}

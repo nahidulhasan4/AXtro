@@ -1041,6 +1041,37 @@ flex-direction: column;
         }
 
      }
+     .user-order{
+        .user-card-box{
+            padding: 34px 30px ;
+            gap: 20px;
+            justify-content: center;
+            align-items: center;
+    
+        }
+        .user-card{
+            max-width: 500px;
+            width: 100%;
+            flex-direction: column;
+            padding: 10px;
+             .user-card-head{
+                max-width: 260px;
+                width: 100%;
+                .user-orderCard-img{
+                    width: 100%;
+                    aspect-ratio: 260px/225.88px;
+                    object-fit: cover;
+                }
+            }
+             .user-card-body{
+                flex-direction: column;
+                gap: 20px;
+              
+
+            }
+        }
+
+     }
 }
 
 @media #{$mobile} {
@@ -2036,6 +2067,40 @@ flex-direction: column;
             }
     
          }
+         .user-order{
+            .user-card-box{
+                padding: 34px 30px ;
+                gap: 20px;
+                justify-content: center;
+                align-items: center;
+        
+            }
+            .user-card{
+               
+                width: 100%;
+                
+                 .user-card-head{
+                   
+                    width: 100%;
+                    .user-orderCard-img{
+                        width: 100%;
+                        aspect-ratio: 260px/225.88px;
+                        object-fit: cover;
+                    }
+                }
+                 .user-card-body{
+                    flex-direction: column;
+                    padding: 10px;
+                    gap: 20px;
+                    .game-car-body{
+                        max-width: 360px;
+
+                    }
+    
+                }
+            }
+    
+         }
 }
 
 @media #{$phone-tab} {
@@ -2510,6 +2575,35 @@ flex-direction: column;
             flex-direction: column;
             .avarage-rating{
                 text-align: center;
+            }
+        }
+
+     }
+     .user-order{
+        .user-card-box{
+            padding: 34px 30px ;
+            gap: 20px;
+            justify-content: center;
+            align-items: center;
+    
+        }
+        .user-card{
+          
+            width: 100%;
+           
+             .user-card-head{
+               
+                width: 100%;
+                .user-orderCard-img{
+                    width: 100%;
+                   
+                    object-fit: cover;
+                }
+            }
+             .user-card-body{
+                
+                padding: 10px;
+
             }
         }
 
