@@ -289,6 +289,10 @@ a {
   gap: 14px;
 }
 
+.pb-40 {
+  padding-bottom: 40px;
+}
+
 .gap-20 {
   display: flex;
   flex-direction: column;
@@ -309,6 +313,10 @@ a {
 
 .mb-40 {
   margin-bottom: 40px !important;
+}
+
+.mt-35 {
+  margin-top: 35px;
 }
 
 .mt-40 {
@@ -4175,6 +4183,143 @@ a {
   color: #FFFFFF;
 }
 
+.user-order-info .user-box .user-content {
+  background-color: #0B0E13 !important;
+  border: 1px solid rgba(255, 255, 255, 0.1019607843);
+}
+.user-order-info .user-box .user-content .order-cart-box {
+  width: 100%;
+  padding: 30px;
+}
+.user-order-info .user-box .user-content .order-cart-box .back-icon {
+  padding: 8px 8px;
+  border-radius: 50%;
+  background-color: #000000;
+}
+.user-order-info .user-box .user-content .order-auther-box {
+  margin-top: 18px;
+  padding: 28px 20px 28px 30px;
+  width: 100%;
+  background-color: #000000;
+  border-radius: 4px;
+}
+.user-order-info .user-box .user-content .order-auther-box .auther-name {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  text-align: left;
+  color: #FFFFFF;
+}
+.user-order-info .user-box .user-content .order-auther-box .auther-info {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #CCCCCC;
+}
+.user-order-info .user-box .user-content .order-Administrator-box {
+  margin-top: 18px;
+  padding: 28px 20px 28px 30px;
+  width: 100%;
+  border: 1px solid rgba(255, 255, 255, 0.1019607843);
+  border-radius: 4px;
+}
+.user-order-info .user-box .user-content .message-box {
+  margin-top: 46px;
+  width: 100%;
+}
+.user-order-info .user-box .user-content .message-box .message-input {
+  width: 100%;
+  background-color: #000000;
+  border: 1px solid rgba(255, 255, 255, 0.1019607843);
+  outline: none;
+  padding-top: 16px;
+  padding-left: 14px;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 26px;
+  border-radius: 5px;
+}
+.user-order-info .user-box .user-content .upload-file {
+  padding: 10px;
+  margin-top: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.1019607843);
+}
+.user-order-info .user-box .user-content .upload-file .file-status {
+  margin-left: 22px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 26px;
+  text-align: left;
+  color: #616161;
+}
+.user-order-info .user-box .user-content .seeAll-product {
+  margin-top: 14px;
+}
+.user-order-info .user-box .user-content .seeAll-product .offerCard-btn {
+  padding: 22px 31px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 10px;
+  text-align: left;
+}
+.user-order-info .user-box .user-content .order-card {
+  max-width: 295px;
+  padding: 28px 31px 0 19px;
+  width: 100%;
+  border-left: 1px solid rgba(255, 255, 255, 0.1019607843);
+}
+.user-order-info .user-box .user-content .order-card .user-card {
+  border: none;
+  background-color: #000000;
+  padding: 20px;
+}
+.user-order-info .user-box .user-content .order-card .user-card .user-card-head {
+  max-width: 200px;
+  width: 100%;
+}
+.user-order-info .user-box .user-content .order-card .user-card .user-card-head .user-orderCard-img {
+  width: 100%;
+  aspect-ratio: 200px/147px;
+  object-fit: cover;
+}
+.user-order-info .user-box .user-content .order-card .user-card .order-cade {
+  margin-top: 10px;
+}
+.user-order-info .user-box .user-content .order-card .user-card .user-card-body {
+  gap: 20px;
+}
+.user-order-info .user-box .user-content .auther-name {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  text-align: left;
+  color: #FFFFFF;
+}
+.user-order-info .user-box .user-content .auther-info {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #CCCCCC;
+}
+.user-order-info .user-box .user-content .order-title {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 26px;
+  text-align: left;
+  color: #FFFFFF;
+}
+.user-order-info .user-box .user-content .chose-btn {
+  max-width: 168px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19.2px;
+  text-align: left;
+  color: #45F882;
+  padding: 11px 41px;
+  border-radius: 4px;
+  background: rgba(69, 248, 130, 0.2);
+}
+
 @media only screen and (min-width: 320px) and (max-width: 447px) {
   .sticky {
     transition: all 0.3s linear;
@@ -4983,6 +5128,22 @@ a {
     flex-direction: column;
     gap: 20px;
   }
+  .user-order-info .user-content {
+    flex-direction: column;
+  }
+  .user-order-info .auther-header {
+    flex-direction: column;
+    align-items: start !important;
+  }
+  .user-order-info .seeAll-product {
+    align-items: start !important;
+    justify-content: center !important;
+  }
+  .user-order-info .upload-file {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
 }
 @media only screen and (min-width: 448px) and (max-width: 576px) {
   .sticky {
@@ -5747,6 +5908,16 @@ a {
   }
   .user-order .user-card .user-card-body .game-car-body {
     max-width: 360px;
+  }
+  .user-order-info .user-content {
+    flex-direction: column;
+  }
+  .user-order-info .seeAll-product {
+    align-items: start !important;
+    justify-content: center !important;
+  }
+  .user-order-info .order-card {
+    width: 100%;
   }
 }
 @media only screen and (min-width: 577px) and (max-width: 768px) {

@@ -1072,6 +1072,25 @@ flex-direction: column;
         }
 
      }
+    .user-order-info{ 
+        .user-content{ 
+            flex-direction: column;
+        }
+        .auther-header{
+            flex-direction: column;
+            align-items: start !important;
+        }
+        .seeAll-product{
+            align-items: start !important;
+            justify-content: center !important;
+        }
+        .upload-file{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+    }
 }
 
 @media #{$mobile} {
@@ -2101,6 +2120,22 @@ flex-direction: column;
             }
     
          }
+         .user-order-info{ 
+            .user-content{ 
+                flex-direction: column;
+            }
+          
+            .seeAll-product{
+                align-items: start !important;
+                justify-content: center !important;
+            }
+            .order-card{
+               
+                width: 100%;
+            }
+           
+    
+        }
 }
 
 @media #{$phone-tab} {

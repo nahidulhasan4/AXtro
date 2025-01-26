@@ -93,3 +93,159 @@
     }
 
 }
+
+// here order page info
+.user-order-info{
+    .user-box{
+        .user-content{
+            background-color: $section-primary !important;
+            border: 1px solid #FFFFFF1A;
+            .order-cart-box{
+              
+                width: 100%;
+               
+                padding: 30px;
+                .back-icon{
+                    padding: 8px 8px;
+                    border-radius: 50%;
+                    background-color: #000000;
+                }
+               
+            }
+            .order-auther-box{
+                margin-top: 18px;
+                padding: 28px 20px 28px 30px;
+                width: 100%;
+                background-color: $section-secoundry;
+                border-radius: 4px;
+                .auther-name{
+                    font-size: 16px;
+                    font-weight: 600;
+                    line-height: 24px;
+                    text-align: left;
+                    color: $heading-white;
+                }
+                .auther-info{
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 24px;
+                    color: #CCCCCC;
+                }
+
+
+
+            }
+            .order-Administrator-box{
+                margin-top: 18px;
+                padding: 28px 20px 28px 30px;
+                width: 100%;
+                border: 1px solid #FFFFFF1A;
+                border-radius: 4px;
+            }
+            .message-box{
+                margin-top: 46px;
+                width: 100%;
+                .message-input{
+                    width: 100%;
+                    background-color: $section-secoundry;
+                    border: 1px solid #FFFFFF1A;
+                    outline: none;
+                    padding-top: 16px;
+                    padding-left: 14px;
+                    font-size: 18px;
+                    font-weight: 600;
+                    line-height: 26px;
+                    border-radius: 5px;
+                }
+            }
+            .upload-file{
+                padding: 10px;
+                margin-top: 18px;
+                border: 1px solid #FFFFFF1A;
+               
+               
+                .file-status{
+                    margin-left: 22px;
+                    font-size: 16px;
+                    font-weight: 500;
+                    line-height: 26px;
+                    text-align: left;
+                    color:#616161;
+                    
+                }
+            }
+            .seeAll-product{
+                margin-top: 14px;
+                .offerCard-btn{
+                   
+                    padding: 22px 31px;
+                    font-size: 16px;
+                    font-weight: 500;
+                    line-height: 10px;
+                    text-align: left;
+                 
+                 
+                }
+            }
+            .order-card{
+                max-width: 295px;
+                padding: 28px 31px 0 19px;
+                width: 100%;
+                border-left: 1px solid #FFFFFF1A;
+               
+                .user-card{
+                    border: none;
+                    background-color: $section-secoundry;
+                    padding: 20px;
+                    .user-card-head{
+                        max-width: 200px;
+                        width: 100%;
+                        .user-orderCard-img{
+                            width: 100%;
+                            aspect-ratio: 200px/147px;
+                            object-fit: cover;
+                        }
+                    }
+                    .order-cade{
+                        margin-top: 10px;
+                    }
+                    .user-card-body{
+                        gap: 20px;
+                    }
+                }
+            }
+            .auther-name{
+                font-size: 16px;
+                font-weight: 600;
+                line-height: 24px;
+                text-align: left;
+                color: $heading-white;
+            }
+            .auther-info{
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 24px;
+                color: #CCCCCC;
+            }
+             .order-title{
+                font-size: 18px;
+                font-weight: 600;
+                line-height: 26px;
+                text-align: left; 
+                color: $heading-white;
+            }
+            .chose-btn{
+                max-width: 168px;
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 19.2px;
+                text-align: left;
+                color: $button-color;
+                padding: 11px 41px;
+                border-radius: 4px;
+                background: #45F88233;
+
+            }
+        }
+    }
+}
