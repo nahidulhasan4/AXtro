@@ -254,24 +254,7 @@ document.querySelectorAll('.counter-increment').forEach(initializeCounter);
 
 
 
-// here create modal js
 
-// function initializeCounter(counterElement) {
-//   let count = 0;
-//   const counterDisplay = counterElement.querySelector('.counter-display');
-//   const plusButton = counterElement.querySelector('.plus');
-//   const minusButton = counterElement.querySelector('.minus');
-
-//   plusButton.addEventListener('click', () => {
-//     count++;
-//     counterDisplay.textContent = count;
-//   });
-
-//   minusButton.addEventListener('click', () => {
-//     count--;
-//     counterDisplay.textContent = count;
-//   });
-// }
 
 function createModal(id) {
   const template = document.getElementById('modal-template').content.cloneNode(true);
@@ -289,26 +272,14 @@ function createModal(id) {
 
 
 
-// function initializeModals() {
-//   const modalContainer = document.getElementById('modal-container');
-//   modalContainer.appendChild(createModal('modal1'));
-//   modalContainer.appendChild(createModal('modal2'));
-//   modalContainer.appendChild(createModal('modal3'));
 
-//   document.querySelectorAll('.showModal').forEach(button => {
-//     button.addEventListener('click', function() {
-//       const modalId = this.getAttribute('data-target');
-//       const modal = document.getElementById(modalId);
-//       modal.classList.add('open');
-//     });
-//   });
-// }
 function initializeModals() {
   const modalContainer = document.getElementById('modal-container');
   modalContainer.appendChild(createModal('modal1'));
   modalContainer.appendChild(createModal('modal2'));
   modalContainer.appendChild(createModal('modal3'));
-  modalContainer.appendChild(createModal('modal4')); // Add more modals as needed
+  modalContainer.appendChild(createModal('modal4'));
+  modalContainer.appendChild(createModal('modal5')); // Add more modals as needed
 
   document.querySelectorAll('.showModal').forEach(button => {
     button.addEventListener('click', function() {

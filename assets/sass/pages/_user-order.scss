@@ -249,3 +249,31 @@
         }
     }
 }
+// 
+
+.not-found{
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 57.6px;
+    text-align: center;
+    color: $heading-white;
+}
+// review modal deisgn here
+.review-modal{
+    .succes-modal-imgbox{
+        padding: 30px !important;
+        
+    }
+    .frombox .coment-form {
+        padding: 0 !important;
+    }
+    .name-filed{
+        max-width: 600px !important;
+        .name-input{
+            max-width: 600px !important;
+        }
+    }
+    .offerCard-btn{
+        max-width: 180px !important;
+    }
+}
