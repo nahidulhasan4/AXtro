@@ -12,6 +12,9 @@
  flex-direction: column;
  gap: 45px;
 }
+.mt-20{
+    margin-top: 20px !important;
+}
 .gap-30{
     display: flex;
     flex-direction: column;
@@ -22,10 +25,16 @@
     gap: 14px;
 
    }
+   .mt-16{
+    margin-top: 16px;
+   }
 .pb-40{
     padding-bottom: 40px;
 
    }
+.p-24{
+    padding: 24px !important;
+}
 .gap-20{
     display: flex;
     flex-direction: column;

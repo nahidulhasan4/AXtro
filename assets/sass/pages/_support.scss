@@ -1,0 +1,347 @@
+.support-box{
+    .user-content{
+        .tablebox{
+            padding: 0px 24px 30px 24px;
+        }
+        .content-btn-box {
+            padding: 24px;
+            .open-teket{
+                padding: 12px 17px ;
+                background-color: #45F882;
+                color: #000000;
+                font-weight: 600;
+                font-size: 16px;
+                border-radius: 6px;
+                transition: all 0.3s linear;
+                border: 1px solid $button-color;
+                &:hover{
+                    svg path{
+                        fill: $heading-white;
+                        stroke: $heading-white;
+                        transition: all 0.3s linear;
+                    }
+                    background-color: $button-color;
+                    border: 1px solid $heading-white;
+                    color: $heading-white;
+                }
+            }
+           
+        }
+        .order-title{
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 28.8px;
+            text-align: left;
+            color: $heading-white;
+        }
+        .table-header{
+            .table-heading{
+                padding-top: 12px;
+                padding-bottom: 12px;
+                background-color: $section-primary !important;
+                font-size: 18px;
+                font-weight: 600;
+                line-height: 21.6px;
+                text-align: left;
+
+            }
+            
+           
+        }
+        .table-heading,
+        .table-data{
+            text-align: left;
+            border-bottom: 1px solid #0B0E13 !important;
+            &:first-child{
+                padding-left: 24px;
+                min-width: 100px !important;
+               
+                
+            }
+            &:nth-child(2){
+                min-width: 316px !important;
+            }
+            &:nth-child(3){
+                min-width: 165px !important;
+            }
+            &:nth-child(4){
+               min-width: 140px !important;
+            }
+            &:last-child{
+                padding-right: 24px;
+                text-align: right !important;
+            }
+        }
+        .table-data{
+          padding-top: 12px !important;
+          padding-bottom: 12px !important;
+            
+        }
+        .unseen-message{
+            padding: 11.5px 15px;
+            border-radius: 6px;
+            color: $button-color;
+            background-color: #11261E;
+        }
+        .action-message{
+            padding: 15px 10px;
+            background-color: $button-color;
+            border-radius: 6px;
+        }
+        .btn-inproces{
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 21.6px;
+            text-align: left;
+            background-color: #040E1C;
+            color: #2374E7;
+            padding: 12px;
+            border-radius: 6px;
+        }
+        .last-proces{
+            background-color: #FE5A3F1F;
+            color: #FE5A3F;
+        }
+        .support-completed{
+            background-color: #11261E;
+            color: #45F882;
+        }
+    }
+    
+    
+}
+.open-teket{
+    padding: 11px 9px;
+    background-color: #45F882;
+    color: #000000;
+    font-weight: 600;
+    font-size: 16px;
+    border-radius: 6px;
+    transition: all 0.3s linear;
+    border: 1px solid $button-color;
+    &:hover{
+        svg path{
+            fill: $heading-white;
+            stroke: $heading-white;
+            transition: all 0.3s linear;
+        }
+        background-color: $button-color;
+        border: 1px solid $heading-white;
+        color: $heading-white;
+    }
+}
+// here design suporrt tiket modal
+.support-tiket-modal{
+    .succes-modal-imgbox {
+         padding: 0 !important;
+        .name-filed {
+            max-width: 700px !important;
+            width: 100%;
+            .name-input{
+                max-width: 700px !important;
+                width: 100%;
+            }
+        }
+        .meassge-filed{
+            height: 84px !important;
+        }
+        .message-input{
+            height: 84px !important;
+        }
+    }
+    .create-suporrt{
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 32px;
+        text-align: left; 
+        color: $heading-white;
+    }
+}
+// here design
+.support-message{
+    .user-content{
+        gap: 30px;
+    }
+    .user-content{
+
+        background-color: $section-primary;
+        .support-message-box{
+            background-color: $section-secoundry;
+            max-width: 522px;
+            width: 100%;
+            padding: 24px;
+            border-radius: 12px;
+        }
+    }
+    .message-container{
+        margin-top: 30px !important;
+       
+        .seller-messagebox{
+            .seller-message{
+                background-color: $section-primary;
+                padding: 12px 14px;
+                border-top-right-radius: 6px;
+                border-bottom-right-radius: 6px;
+                border-bottom-left-radius: 6px;
+                max-width: 300px;
+              
+                width: 100%;
+              
+                .text-width{
+                    max-width: 240px !important; 
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 22px;
+                    text-align: left;
+                    color: $heading-white;
+                }
+                .message-date{
+                    font-size: 14px;
+                    font-weight: 500;
+                    line-height: 18.9px;
+                    text-align: left;
+                    color: $heading-white;
+                }
+            }
+        }
+        .buyer-messagebox{
+            .buyer-message{
+                background-color: #11261E !important;
+                padding: 12px 14px;
+                border-top-left-radius: 6px;
+                border-bottom-right-radius: 6px;
+                border-bottom-left-radius: 6px;
+                max-width: 300px;
+              
+                width: 100%;
+                .text-width{
+                    max-width: 223px !important; 
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 22px;
+                    text-align: left;
+                    color: $heading-white;
+                }
+                .message-date{
+                    font-size: 14px;
+                    font-weight: 500;
+                    line-height: 18.9px;
+                    text-align: left;
+                    color: $heading-white;
+                }
+            }
+
+        }
+      
+    }
+    .message-box{
+        margin-top: 46px;
+        width: 100%;
+        height: 86px !important;
+        .message-input{
+            height: 86px !important;
+            width: 100%;
+            background-color: $section-secoundry;
+            border: 1px solid #FFFFFF1A;
+            outline: none;
+            padding-top: 16px;
+            padding-left: 14px;
+            font-size: 18px;
+            font-weight: 600;
+            line-height: 26px;
+            border-radius: 5px;
+            color: white;
+        }
+    }
+    .upload-file{
+        padding: 10px;
+        margin-top: 18px;
+        .chose-btn{
+            padding: 10px;
+            background-color: #0B0E13;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 26px;
+            text-align: left;
+            text-decoration-line: underline;
+            text-decoration-style: solid;
+            text-underline-position: from-font;
+            text-decoration-skip-ink: none;
+            color: $heading-white;
+            border-radius: 4px;  
+        }
+       
+       
+        .file-status{
+            margin-left: 22px;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 26px;
+            text-align: left;
+            color: $heading-white;
+            
+        }
+    }
+    .seeAll-product{
+        margin-top: 14px;
+        .offerCard-btn{
+           
+            padding: 22px 31px;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 10px;
+            text-align: left;
+         
+         
+        }
+    }
+
+    .tiket-info{
+        border-radius: 6px;
+        padding: 24px;
+        max-width: 318px !important;
+        background-color: $section-secoundry;
+        max-height: 300px;
+        .support-tiket-stutas{
+            gap: 16px;
+        }
+        .status{
+          font-size: 18px;
+          font-weight: 600;
+          line-height: 21.6px;
+          text-align: left;
+          color: $heading-white;
+        }
+        .tiket-namw{
+          font-size: 24px;
+          font-weight: 600;
+          line-height: 28.8px;
+          text-align: left;
+          color: $heading-white;
+        }
+        .tiket-name{
+            color: $heading-white;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 30px;
+            text-align: left;
+        }
+        .support-tiket-info{
+            color: $heading-white;
+           font-size: 16px;
+           font-weight: 600;
+           line-height: 30px;
+           text-align: left;
+          }
+          .btn-inproces{
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 22px;
+            text-align: left;
+            background-color: #040E1C;
+            color: #2374E7;
+            padding: 7px 13px;
+            border-radius: 6px;
+        }
+    }
+}

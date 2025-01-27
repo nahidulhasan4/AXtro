@@ -29,7 +29,7 @@
 
         }
         .user-menu-items{
-
+            cursor: pointer;
             padding: 20px 0px 14px 24px;
             border-bottom: 1px solid #FFFFFF1A;
             transition: all 0.3s ease-in;
@@ -242,5 +242,144 @@
         line-height: 32px;
         text-align: left;
         color: $heading-white;
+    }
+}
+
+// here design user all pavorite product page 
+.user-allProduct{
+    .user-content{
+        background-color: $section-primary;
+        .order-title{
+            padding-left: 0 !important;
+            margin-bottom: 24px;
+        }
+        .seeAll-product{
+            margin-top: 40px !important;
+            .product-page-list{
+                gap: 20px;
+                .page-number{
+                   width: 54px;
+                   display: flex;
+                   align-items: center;
+                   justify-content: center;
+                   height: 54px;
+                    border: 1px solid #45f88186;
+                    border-radius: 3px;
+                    transition: all 0.3s linear;
+                    cursor: pointer;
+                    .page-link{
+                        font-size: 16px;
+                        font-weight: 400;
+                        line-height: 26px;
+                        text-align: center;
+                        color: $heading-white;
+
+                    }
+                    &:hover{
+                        background-color: $button-color;
+                        .page-link{
+                            svg path{
+                                fill: $section-secoundry;
+                                stroke: $section-secoundry;
+                            }
+                            color: $section-secoundry;
+    
+                        } 
+                    }
+                }
+            }
+        }
+    }
+}
+// user empty pavorite product page
+.empty-pavorite{
+    .user-content{
+        background-color: $section-primary !important;
+    }
+}
+// here design user password update
+.user-pass-update{
+    .user-box{
+        gap: 80px !important;
+    }
+    .frombox{
+        margin-top: 0;
+        max-width: 770px;
+    }
+    .user-content{
+        background-color: $section-primary;
+    }
+    .coment-form{
+        padding: 40px !important;
+        background-color: $section-secoundry;
+        max-width: 770px;
+        .blog-subtitle {
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 32px;
+            text-align: center;
+            color: #FFFFFF;
+        }
+    }
+    .sing-up-box{
+       
+    }
+    .name-filed {
+        max-width: 690px !important;
+    }
+   .name-input{
+    max-width: 690px !important;
+   }
+   .eye-icon {
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    }
+   .offerCard-btn{
+    max-width: 690px;
+   
+    padding: 18px 24px;
+   }
+}
+
+
+// here design log out succes modal 
+.logout-modal{
+    .modal-btn-box{
+        margin-bottom: 30px;
+    }
+    .logout-btn1{
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 19px;
+        text-align: left;
+        color: #FFFFFF;
+        padding: 16px 65px;
+        border: 1px solid #FFFFFF;
+        border-radius: 6px;
+        transition: all 0.3s ease-out;
+        &:hover{
+            color: $section-secoundry;
+            background-color: $button-color ;
+            border: 1px solid $button-color
+        }
+    }
+    .logout-btn2{
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 17px;
+        text-align: left;
+        color: #FFFFFF;
+        padding: 17px 49px;
+        border: 1px solid #FE3030;
+        border-radius: 6px;
+        background-color: #FE3030;
+        transition: all 0.3s ease-out;
+        &:hover{
+            color: $heading-white;
+            background-color: $section-secoundry ;
+            border: 1px solid $heading-white;
+        }
+
     }
 }

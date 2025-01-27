@@ -1091,6 +1091,21 @@ flex-direction: column;
         }
 
     }
+    .support-box{
+        .user-box{
+            flex-direction: column;
+        }
+        .content-btn-box {
+            gap: 20px;
+            flex-direction: column;
+        }
+     }
+     .support-message{
+        .user-content{
+            flex-direction: column !important;
+            gap: 30px;
+        }
+    }
 }
 
 @media #{$mobile} {
@@ -2136,6 +2151,12 @@ flex-direction: column;
            
     
         }
+        .support-message{
+            .user-content{
+                flex-direction: column !important;
+                gap: 30px;
+            }
+        }
 }
 
 @media #{$phone-tab} {
@@ -2643,6 +2664,11 @@ flex-direction: column;
         }
 
      }
+     .support-box{
+        .user-box{
+            flex-direction: column;
+        }
+     }
 }
 
 @media #{$tab-between} {
@@ -2932,6 +2958,20 @@ flex-direction: column;
         line-height: 40.6px;
         text-align: center;
         color: $heading-white;
+    }
+    .support-box{
+        .user-box{
+            flex-direction: column;
+        }
+        .content-btn-box {
+
+        }
+     }
+     .support-message{
+        .user-content{
+            flex-direction: column !important;
+            gap: 30px;
+        }
     }
 }
 

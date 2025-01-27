@@ -469,8 +469,8 @@
         <div class="user-box d-flex align-content-center">
           <div class="user-siderBar">
             <ul class="user-menu">
-              <li class="user-menu-items">
-                <a class="user-items-link" href="http://">
+              <li class="user-menu-items user-menu-active">
+                <a class="user-items-link" href="./user-profile.html">
                   <span class="user-link-icon">
                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <g clip-path="url(#clip0_7683_4182)">
@@ -488,8 +488,8 @@
                   Profile
                 </a>
               </li>
-              <li class="user-menu-items user-menu-active">
-                <a class="user-items-link" href="http://">
+              <li class="user-menu-items">
+                <a class="user-items-link" href="./user-order.html">
                   <span class="user-link-icon">
                     <svg width="16" height="20" viewBox="0 0 16 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path
@@ -520,7 +520,7 @@
                 </a>
               </li>
               <li class="user-menu-items">
-                <a class="user-items-link" href="http://">
+                <a class="user-items-link" href="./user-profile-pavorite.html">
                   <span class="user-link-icon">
                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path
@@ -533,7 +533,7 @@
                 </a>
               </li>
               <li class="user-menu-items">
-                <a class="user-items-link" href="http://">
+                <a class="user-items-link" href="./user-pass-update.html">
                   <span class="user-link-icon">
                     <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path
@@ -548,8 +548,8 @@
                   Password
                 </a>
               </li>
-              <li class="user-menu-items">
-                <a class="user-items-link" href="http://">
+              <li class="user-menu-items showModal "  data-target="modal6" >
+                <a class="user-items-link" >
                   <span class="user-link-icon">
                     <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M14.25 11.0835L15.1262 10.2073C15.5168 9.81675 15.5168 9.18358 15.1262 8.79306L14.25 7.91683" stroke="#45F882" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -588,7 +588,56 @@
 
     <!-- here recomanned section -->
     
-      
+    <div id="modal-container">
+      <template id="modal-template">
+          <div class="modal-main">
+              <div class="anywhere-away  "></div>
+         
+                <div class="succes-modal logout-modal position-absolute ">
+                  <div class="success-modal-content">
+                    <div class="succes-modal-imgbox d-flex flex-column align-items-center position-relative">
+                      <img class="sucess-img" src="./assets/img/logo/logout.png" alt="" srcset="">
+                      <div class="success-modal-detal d-flex flex-column align-content-around ">
+                        <h5 class="seccess-message">Are you sure want to Logout ?</h5>
+                       
+                      </div>
+                      <span class="succesmodal-close hideModal position-absolute">
+                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M5.31106 7.02111C3.67952 5.39805 2.1069 3.832 0.532319 2.2682C0.142041 1.88069 -0.132922 1.45836 0.0761053 0.877935C0.423175 -0.085787 1.44419 -0.286563 2.21857 0.478631C3.6582 1.90147 5.10343 3.31981 6.49845 4.7859C6.92772 5.23715 7.13395 5.16246 7.52114 4.76147C8.92653 3.30521 10.3648 1.88041 11.8038 0.457008C12.5675 -0.298638 13.6225 -0.0779251 13.9387 0.886921C14.1281 1.46482 13.8531 1.88743 13.4623 2.27691C12.0434 3.6902 10.6324 5.11079 9.21384 6.52408C9.06065 6.67684 8.87575 6.79758 8.67177 6.96017C10.3347 8.61551 11.9304 10.1889 13.5077 11.7805C14.2894 12.5692 14.063 13.6301 13.0706 13.9477C12.4814 14.1361 12.074 13.8214 11.6922 13.4386C10.2623 12.006 8.81599 10.5893 7.41256 9.13107C7.05763 8.76209 6.89574 8.82219 6.57617 9.15017C5.1486 10.6157 3.69299 12.0534 2.24635 13.5001C1.85803 13.8885 1.44222 14.1507 0.854979 13.9109C-0.0925194 13.5237 -0.292289 12.592 0.456564 11.8201C1.51741 10.7269 2.60239 9.65702 3.68429 8.58406C4.20728 8.06514 4.74682 7.56222 5.31106 7.02111Z" fill="#EB5757"/>
+                          </svg>
+                          
+                      </span>
+                     
+                    </div>
+                   <div class="d-flex modal-btn-box w-100 align-items-lg-center justify-content-center gap-3">
+                    <button class=" logout-btn1">Cancel</button>
+                    <button class="logout-btn2">Yes, Logout</button>
+                   
+                   </div>
+            
+                  </div>
+                   
+                
+                  
+                </div>
+                  <div class="counter-increment d-none align-items-center gap-3">
+                    <button class="minus">
+                      <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <line x1="6.3" y1="11.7" x2="17.7" y2="11.7" stroke="#636973" stroke-width="1.6" stroke-linecap="round"/>
+                      </svg>
+                    </button>
+                    <div class="counter-display">0</div>
+                    <button class="plus">
+                      <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M6 11.6875C5.6203 11.6875 5.3125 11.3797 5.3125 11C5.3125 10.6203 5.6203 10.3125 6 10.3125L10.8125 10.3125L10.8125 5.5C10.8125 5.1203 11.1203 4.8125 11.5 4.8125C11.8797 4.8125 12.1875 5.1203 12.1875 5.5L12.1875 10.3125L17 10.3125C17.3797 10.3125 17.6875 10.6203 17.6875 11C17.6875 11.3797 17.3797 11.6875 17 11.6875L12.1875 11.6875L12.1875 16.5C12.1875 16.8797 11.8797 17.1875 11.5 17.1875C11.1203 17.1875 10.8125 16.8797 10.8125 16.5L10.8125 11.6875L6 11.6875Z" fill="#45F882"/>
+                      </svg>
+                    </button> 
+                  </div>
+                 
+           
+          </div>
+      </template>
+    </div> 
 
 
     <div id="modal-container">
