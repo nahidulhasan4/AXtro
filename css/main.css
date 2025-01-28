@@ -4898,9 +4898,8 @@ filter(); */
 }
 
 @media only screen and (min-width: 320px) and (max-width: 447px) {
-  .sticky {
-    transition: all 0.3s linear;
-    margin-top: -99px;
+  .product-filter-modal {
+    top: 6% !important;
   }
   .tablebox {
     overflow-x: scroll;
@@ -5751,9 +5750,8 @@ filter(); */
   }
 }
 @media only screen and (min-width: 448px) and (max-width: 576px) {
-  .sticky {
-    transition: all 0.3s linear;
-    margin-top: -49px;
+  .product-filter-modal {
+    top: 6% !important;
   }
   .tablebox {
     overflow-x: scroll;

@@ -1,8 +1,7 @@
 // here start gift card section responsive design 
 @media #{$small-device} {
-    .sticky {
-        transition: all 0.3s linear;
-        margin-top: -99px;
+    .product-filter-modal {
+        top: 6% !important;
     }
     .tablebox{    
            overflow-x: scroll;
@@ -1131,9 +1130,9 @@ flex-direction: column;
 }
 
 @media #{$mobile} {
-    .sticky {
-        transition: all 0.3s linear;
-        margin-top: -49px;
+
+    .product-filter-modal {
+        top: 6% !important;
     }
     .tablebox{    
         overflow-x: scroll;
@@ -2179,13 +2178,15 @@ flex-direction: column;
         #all-product{
             .side-bar-none{
                 display: none !important;
-                
+               
             }
+           
             .filter{
                 opacity: 1;
                 visibility: visible;
             }
         }
+       
 }
 
 @media #{$phone-tab} {
