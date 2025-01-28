@@ -73,7 +73,7 @@ button {
 .chabox {
     display: block;
     position: relative;
-    padding-left: 35px;
+    padding-left: 22px;
     margin-bottom: 12px;
     cursor: pointer;
     font-size: 22px;
@@ -97,19 +97,19 @@ button {
     position: absolute;
     top: 0;
     left: 0;
-    height: 25px;
-    width: 25px;
-    background-color: #eee;
+    height: 22px;
+    width: 22px;
+    background-color: $section-primary;
   }
   
   /* On mouse-over, add a grey background color */
   .chabox:hover input ~ .checkmark {
-    background-color: #ccc;
+    background-color: $section-primary;
   }
   
   /* When the checkbox is checked, add a blue background */
   .chabox input:checked ~ .checkmark {
-    background-color: #2196F3;
+    background-color: $button-color;
   }
   
   /* Create the checkmark/indicator (hidden when not checked) */
@@ -130,7 +130,7 @@ button {
     top: 5px;
     width: 5px;
     height: 10px;
-    border: solid white;
+    border: solid $section-secoundry;
     border-width: 0 3px 3px 0;
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);

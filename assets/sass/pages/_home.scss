@@ -46,7 +46,7 @@
             }
             .offerCard-btn {
                 margin-top: 40px;
-                padding: 13px 24px;
+                padding: 15px 0px;
                 max-width: 196px;
                 border: 1px solid $button-color;
                 display: flex;
@@ -115,7 +115,7 @@
                 }
                 .offerCard-btn {
                     margin-top: 40px;
-                    padding: 13px 24px;
+                    padding: 15px 0px;
                     max-width: 196px;
                     border: 1px solid $button-color;
                     display: flex;
@@ -189,7 +189,7 @@
         grid-row-gap: 2rem;
 
         .gift-card {
-            padding: 30px 11px;
+            padding: 28px 11px;
             border: 1px solid #FFFFFF1A;
             border-radius: 6px;
             background-color: $section-secoundry;
@@ -243,7 +243,7 @@
         }
 
         .offerCard-btn {
-            padding: 13px 24px;
+            padding: 13px 24.4px;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -255,7 +255,6 @@
             border-radius: 5px;
             border: 1px solid $button-color;
             transition: all 0.3s ease;
-
             &:hover {
                 background-color: $section-secoundry;
                 border: 1px solid #F6F8FF;
@@ -427,9 +426,9 @@
     }
     .game-wepper-img{
    
-        max-width: 258px;
+        max-width: 269px;
         width: 100%;
-        aspect-ratio: 258px/501px;
+      
         border-radius: 8px;
         
         background: #FFFFFF;
@@ -440,6 +439,7 @@
             height: 100%;
             object-fit: cover;
             border-radius: 8px;
+            aspect-ratio: 258px/501px;
         
         }
 

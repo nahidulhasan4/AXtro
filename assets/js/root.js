@@ -209,12 +209,12 @@ function priceslider() {
       };
 
       noUiSlider.create(tooltipSlider, {
-          start: [18000, 50000.0],
+          start: [0, 500.0],
           connect: true,
           format: formatForSlider,
           range: {
               min: 0.0,
-              max: 60000.0,
+              max: 500.0,
           },
       });
       var formatValues = [document.getElementById("slider-margin-value-min"), document.getElementById("slider-margin-value-max")];
