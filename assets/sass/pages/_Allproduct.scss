@@ -94,17 +94,6 @@
     font-weight: 700;
 }
 
-
-
-
-
-
-
-
-
-
-
-
 #all-product {
     margin-top: 63px;
     margin-bottom: 60px;
@@ -112,10 +101,7 @@
        margin-top: 35px;
     
     }
-
-  
 }
-
 .product-content-box {
     display: flex;
     height: fit-content;
@@ -264,6 +250,16 @@
         }
     }
 }
+.product-filter-modal{
+   top: 10%;
+   transform: translateY(-70%);
+   left: 50%;
+   transform: translateX(-50%);
+   margin-top: 0px;
+   max-width: 760px !important;
+   width: 100%;
+   
+}
 
 .product-content {
     display: flex;
@@ -281,6 +277,25 @@
             font-weight: 500;
             line-height: 24px;
             color: $heading-white;
+        }
+    .filter{
+    gap: 20px;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    padding: 9px 14px;
+    background-color: #000000;
+    border-radius: 4px;
+    transition: all 0.3s linear;
+    max-width: 150px;
+    width: 100%;
+    opacity: 0;
+    visibility: hidden;
+    .filter-ison{
+
+    }
         }
 
     }
@@ -401,7 +416,13 @@
        
     }
 }
-
+.filter-close{
+    top: 15px;
+    right: 20px;
+    padding: 10px;
+    background-color: #eb575721;
+    border-radius: 6px ;
+}
 
 .accordion-item {
     background-color: $section-secoundry;
@@ -493,7 +514,14 @@
           
        }
    }
-
+.filter-modal{
+    visibility: hidden;
+    opacity: 0;
+}
+.on-filter{
+    visibility: visible;
+    opacity: 1;
+}
 
 //    here seller empty page scss
 .product-imgbox{
@@ -524,3 +552,57 @@
         align-self: center;
     }
 }
+
+
+/*
+let filter = function(){
+  let filterbox = document.getElementById('filter');
+  let filterShow= document.getElementById('show-Filter');
+  let filterOff = document.getElementById('filter-off')
+  filterShow.addEventListener('click', function () {
+     filterbox.classList.add('on-filter')
+     filterbox.classList.remove('filter-modal')
+  });
+  filterOff.addEventListener('click', function () {
+    filterbox.classList.remove('on-filter')
+    filterbox.classList.add('filter-modal')
+ });
+}
+
+function priceslider(sliderId, minId, maxId) {
+  let sliderElement = document.getElementById(sliderId);
+
+  if (sliderElement) {
+    let formatForSlider = {
+      from: function (formattedValue) {
+        return Number(formattedValue);
+      },
+      to: function (numericValue) {
+        return Math.round(numericValue);
+      },
+    };
+
+    noUiSlider.create(sliderElement, {
+      start: [0, 500.0],
+      connect: true,
+      format: formatForSlider,
+      range: {
+        min: 0.0,
+        max: 500.0,
+      },
+    });
+
+    let formatValues = [
+      document.getElementById(minId),
+      document.getElementById(maxId)
+    ];
+
+    sliderElement.noUiSlider.on("update", function (values, handle, unencoded) {
+      formatValues[0].innerHTML = "Price: " + "$" + values[0];
+      formatValues[1].innerHTML = "$" + values[1];
+    });
+  }
+}
+priceslider("slider-tooltips-1", "slider-margin-value-min-1", "slider-margin-value-max-1");
+priceslider("slider-tooltips-2", "slider-margin-value-min-2", "slider-margin-value-max-2");
+filter(); */

@@ -195,37 +195,42 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 // price range
-function priceslider() {
-  if ($("#slider-tooltips").length > 0) {
-      var tooltipSlider = document.getElementById("slider-tooltips");
+function priceslider(sliderId, minId, maxId) {
+  let sliderElement = document.getElementById(sliderId);
 
-      var formatForSlider = {
-          from: function (formattedValue) {
-              return Number(formattedValue);
-          },
-          to: function (numericValue) {
-              return Math.round(numericValue);
-          },
-      };
+  if (sliderElement) {
+    let formatForSlider = {
+      from: function (formattedValue) {
+        return Number(formattedValue);
+      },
+      to: function (numericValue) {
+        return Math.round(numericValue);
+      },
+    };
 
-      noUiSlider.create(tooltipSlider, {
-          start: [0, 500.0],
-          connect: true,
-          format: formatForSlider,
-          range: {
-              min: 0.0,
-              max: 500.0,
-          },
-      });
-      var formatValues = [document.getElementById("slider-margin-value-min"), document.getElementById("slider-margin-value-max")];
-      tooltipSlider.noUiSlider.on("update", function (values, handle, unencoded) {
-          formatValues[0].innerHTML = "Price: " + "$" + values[0];
-          formatValues[1].innerHTML = "$" + values[1];
-      });
+    noUiSlider.create(sliderElement, {
+      start: [0, 500.0],
+      connect: true,
+      format: formatForSlider,
+      range: {
+        min: 0.0,
+        max: 500.0,
+      },
+    });
+
+    let formatValues = [
+      document.getElementById(minId),
+      document.getElementById(maxId)
+    ];
+
+    sliderElement.noUiSlider.on("update", function (values, handle, unencoded) {
+      formatValues[0].innerHTML = "Price: " + "$" + values[0];
+      formatValues[1].innerHTML = "$" + values[1];
+    });
   }
 }
-priceslider();
-
+priceslider("slider-tooltips-1", "slider-margin-value-min-1", "slider-margin-value-max-1");
+priceslider("slider-tooltips-2", "slider-margin-value-min-2", "slider-margin-value-max-2");
 
 
 // here incriment and dicriment counter 
@@ -282,6 +287,8 @@ function initializeModals() {
   modalContainer.appendChild(createModal('modal5'));
   modalContainer.appendChild(createModal('modal6')); 
   modalContainer.appendChild(createModal('modal7'));// Add more modals as needed
+  
+
 
   document.querySelectorAll('.showModal').forEach(button => {
     button.addEventListener('click', function() {
@@ -294,3 +301,7 @@ function initializeModals() {
 
 document.addEventListener('DOMContentLoaded', initializeModals);
 
+
+
+
+// here design filter

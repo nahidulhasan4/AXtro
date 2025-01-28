@@ -41,9 +41,7 @@
         }
     }
  }
- .product-side-bar {
- max-width: 300px !important;
- }
+ 
  .modal1-footer{
 flex-direction: column;
  .button-grop{
@@ -1106,6 +1104,30 @@ flex-direction: column;
             gap: 30px;
         }
     }
+    #all-product{
+        .side-bar-none{
+            display: none !important;
+            
+        }
+        .filter{
+            opacity: 1;
+            visibility: visible;
+        }
+        .product-slect{
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .product-filter-modal{
+            top: 10%;
+            transform: translateY(-70%);
+            left: 50%;
+            transform: translateX(-50%);
+            margin-top: 0px;
+            max-width: 760px !important;
+            width: 100%;
+            
+         }
+    }
 }
 
 @media #{$mobile} {
@@ -1147,9 +1169,6 @@ flex-direction: column;
         justify-content: center ;
         align-items: center;
      }
-     .product-side-bar {
-        max-width: 300px !important;
-        }
     .product-content-box{
         flex-direction: column;
         gap: 20px;
@@ -2157,6 +2176,16 @@ flex-direction: column;
                 gap: 30px;
             }
         }
+        #all-product{
+            .side-bar-none{
+                display: none !important;
+                
+            }
+            .filter{
+                opacity: 1;
+                visibility: visible;
+            }
+        }
 }
 
 @media #{$phone-tab} {
@@ -2669,6 +2698,18 @@ flex-direction: column;
             flex-direction: column;
         }
      }
+     #all-product{
+        .side-bar-none{
+            display: none !important;
+            
+        }
+        .filter{
+            opacity: 1;
+            visibility: visible;
+        }
+
+    }
+    
 }
 
 @media #{$tab-between} {

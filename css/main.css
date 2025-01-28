@@ -2128,6 +2128,16 @@ a {
   gap: 8px;
 }
 
+.product-filter-modal {
+  top: 10%;
+  transform: translateY(-70%);
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 0px;
+  max-width: 760px !important;
+  width: 100%;
+}
+
 .product-content {
   display: flex;
   flex-direction: column;
@@ -2144,6 +2154,22 @@ a {
   font-weight: 500;
   line-height: 24px;
   color: #FFFFFF;
+}
+.product-content .product-slect .filter {
+  gap: 20px;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  padding: 9px 14px;
+  background-color: #000000;
+  border-radius: 4px;
+  transition: all 0.3s linear;
+  max-width: 150px;
+  width: 100%;
+  opacity: 0;
+  visibility: hidden;
 }
 .product-content .dropDown-menu .dropDwon-cetagoris {
   color: #FFFFFF;
@@ -2234,6 +2260,14 @@ a {
 .prise-range {
   padding: 20px;
 }
+.filter-close {
+  top: 15px;
+  right: 20px;
+  padding: 10px;
+  background-color: rgba(235, 87, 87, 0.1294117647);
+  border-radius: 6px;
+}
+
 .accordion-item {
   background-color: #000000;
   border: none;
@@ -2317,6 +2351,16 @@ a {
   font-size: 2rem;
 }
 
+.filter-modal {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.on-filter {
+  visibility: visible;
+  opacity: 1;
+}
+
 .product-imgbox {
   height: auto;
   display: flex;
@@ -2347,6 +2391,58 @@ a {
   align-self: center;
 }
 
+/*
+let filter = function(){
+  let filterbox = document.getElementById('filter');
+  let filterShow= document.getElementById('show-Filter');
+  let filterOff = document.getElementById('filter-off')
+  filterShow.addEventListener('click', function () {
+     filterbox.classList.add('on-filter')
+     filterbox.classList.remove('filter-modal')
+  });
+  filterOff.addEventListener('click', function () {
+    filterbox.classList.remove('on-filter')
+    filterbox.classList.add('filter-modal')
+ });
+}
+
+function priceslider(sliderId, minId, maxId) {
+  let sliderElement = document.getElementById(sliderId);
+
+  if (sliderElement) {
+    let formatForSlider = {
+      from: function (formattedValue) {
+        return Number(formattedValue);
+      },
+      to: function (numericValue) {
+        return Math.round(numericValue);
+      },
+    };
+
+    noUiSlider.create(sliderElement, {
+      start: [0, 500.0],
+      connect: true,
+      format: formatForSlider,
+      range: {
+        min: 0.0,
+        max: 500.0,
+      },
+    });
+
+    let formatValues = [
+      document.getElementById(minId),
+      document.getElementById(maxId)
+    ];
+
+    sliderElement.noUiSlider.on("update", function (values, handle, unencoded) {
+      formatValues[0].innerHTML = "Price: " + "$" + values[0];
+      formatValues[1].innerHTML = "$" + values[1];
+    });
+  }
+}
+priceslider("slider-tooltips-1", "slider-margin-value-min-1", "slider-margin-value-max-1");
+priceslider("slider-tooltips-2", "slider-margin-value-min-2", "slider-margin-value-max-2");
+filter(); */
 #product-details {
   margin-top: 60px;
 }
@@ -4837,9 +4933,6 @@ a {
   .profile-view-box .profile-name-box .seller-profilebox .seller-id-details {
     align-items: center !important;
   }
-  .product-side-bar {
-    max-width: 300px !important;
-  }
   .modal1-footer {
     flex-direction: column;
   }
@@ -5636,6 +5729,26 @@ a {
     flex-direction: column !important;
     gap: 30px;
   }
+  #all-product .side-bar-none {
+    display: none !important;
+  }
+  #all-product .filter {
+    opacity: 1;
+    visibility: visible;
+  }
+  #all-product .product-slect {
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  #all-product .product-filter-modal {
+    top: 10%;
+    transform: translateY(-70%);
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 0px;
+    max-width: 760px !important;
+    width: 100%;
+  }
 }
 @media only screen and (min-width: 448px) and (max-width: 576px) {
   .sticky {
@@ -5667,9 +5780,6 @@ a {
   .product-content-box {
     justify-content: center;
     align-items: center;
-  }
-  .product-side-bar {
-    max-width: 300px !important;
   }
   .product-content-box {
     flex-direction: column;
@@ -6415,6 +6525,13 @@ a {
     flex-direction: column !important;
     gap: 30px;
   }
+  #all-product .side-bar-none {
+    display: none !important;
+  }
+  #all-product .filter {
+    opacity: 1;
+    visibility: visible;
+  }
 }
 @media only screen and (min-width: 577px) and (max-width: 768px) {
   .product-content-box {
@@ -6787,6 +6904,13 @@ a {
   }
   .support-box .user-box {
     flex-direction: column;
+  }
+  #all-product .side-bar-none {
+    display: none !important;
+  }
+  #all-product .filter {
+    opacity: 1;
+    visibility: visible;
   }
 }
 @media only screen and (min-width: 769px) and (max-width: 1024px) {

@@ -3,6 +3,23 @@ $(document).ready(function () {
     $("select").niceSelect();
 });
 
+
+// here degin filter modal-------------------------------------->
+let filter = function(){
+    let filterbox = document.getElementById('filter');
+    let filterShow= document.getElementById('show-Filter');
+    let filterOff = document.getElementById('filter-off')
+    filterShow.addEventListener('click', function () {
+       filterbox.classList.add('on-filter')
+       filterbox.classList.remove('filter-modal')
+    });
+    filterOff.addEventListener('click', function () {
+      filterbox.classList.remove('on-filter')
+      filterbox.classList.add('filter-modal')
+   });
+  }
+  filter();
+
 // header-top-options------------------------------->
 function selectBoxHandler(selector) {
     const countryTop = document.querySelector(`#${selector}`);
@@ -296,6 +313,7 @@ servicer_wrappers.forEach((item) => {
         servicer_wrappers[2].classList.add("is-active");
     });
 });
+
 
 // range slider----------------------------------------
 function priceslider() {
