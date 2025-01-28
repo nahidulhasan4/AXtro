@@ -84,13 +84,19 @@
             background-color: #0B0E13;
             border: 1px solid $button-color;
             color: $button-color;
-            
+            padding: 13px 30.8px !important;
             &:hover{
                 border: 1px solid $heading-white;
                 color: $heading-white;
             }
         }
+        .offerCard-btn{
+            padding: 13px 27.6px;
+        }
+      
     }
+
+
 
 }
 

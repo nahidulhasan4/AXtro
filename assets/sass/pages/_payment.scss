@@ -36,6 +36,12 @@
         grid-column-gap: 2rem;
         grid-row-gap: 2rem;
     }
+    .payment-method-selected{
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.3s linear;
+        left: 20px;
+    }
     .payment-card{
         padding: 14px 29px 15px 29px;
         background-color: $heading-white;
@@ -43,13 +49,29 @@
         border: 1px solid transparent;
         border-radius: 3px;
         transition: all 0.3s linear;
+        cursor: pointer;
         &:hover{
             border: 1px solid $button-color;
+            .payment-card-img{
+                transition: all 0.3s linear;
+                transform: translateX(19%);
+            }
+           
+            .payment-method-selected{
+                opacity: 1;
+                visibility: visible;
+                display: block;
+            }
         }
     }
     .payment-card-img{
         max-width: 111px;
     }
+}
+
+.payment-sccs{
+    opacity: 0;
+    visibility: hidden;
 }
 .payment-siderber{
     max-width: 370px;

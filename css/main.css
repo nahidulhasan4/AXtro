@@ -1185,6 +1185,17 @@ a {
   justify-content: end;
   gap: 14px;
   margin-bottom: 30px;
+  border: none;
+  outline: none;
+}
+#games .offer-card-head .nav-item {
+  background-color: none;
+}
+#games .offer-card-head .nav-item .active {
+  background-color: #45F882;
+  box-shadow: 7px 7px 20px 4px rgba(0, 0, 0, 0.0509803922);
+  color: #000000;
+  border: 1px solid #45F882;
 }
 #games .offer-card-head .offerCard-btn {
   padding: 15px 20px;
@@ -1200,12 +1211,6 @@ a {
   font-weight: 500;
   border-radius: 5px;
   transition: all 0.3s linear;
-}
-#games .offer-card-head .offerCard-btn:hover {
-  background-color: #45F882;
-  box-shadow: 7px 7px 20px 4px rgba(0, 0, 0, 0.0509803922);
-  color: #000000;
-  border: 1px solid #45F882;
 }
 #games .game-wepperBox {
   display: grid;
@@ -1289,6 +1294,16 @@ a {
   object-fit: cover;
   border-radius: 8px;
   aspect-ratio: 258px/501px;
+}
+
+.offerCard-btn .offercard-link,
+.return-btn .offercard-link {
+  color: #000000 !important;
+  transition: all 0.3s linear;
+}
+.offerCard-btn:hover .offercard-link,
+.return-btn:hover .offercard-link {
+  color: #FFFFFF !important;
 }
 
 #latestApp {
@@ -1751,7 +1766,7 @@ a {
   font-weight: 600;
 }
 #recommendtion .games-card .game-car-body .gameCard-btn-box {
-  padding-top: 23px;
+  padding-top: 17px;
 }
 #recommendtion .games-card .game-car-body .gameCard-sles {
   font-size: 16px;
@@ -3055,6 +3070,12 @@ filter(); */
   grid-column-gap: 2rem;
   grid-row-gap: 2rem;
 }
+.payment-waybox .payment-method-selected {
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s linear;
+  left: 20px;
+}
 .payment-waybox .payment-card {
   padding: 14px 29px 15px 29px;
   background-color: #FFFFFF;
@@ -3062,12 +3083,27 @@ filter(); */
   border: 1px solid transparent;
   border-radius: 3px;
   transition: all 0.3s linear;
+  cursor: pointer;
 }
 .payment-waybox .payment-card:hover {
   border: 1px solid #45F882;
 }
+.payment-waybox .payment-card:hover .payment-card-img {
+  transition: all 0.3s linear;
+  transform: translateX(19%);
+}
+.payment-waybox .payment-card:hover .payment-method-selected {
+  opacity: 1;
+  visibility: visible;
+  display: block;
+}
 .payment-waybox .payment-card-img {
   max-width: 111px;
+}
+
+.payment-sccs {
+  opacity: 0;
+  visibility: hidden;
 }
 
 .payment-siderber {
@@ -4027,7 +4063,7 @@ filter(); */
   border: 1px solid rgba(255, 255, 255, 0.1019607843);
 }
 .user-siderBar .user-menu .user-menu-active {
-  border-bottom: 1px solid #45F882;
+  border-bottom: 1px solid #45F882 !important;
 }
 .user-siderBar .user-menu .user-menu-active .user-items-link {
   color: #45F882 !important;
@@ -4413,10 +4449,14 @@ filter(); */
   background-color: #0B0E13;
   border: 1px solid #45F882;
   color: #45F882;
+  padding: 13px 30.8px !important;
 }
 .user-card .order-btn-box .oder-btn-one:hover {
   border: 1px solid #FFFFFF;
   color: #FFFFFF;
+}
+.user-card .order-btn-box .offerCard-btn {
+  padding: 13px 27.6px;
 }
 
 .user-order-info .user-box .user-content {

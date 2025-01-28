@@ -5,20 +5,22 @@ $(document).ready(function () {
 
 
 // here degin filter modal-------------------------------------->
-let filter = function(){
-    let filterbox = document.getElementById('filter');
-    let filterShow= document.getElementById('show-Filter');
-    let filterOff = document.getElementById('filter-off')
+let filter = function(filterId,filterShowBTn,filterOffBtn,offC){
+    let filterbox = document.getElementById(filterId);
+    let filterShow= document.getElementById(filterShowBTn);
+    let filterOff = document.getElementById(filterOffBtn);
+    let offClass = document.getElementsByClassName(offC);
     filterShow.addEventListener('click', function () {
        filterbox.classList.add('on-filter')
-       filterbox.classList.remove('filter-modal')
+       filterbox.classList.remove(offClass)
     });
     filterOff.addEventListener('click', function () {
       filterbox.classList.remove('on-filter')
-      filterbox.classList.add('filter-modal')
+      filterbox.classList.add(offClass)
    });
   }
-  filter();
+  filter('filter', 'show-Filter','filter-off', 'filter-modal');
+ 
 
 // header-top-options------------------------------->
 function selectBoxHandler(selector) {
