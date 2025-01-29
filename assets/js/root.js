@@ -320,10 +320,7 @@ function initializeModals() {
   modalContainer.appendChild(createModal('modal2'));
   modalContainer.appendChild(createModal('modal3'));
   modalContainer.appendChild(createModal('modal4'));
-  modalContainer.appendChild(createModal('modal5'));
-  modalContainer.appendChild(createModal('modal6')); 
-  modalContainer.appendChild(createModal('modal7'));
-  modalContainer.appendChild(createModal('modal8'));// Add more modals as needed
+  modalContainer.appendChild(createModal('modal5'));// Add more modals as needed
   
 
 

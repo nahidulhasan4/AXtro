@@ -5,21 +5,23 @@ $(document).ready(function () {
 
 
 // here degin filter modal-------------------------------------->
-let filter = function(filterId,filterShowBTn,filterOffBtn,offC){
+let modalRoot = function(filterId,filterShowBTn,filterOffBtn,){
     let filterbox = document.getElementById(filterId);
     let filterShow= document.getElementById(filterShowBTn);
     let filterOff = document.getElementById(filterOffBtn);
-    let offClass = document.getElementsByClassName(offC);
     filterShow.addEventListener('click', function () {
-       filterbox.classList.add('on-filter')
-       filterbox.classList.remove(offClass)
+       filterbox.classList.add('on-filter');
+       filterbox.classList.add('open')
+    //    filterbox.classList.remove(offClass);
     });
     filterOff.addEventListener('click', function () {
-      filterbox.classList.remove('on-filter')
-      filterbox.classList.add(offClass)
+      filterbox.classList.remove('on-filter');
+      filterbox.classList.remove('open')
+    // filterbox.classList.add(offClass)
    });
   }
-  filter('filter', 'show-Filter','filter-off', 'filter-modal');
+  modalRoot('filter', 'show-Filter','filter-off');
+  modalRoot('modal-1', 'showmodal-1','hideModal1');
  
 
 // header-top-options------------------------------->
