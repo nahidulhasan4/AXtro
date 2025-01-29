@@ -3051,6 +3051,9 @@ filter(); */
 .payment-input-box .modal1-body {
   gap: 31px;
 }
+.payment-input-box .modal1-input2 {
+  color: #FFFFFF;
+}
 
 .payment-waybox {
   border-radius: 8px;
