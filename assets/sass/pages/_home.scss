@@ -68,15 +68,12 @@
                            } 
                         }
                     &:hover { 
-                            background-color: $section-secoundry;
+                            color: $section-secoundry;
                             box-shadow: 7px 7px 20px 4px #0000000D;
-                            color: $heading-white;
+                            background-color: $heading-white;
                             border: 1px solid $heading-white;
                             
-                            span svg path { 
-                                transition: all 0.3s linear;
-                                fill: #FFFFFF; 
-                         } 
+                         
                     }
             }
             
@@ -137,15 +134,12 @@
                                } 
                             }
                         &:hover { 
-                                background-color: $section-secoundry;
+                               color: $section-secoundry;
                                 box-shadow: 7px 7px 20px 4px #0000000D;
-                                color: $heading-white;
+                                background-color: $heading-white;
                                 border: 1px solid $heading-white;
                                 
-                                span svg path { 
-                                    transition: all 0.3s linear;
-                                    fill: #FFFFFF; 
-                             } 
+                              
                         }
                 }
                 
@@ -255,16 +249,13 @@
             border-radius: 5px;
             border: 1px solid $button-color;
             transition: all 0.3s ease;
-            &:hover {
-                background-color: $section-secoundry;
+            &:hover { 
+                color: $section-secoundry !important;
                 border: 1px solid #F6F8FF;
                 box-shadow: 7px 7px 20px 4px #0000000D;
-                color: $heading-white;
+                background-color: $heading-white;
 
-                span svg path { 
-                    transition: all 0.3s linear;
-                    fill: #FFFFFF; 
-             } 
+                
             }
         }
     }
@@ -465,12 +456,7 @@
        
 
     }
-    &:hover{
-        .offercard-link{
-            color: $heading-white!important;
-        }
-       
-    }
+  
 }
 
 
@@ -515,15 +501,12 @@
             transition: all 0.3s linear;
 
             &:hover {
-                background-color: $section-secoundry;
+                color: $section-secoundry;
                 border: 1px solid #F6F8FF;
                 box-shadow: 7px 7px 20px 4px #0000000D;
-                color: $heading-white;
+                background-color: $heading-white;
 
-                span svg path { 
-                    transition: all 0.3s linear;
-                    fill: #FFFFFF; 
-             } 
+              
             }
         }
     }
@@ -712,15 +695,12 @@
             transition: all 0.3s ease;
 
             &:hover {
-                background-color: $section-secoundry;
+                color: $section-secoundry;
                 border: 1px solid #F6F8FF;
                 box-shadow: 7px 7px 20px 4px #0000000D;
-                color: $heading-white;
+                background-color: $heading-white;
 
-                span svg path { 
-                    transition: all 0.3s linear;
-                    fill: #FFFFFF; 
-             } 
+                
             }
         }
     }
@@ -939,15 +919,12 @@
             transition: all 0.3s linear;
 
             &:hover {
-                background-color: $section-secoundry;
+                color: $section-secoundry;
                 border: 1px solid #F6F8FF;
                 box-shadow: 7px 7px 20px 4px #0000000D;
-                color: $heading-white;
+                background-color: $heading-white;
 
-                span svg path { 
-                    transition: all 0.3s linear;
-                    fill: #FFFFFF; 
-             } 
+              
             }
         }
     }
@@ -1100,14 +1077,11 @@
                 transition: all 0.3s linear;
     
                 &:hover {
-                    background-color: $section-secoundry;
+                    color: $section-secoundry;
                     border: 1px solid #F6F8FF;
                     box-shadow: 7px 7px 20px 4px #0000000D;
-                    color: $heading-white;
-                    span svg path { 
-                        transition: all 0.3s linear;
-                        fill: #FFFFFF; 
-                 } 
+                    background-color: $heading-white;
+                   
                    
                 }
             }

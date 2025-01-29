@@ -111,6 +111,43 @@ new Swiper(".hero-swiper", {
     },
   },
 });
+// review silder
+new Swiper(".review-swiper", {
+  spaceBetween: 30,
+  slidesPerView: 3,
+  loop: true,
+  speed: 1000,
+  autoplay: {
+    delay: 2000,
+    disableOnInteraction: false,
+  },
+
+  pagination: {
+    el: ".swiper-pagination",
+    type: "bullets",
+  },
+
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+    },
+    375: {
+      slidesPerView: 1.5,
+      spaceBetween: 14,
+    },
+    640: {
+      slidesPerView: 2.5,
+    },
+
+    1024: {
+      slidesPerView: 3,
+    },
+    1260: {
+      slidesPerView: 3,
+      spaceBetween: 30,
+    },
+  },
+});
 
 // here add product details swiper js
 new Swiper(".product-siwper", {

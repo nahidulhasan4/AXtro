@@ -167,6 +167,22 @@
         grid-row-gap: 3rem;
      
      }
+     .swiper-pagination{
+        z-index: 22;
+        bottom: -6px;
+        .swiper-pagination-bullet{
+            background: #45f88169 !important;
+            margin: 8px !important;
+            z-index: 22;
+            cursor: pointer;
+        }
+        .swiper-pagination-bullet-active{
+            background: #45F882 !important;
+            outline: 1px solid #45F882;
+            outline-offset: 5px ;
+            z-index: 22;
+        }
+    }
    
 }
 .review-head{

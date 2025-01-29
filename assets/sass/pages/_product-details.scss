@@ -84,14 +84,14 @@
 .silder-card{
     max-width: 142px;
     width: 100%;
-    border: 2px solid #333333;
+    border: 2px solid #333333 !important;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     border-radius: 6px;
     padding: 3.34px;
-    background-color: $section-primary;
+    background-color: $section-primary !important;
     transition: all 0.3s linear;
     position: relative;
   
@@ -122,7 +122,7 @@
 
  }
  &:hover{
-    border: 2px solid #45F882;
+    border: 2px solid #45F882 !important;
     .hover-img{
         opacity: 1;
     }
@@ -148,7 +148,24 @@
         color: $heading-white;
     }
 }
-
+.nav,
+.nav-tabs{
+    border: none;
+}
+.nav-item{
+    background-color: none;
+    border: none;
+   
+    .nav-link{
+       
+    }
+    .active{
+        background-color: $button-color;
+        box-shadow: 7px 7px 20px 4px #0000000D;
+        color: $section-secoundry;
+        border: 1px solid $button-color;
+    }
+}
 
 
 .product-review{
@@ -192,6 +209,7 @@
     max-width: 370px;
     border-radius: 8px ;
     border: 1px solid #333333;
+    box-shadow: 0px 6px 60px 5px #00000014;
 
     .reviewcard-head{
         padding: 20px 20px 14px 20px;
@@ -329,15 +347,51 @@
 }
 
 // modal design here  essensial data
+
+#modal-container{
+    width: 100%;
+    height: 100%;
+    .modal-template{
+        width: 100%;
+        height: 100%;
+    }
+
+}
 .modal-main{
- opacity: 0;
- visibility: hidden;
- width: 100%;
- height: 100%;
+ 
+    opacity: 0;
+    visibility: hidden;
+    width: 100vmax;
+    height: 10vmax;
+    position: fixed;
+    inset: 0;
+    max-width: 100vw !important;
+    width: 100% !important;
+    max-height: 100dvh !important;
+    width: 100% !important;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+    z-index: 22;
+    top: 40%;
+
+ .anywhere-away{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.37);
+    max-width: 100vw;
+    width: 100%;
+    max-height: 100dvh;
+    width: 100%;;
+    cursor: pointer;
+}
 }
  .open{
    opacity: 1;
    visibility: visible; 
+ 
+ 
  }
 
 .modal1{
@@ -349,10 +403,7 @@
     height: fit-content;
     color: $heading-white;
     z-index: 22;
-    top: 50%;
-    transform: translateY(-50%);
-    left: 50%;
-    transform: translateX(-50%);
+   
     
     .modal1-body{
         gap: 30px;

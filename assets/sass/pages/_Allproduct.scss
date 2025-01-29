@@ -54,9 +54,9 @@
 
 
     &:hover {
-        background-color: $section-secoundry;
+        color: $section-secoundry;
         box-shadow: 7px 7px 20px 4px #0000000D;
-        color: $heading-white;
+        background-color: $heading-white;
         border: 1px solid $heading-white;
 
 
@@ -117,12 +117,14 @@
     max-width: 270px;
     width: 100% !important;
     border-radius: 8px;
+    box-shadow: 0px 6px 60px 5px #00000014;
+    
 
     .sideBar-pricebox {
         border-radius: 8px;
         width: 100%;
         background-color: $section-secoundry;
-
+        border: 1px solid #3C3E42;
         .sideber-ttile {
             font-size: 20px;
             line-height: 32px;
@@ -161,60 +163,7 @@
         }
     }
 
-    // .price-ringebox {
-    //     padding: 32px 20px;
-    //     .sidebar-range {
-    //         .price {
-    //             display: unset;
     
-    //             span {
-    //                 font-size: 1.6rem;
-    //                 color: #7555551a;
-               
-    //             }
-    //         }
-    
-    //         .slider-range {
-    //             height: 6px;
-    //             margin: 1.5rem 0;
-    //             border-radius: 30px;
-    //         }
-    
-    //         .noUi-target {
-    //             background: $button-color;
-    //             height: 5px;
-    //             border: none;
-    //             box-shadow: none;
-    //         }
-
-    //         .noUi-handle {
-    //             border-radius: 50%;
-    //             height: 1.6rem;
-    //             width: 1.6rem;
-    //             right: -1.4rem;
-    //             border: 3px solid $section-secoundry;
-    //             background: $heading-white;
-    
-    //             &::before {
-    //                 display: none;
-    //             }
-    
-    //             &::after {
-    //                 display: none;
-    //             }
-    //         }
-    
-    //         .noUi-connect {
-    //             background: red;
-    //         }
-    
-    //         .example-val {
-    //             font-size: 2rem;
-                
-    //         }
-    //     }
-      
-    // }
 }
 
 .price-review {
@@ -223,7 +172,7 @@
     gap: 15px;
     padding: 0 20px;
     padding-bottom: 32px;
-
+ 
     .review-iconBox {
         gap: 17px;
 

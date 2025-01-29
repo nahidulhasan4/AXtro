@@ -148,7 +148,7 @@
                     <div class="header-nav-section">
                         <div class="header-navigation ">
                             <div class="header-logo">
-                                <a href="#">
+                                <a href="./index.html">
                                     <img src="./assets/img/logo/Logo.png" alt="logo" />
                                 </a>
                             </div>
@@ -189,7 +189,7 @@
                                             fill="#121313" />
                                     </svg>
                                 </a></li>
-                            <li class="header-cart-items"><a href="./seller-profile.html" class="cart-link"> <svg width="46" height="46"
+                            <li class="header-cart-items"><a href="./user-profile.html" class="cart-link"> <svg width="46" height="46"
                                         viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <ellipse cx="23.0013" cy="28.9582" rx="7.58333" ry="3.79167" stroke="white"
                                             stroke-width="1.5" stroke-linejoin="round" />
@@ -528,7 +528,7 @@
                     </span>
                 </div>                  
              </div>              
-                 <button class="offerCard-btn mb-20 showModal"  >Save</button>
+                 <button class="offerCard-btn mb-20 showModal" data-target="modal6" >Save</button>
                 </form>
                
             </div>
@@ -546,10 +546,6 @@
   <template id="modal-template">
       <div class="modal-main">
           <div class="anywhere-away "></div>
-          <div class="modal1 position-absolute">
-              <div class="modal1-head d-flex align-items-center justify-content-between">
-                  <h2 class="input-name">Easy way to Buy</h2>
-              </div>
               <div class="succes-modal position-absolute">
                 <div class="success-modal-content">
                   <div class="succes-modal-imgbox d-flex flex-column align-items-center position-relative">
@@ -577,21 +573,9 @@
               
                 
               </div>
-              <div class="counter-increment d-none align-items-center gap-3">
-                <button class="minus">
-                  <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <line x1="6.3" y1="11.7" x2="17.7" y2="11.7" stroke="#636973" stroke-width="1.6" stroke-linecap="round"/>
-                  </svg>
-                </button>
-                <div class="counter-display">0</div>
-                <button class="plus">
-                  <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M6 11.6875C5.6203 11.6875 5.3125 11.3797 5.3125 11C5.3125 10.6203 5.6203 10.3125 6 10.3125L10.8125 10.3125L10.8125 5.5C10.8125 5.1203 11.1203 4.8125 11.5 4.8125C11.8797 4.8125 12.1875 5.1203 12.1875 5.5L12.1875 10.3125L17 10.3125C17.3797 10.3125 17.6875 10.6203 17.6875 11C17.6875 11.3797 17.3797 11.6875 17 11.6875L12.1875 11.6875L12.1875 16.5C12.1875 16.8797 11.8797 17.1875 11.5 17.1875C11.1203 17.1875 10.8125 16.8797 10.8125 16.5L10.8125 11.6875L6 11.6875Z" fill="#45F882"/>
-                  </svg>
-                </button> 
-              </div>
+           
              
-          </div>
+        
       </div>
   </template>
 </div>
