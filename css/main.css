@@ -4554,6 +4554,7 @@ filter(); */
   font-weight: 600;
   line-height: 26px;
   border-radius: 5px;
+  color: #FFFFFF !important;
 }
 .user-order-info .user-box .user-content .upload-file {
   padding: 10px;
