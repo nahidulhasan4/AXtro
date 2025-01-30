@@ -388,55 +388,187 @@
 
 
         <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions">
-            <div class="offcanvas-header">
+            <div class="offcanvas-header d-flex flex-column">
+               <div class="d-flex w-100 align-items-center justify-content-between">
                 <a href="#" class="mobile-logo">
                     <img src="./assets/img/logo/Logo.png" alt="logo" />
                 </a>
 
-                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close">
+                <button  class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close">
                     <i class="fa-solid fa-xmark"></i>
                 </button>
+               </div>
+                <div class="header-search-input d-flex align-items-center w-100 mt-20">
+                    <input type="text" class="header-search-box" name=""
+                        placeholder="Search your products...">
+                        <a href="./allproduct.html" class="mobile-search-logo">
+                            <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg" ><path d="M0 8.83158C0.0484783 8.43809 0.0969566 8.04461 0.169674 7.67571C0.484783 5.92962 1.2362 4.42946 2.39968 3.12604C3.75707 1.60128 5.45381 0.592971 7.44142 0.199486C9.76838 -0.267779 11.9741 0.0765214 14.0345 1.33076C16.3614 2.75714 17.84 4.82294 18.3975 7.50356C18.8823 9.7907 18.5187 11.9795 17.4037 14.0453C17.1856 14.4388 17.1856 14.4388 17.5007 14.7585C19.1247 16.4062 20.7487 18.0539 22.3727 19.7016C22.906 20.2427 23.1242 20.8575 22.9302 21.5953C22.5667 22.9971 20.8457 23.5135 19.7549 22.3822C18.8338 21.4231 17.9127 20.5132 16.9674 19.5541C16.216 18.7917 15.4888 18.0539 14.7374 17.2915C14.6889 17.2423 14.6404 17.1932 14.6162 17.1686C14.0345 17.4637 13.5012 17.808 12.9195 18.0539C10.4228 19.1114 7.90196 19.0868 5.42957 17.9555C3.56316 17.0948 2.15728 15.7422 1.16348 13.9469C0.533261 12.791 0.145435 11.5614 0.0484783 10.2334C0.0484783 10.1596 0.0242392 10.0858 0 10.012C0 9.64314 0 9.22507 0 8.83158ZM3.00566 9.4464C3.00566 12.9632 5.84164 15.816 9.30784 15.816C12.774 15.7914 15.5615 12.9632 15.5858 9.4464C15.5858 5.95422 12.7498 3.07685 9.30784 3.07685C5.8174 3.07685 3.00566 5.92962 3.00566 9.4464Z" fill="black"></path></svg>
+                        </a>
+                   </div>
             </div>
             <div class="offcanvas-body">
                 <div class="mobile-menu-section">
-                    <h4 class="title">Menu</h4>
-
-                    <ul class="header-menu header-list">
-                        <li class="nav-list">
-                            <a href="#" class="list-item">
-                                <span class="list-text">Home</span>
-                            </a>
-
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                          <button class="nav-link active " id="gift-tab" data-bs-toggle="tab" data-bs-target="#Gift" type="button" role="tab" aria-controls="home" aria-selected="true"> <h4 class="title">Categories</h4></button>
                         </li>
-                        <li class="nav-list">
-                            <a href="./allproduct.html" class="list-item">
-                                <span class="list-text">Shop</span>
-                            </a>
+                        <li class="nav-item line" role="presentation"></li>
+                        <li class="nav-item" role="presentation">
+                          <button class="nav-link" id="menu-tab" data-bs-toggle="tab" data-bs-target="#Menu" type="button" role="tab" aria-controls="profile" aria-selected="false">  <h4 class="title"> Mian Menu</h4></button>
                         </li>
-                        <li class="nav-list">
-                            <a href="./about-us.html" class="list-item">
-                                <span class="list-text">About</span>
-                            </a>
-                        </li>
-                       
-                        <li class="nav-list">
-                            <a href="./all-blog.html" class="list-item">
-                                <span class="list-text">Blog</span>
-                            </a>
-
-                        </li>
-                        <li class="nav-list">
-                            <a href="./allproduct.html" class="list-item">
-                                <span class="list-text">Product</span>
-                            </a>
-                        </li>
-                        <li class="nav-list">
-                            <a href="#" class="list-item">
-                                <span class="list-text">Contact</span>
-                            </a>
-                        </li>
+                     
+                      </ul>
+                      <div class="tab-content w-100 mt-30 mb-30" id="myTabContent">
+                        <div class="tab-pane fade show active" id="Gift" role="tabpanel" aria-labelledby="gift-tab"> 
+                       <div class="d-block">
+                        <ul class="drop-dwonMenu d-flex flex-column align-items-start  w-100" >
+                             
+                            <li class="gift-cardbox">
+                                <a class="drop-link d-flex justify-content-between" href="./allproduct.html">
+                                <span >
+                                    <img class="drop-img" src="./assets/img/logo/category-2024-08-11-10-19-40-7687.png" alt=""  srcset="">
+                                </span>
+                                <div class="drop-items w-80 d-flex align-items-center justify-content-between color-white gap-2">
+                                    action
+                                    <span> 
+                                        <svg width="6" height="9" viewBox="0 0 6 9" fill="white" xmlns="http://www.w3.org/2000/svg" class="fill-current rtl:rotate-180"><rect x="1.49805" y="0.818359" width="5.78538" height="1.28564" transform="rotate(45 1.49805 0.818359)"></rect><rect x="5.58984" y="4.90918" width="5.78538" height="1.28564" transform="rotate(135 5.58984 4.90918)"></rect></svg> 
+                                    </span>
+                                </div>
+                               
+                               </a>
+                            </li>
+                            <li class="gift-cardbox">
+                                <a class="drop-link d-flex justify-content-between" href="./allproduct.html">
+                                <span >
+                                   <img class="drop-img" src="./assets/img/logo/category-2024-08-11-10-21-30-8214.png" alt="" srcset="">
+                                </span>
+                                <div class="drop-items d-flex align-items-center justify-content-between color-white">
+                                    Gift card
+                                    <span> 
+                                        <svg width="6" height="9" viewBox="0 0 6 9" fill="white" xmlns="http://www.w3.org/2000/svg" class="fill-current rtl:rotate-180"><rect x="1.49805" y="0.818359" width="5.78538" height="1.28564" transform="rotate(45 1.49805 0.818359)"></rect><rect x="5.58984" y="4.90918" width="5.78538" height="1.28564" transform="rotate(135 5.58984 4.90918)"></rect></svg> 
+                                    </span>
+                                </div>
+                               
+                               </a>
+                            </li>
+                            <li class="gift-cardbox">
+                                <a class="drop-link d-flex justify-content-between" href="./allproduct.html">
+                                <span >
+                                    <img class="drop-img" src="./assets/img/logo/category-2024-08-11-10-19-40-7687.png" alt=""  srcset="">
+                                </span>
+                                <div class="drop-items d-flex align-items-center justify-content-between color-white">
+                                    action
+                                    <span> 
+                                        <svg width="6" height="9" viewBox="0 0 6 9" fill="white" xmlns="http://www.w3.org/2000/svg" class="fill-current rtl:rotate-180"><rect x="1.49805" y="0.818359" width="5.78538" height="1.28564" transform="rotate(45 1.49805 0.818359)"></rect><rect x="5.58984" y="4.90918" width="5.78538" height="1.28564" transform="rotate(135 5.58984 4.90918)"></rect></svg> 
+                                    </span>
+                                </div>
+                               
+                               </a>
+                            </li>
+                           
+                        
                     </ul>
+                       </div>
+                        </div>
+                        <div class="tab-pane fade" id="Menu" role="tabpanel" aria-labelledby="profile-tab">
+                            <ul class="header-menu d-flex header-list">
+                                <li class="nav-list">
+                                    <a href="./allproduct.html" class="list-item">
+                                        <span class="list-text">Shop</span>
+                                    </a>
+                                </li>
+                                <li class="nav-list">
+                                    <a href="./about-us.html" class="list-item">
+                                        <span class="list-text">About</span>
+                                    </a>
+                                </li>
+                               
+                                <li class="nav-list">
+                                    <a href="./all-blog.html" class="list-item">
+                                        <span class="list-text">Blog</span>
+                                    </a>
+    
+                                </li>
+                               
+                                <li class="nav-list">
+                                    <a href="./Contact-Us.html" class="list-item">
+                                        <span class="list-text">Contact</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                       
+                        </div>
+
+                        
                 </div>
+              <div class="short-selactor w-100 d-flex align-items-center justify-content-start ">
+                <ul class="header-list">
+                    <li id="allsec" class="price-box position-relative">
+                        <a href="#" class="list-item price-money" >
+                            <span class="list-text">$-USD</span>
+                            <span class="list-icon">
+                                <svg width="12" height="6" viewBox="0 0 12 6" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M12 0.633816C11.9468 0.446997 11.8569 0.28353 11.6806 0.158011C11.3811 -0.0492418 10.9485 -0.0550799 10.649 0.155092C10.5925 0.195958 10.5359 0.239744 10.4826 0.286449C9.02519 1.56499 7.5644 2.84645 6.10694 4.125C6.07367 4.15419 6.04705 4.18922 5.96719 4.24176C5.94389 4.20673 5.93059 4.16294 5.89731 4.13375C4.42654 2.84062 2.95245 1.5504 1.48168 0.257257C1.22213 0.0295716 0.922652 -0.0579998 0.563279 0.0412478C0.0408573 0.1872 -0.172104 0.776848 0.157321 1.16216C0.193924 1.20595 0.237182 1.24681 0.280439 1.28768C1.97748 2.7764 3.67119 4.26511 5.36823 5.75091C5.67769 6.02238 6.07034 6.07492 6.42639 5.89394C6.5129 5.85015 6.58944 5.78594 6.65931 5.72464C8.30644 4.27971 9.95024 2.83478 11.6007 1.39277C11.7837 1.23222 11.9468 1.06875 12 0.838149C12 0.771011 12 0.703873 12 0.633816Z"
+                                        fill="white" />
+                                </svg>
+                            </span>
+                        </a>
+                        <div class="slectbox-body position-absolute w-100" >
+                            <div class="clickAway position-fixed" ></div>
+                            <ul class="country-options">
+                               
+                                <li class="all-option">
+                                    <span class="option-text list-text">৳-BDT</span>
+                                </li>
+                                <li class="all-option">
+                                    <span class="option-text list-text">₹-INR</span>
+                                </li>
+                                <li class="all-option">
+                                    <span class="option-text list-text">₦-NGN</span>
+                                </li>
+                                <li class="all-option">
+                                    <span class="option-text list-text">₱ - PHP</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li id="allsec" class="price-box-two position-relative">
+                        <a href="#" class="list-item price-money" >
+                            <span class="list-text">Eng</span>
+                            <span class="list-icon">
+                                <svg width="12" height="6" viewBox="0 0 12 6" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M12 0.633816C11.9468 0.446997 11.8569 0.28353 11.6806 0.158011C11.3811 -0.0492418 10.9485 -0.0550799 10.649 0.155092C10.5925 0.195958 10.5359 0.239744 10.4826 0.286449C9.02519 1.56499 7.5644 2.84645 6.10694 4.125C6.07367 4.15419 6.04705 4.18922 5.96719 4.24176C5.94389 4.20673 5.93059 4.16294 5.89731 4.13375C4.42654 2.84062 2.95245 1.5504 1.48168 0.257257C1.22213 0.0295716 0.922652 -0.0579998 0.563279 0.0412478C0.0408573 0.1872 -0.172104 0.776848 0.157321 1.16216C0.193924 1.20595 0.237182 1.24681 0.280439 1.28768C1.97748 2.7764 3.67119 4.26511 5.36823 5.75091C5.67769 6.02238 6.07034 6.07492 6.42639 5.89394C6.5129 5.85015 6.58944 5.78594 6.65931 5.72464C8.30644 4.27971 9.95024 2.83478 11.6007 1.39277C11.7837 1.23222 11.9468 1.06875 12 0.838149C12 0.771011 12 0.703873 12 0.633816Z"
+                                        fill="white" />
+                                </svg>
+                            </span>
+                        </a>
+                        <div class="slectbox-body-two position-absolute w-100" >
+                            <div class="clickAway position-fixed" ></div>
+                            <ul class="country-options">
+                                <li class="all-option">
+                                    <span class="option-text list-text">Bangla</span>
+                                </li>
+                                <li class="all-option">
+                                    <span class="option-text list-text">Hindi</span>
+                                </li>
+                                <li class="all-option">
+                                    <span class="option-text list-text">Arabic</span>
+                                </li>
+                               
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+              </div>  
+                      
+                 
+            </div>
+      
             </div>
         </div>
     </nav>
@@ -665,8 +797,8 @@
       <template id="modal-template">
           <div class="modal-main">
               <div class="anywhere-away  "></div>
-          <div id="modal8">
-            <div class="succes-modal logout-modal position-absolute ">
+       
+            <div class="succes-modal logout-modal">
                 <div class="success-modal-content">
                   <div class="succes-modal-imgbox d-flex flex-column align-items-center position-relative">
                     <img class="sucess-img" src="./assets/img/logo/logout.png" alt="" srcset="">
@@ -693,7 +825,7 @@
               
                 
               </div>
-          </div>
+          
                
                 
                  
@@ -706,7 +838,7 @@
                 <div class="anywhere-away "></div>
                  
                  <div id="modal6">
-                    <div class="succes-modal position-absolute">
+                    <div class="succes-modal">
                         <div class="success-modal-content">
                           <div class="succes-modal-imgbox d-flex flex-column align-items-center position-relative">
                             <img class="sucess-img" src="./assets/img/product/Group 1000006679.png" alt="" srcset="">
