@@ -35,9 +35,14 @@ new Swiper(".product-siwper", {
 	},
 });
 
+let myName = "nahid";
+let lastName = "Hasan";
 
+addName =function( ) {
+la
+};
 
-
+(() =>(myName + lastName))()
 
 
 
