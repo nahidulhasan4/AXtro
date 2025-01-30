@@ -157,9 +157,14 @@
         }
     }
     .swiper-pagination{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
         .swiper-pagination-bullet{
             background: #FFFFFF !important;
             margin: 8px !important;
+            padding: 4px !important;
         }
         .swiper-pagination-bullet-active{
             background: #FFFFFF !important;
@@ -296,6 +301,22 @@
         grid-row-gap: 3rem;
 
     }
+    .offer-card{
+        max-width: 370px;
+        width: 100%;
+        overflow: hidden;
+        .offer-img{
+            width: 100%;
+            aspect-ratio: 370px/180px;
+            object-fit: cover;
+            transition: all 0.3s ease-in-out;
+        }
+        &:hover{
+            .offer-img{
+                transform: scale(1.1) !important; 
+            }
+        }
+    }
 }
 
 // here start games section
@@ -363,8 +384,9 @@
         gap: 1.6rem;
         .game-card-head{
             
-            width: 160px;
-            aspect-ratio: 160px/125px;
+            width: 160px;  
+            width: 100%;
+            overflow: hidden;
 
             .games-watch-icon{
                 padding: 5px;
@@ -373,13 +395,16 @@
                 border-radius: 50%;
                 background-color: $heading-white;
                 cursor: pointer;
+                z-index: 11;
               
             }
             .games-img{
                 width: 100%;
+                aspect-ratio: 160px/125px;
                 height: auto;
                 object-fit: cover;
                 border-radius: 6px;
+                transition: all 0.3s ease-in-out;
             }
         }
         .game-car-body{
@@ -420,6 +445,11 @@
                 font-weight: 500;
                 gap: 5px;
                 color: $heading-white;
+            }
+        }
+        &:hover{
+            .games-img{
+            transform: scale(1.2) !important;
             }
         }
     }
@@ -555,9 +585,10 @@
         border: 1px solid #3C3E42;
         border-radius: 6px;
         gap: 1.6rem;
+        
         .game-card-head{
             
-           
+           overflow: hidden;
 
             .games-watch-icon{
                 padding: 5px;
@@ -573,6 +604,7 @@
                 height: auto;
                 object-fit: cover;
                 border-radius: 6px;
+                transition: all 0.3s ease-in-out;
             }
         }
         .game-car-body{
@@ -611,6 +643,11 @@
                 font-weight: 500;
                 gap: 5px;
                 color: $heading-white;
+            }
+        }
+        &:hover{
+            .games-img{
+            transform: scale(1.2) !important;
             }
         }
     }
@@ -798,7 +835,7 @@
         gap: 1.6rem;
         .game-card-head{
             
-           
+           overflow: hidden;
 
             .games-watch-icon{
                 padding: 5px;
@@ -807,12 +844,14 @@
                 border-radius: 50%;
                 background-color: $heading-white;
                 cursor: pointer;
+                z-index: 11;
               
             }
             .games-img{
               
                 height: auto;
                 object-fit: cover;
+                transition: all 0.3s ease-in-out;
                 
             }
         }
@@ -852,6 +891,11 @@
                 font-weight: 500;
                 gap: 5px;
                 color: $heading-white;
+            }
+        }
+        &:hover{
+            .games-img{
+            transform: scale(1.2) !important;
             }
         }
     }

@@ -1192,9 +1192,16 @@ a {
   width: 100%;
   aspect-ratio: 429px/434px;
 }
+#hero .swiper-pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
 #hero .swiper-pagination .swiper-pagination-bullet {
   background: #FFFFFF !important;
   margin: 8px !important;
+  padding: 4px !important;
 }
 #hero .swiper-pagination .swiper-pagination-bullet-active {
   background: #FFFFFF !important;
@@ -1306,6 +1313,20 @@ a {
   grid-column-gap: 3rem;
   grid-row-gap: 3rem;
 }
+#offer-Card .offer-card {
+  max-width: 370px;
+  width: 100%;
+  overflow: hidden;
+}
+#offer-Card .offer-card .offer-img {
+  width: 100%;
+  aspect-ratio: 370px/180px;
+  object-fit: cover;
+  transition: all 0.3s ease-in-out;
+}
+#offer-Card .offer-card:hover .offer-img {
+  transform: scale(1.1) !important;
+}
 
 #games {
   margin-bottom: 48px;
@@ -1358,7 +1379,8 @@ a {
 }
 #games .games-card .game-card-head {
   width: 160px;
-  aspect-ratio: 160px/125px;
+  width: 100%;
+  overflow: hidden;
 }
 #games .games-card .game-card-head .games-watch-icon {
   padding: 5px;
@@ -1367,12 +1389,15 @@ a {
   border-radius: 50%;
   background-color: #FFFFFF;
   cursor: pointer;
+  z-index: 11;
 }
 #games .games-card .game-card-head .games-img {
   width: 100%;
+  aspect-ratio: 160px/125px;
   height: auto;
   object-fit: cover;
   border-radius: 6px;
+  transition: all 0.3s ease-in-out;
 }
 #games .games-card .game-car-body {
   max-width: 220px;
@@ -1407,6 +1432,9 @@ a {
   font-weight: 500;
   gap: 5px;
   color: #FFFFFF;
+}
+#games .games-card:hover .games-img {
+  transform: scale(1.2) !important;
 }
 #games .Games-wepper {
   gap: 3rem;
@@ -1513,6 +1541,9 @@ a {
   border-radius: 6px;
   gap: 1.6rem;
 }
+#latestApp .games-card .game-card-head {
+  overflow: hidden;
+}
 #latestApp .games-card .game-card-head .games-watch-icon {
   padding: 5px;
   top: 5px;
@@ -1525,6 +1556,7 @@ a {
   height: auto;
   object-fit: cover;
   border-radius: 6px;
+  transition: all 0.3s ease-in-out;
 }
 #latestApp .games-card .game-car-body {
   max-width: 220px;
@@ -1559,6 +1591,9 @@ a {
   font-weight: 500;
   gap: 5px;
   color: #FFFFFF;
+}
+#latestApp .games-card:hover .games-img {
+  transform: scale(1.2) !important;
 }
 #latestApp .btn-pav {
   padding: 14px 11px;
@@ -1718,6 +1753,9 @@ a {
   border-radius: 6px;
   gap: 1.6rem;
 }
+.games-card .game-card-head {
+  overflow: hidden;
+}
 .games-card .game-card-head .games-watch-icon {
   padding: 5px;
   top: 5px;
@@ -1725,10 +1763,12 @@ a {
   border-radius: 50%;
   background-color: #FFFFFF;
   cursor: pointer;
+  z-index: 11;
 }
 .games-card .game-card-head .games-img {
   height: auto;
   object-fit: cover;
+  transition: all 0.3s ease-in-out;
 }
 .games-card .game-car-body {
   max-width: 220px;
@@ -1763,6 +1803,9 @@ a {
   font-weight: 500;
   gap: 5px;
   color: #FFFFFF;
+}
+.games-card:hover .games-img {
+  transform: scale(1.2) !important;
 }
 
 #counter {
