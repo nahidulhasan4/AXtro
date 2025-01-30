@@ -235,11 +235,19 @@
                   font-weight: 400;
                   line-height: 26px;  
                   transition: all 0.3s linear;
+                  svg g path{
+                    transition: all 0.3s linear;
+                    fill: #45F882;
+                  }
+
 
                 }
                 &:hover{
                     .media-link{
                         color: $button-color;
+                        svg g path {
+                            fill: $heading-white;
+                          }
                     }
 
                 }
@@ -386,7 +394,12 @@
     
 }
 
+.name-input{
+    &:hover{
+        border: 1px solid $button-color !important;
+    }
 
+}
 
 
 

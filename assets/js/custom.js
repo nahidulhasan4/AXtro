@@ -22,6 +22,7 @@ let modalRoot = function(filterId,filterShowBTn,filterOffBtn,){
   }
   modalRoot('filter', 'show-Filter','filter-off');
   modalRoot('modal-1', 'showmodal-1','hideModal1');
+  modalRoot('modal-2', 'showmodal-2','hideModal2');
  
 
 // header-top-options------------------------------->

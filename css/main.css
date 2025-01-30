@@ -207,6 +207,14 @@ button {
   transform: rotate(45deg);
 }
 
+textarea {
+  border: 1px solid rgba(255, 255, 255, 0.1019607843);
+  outline: none !important;
+}
+textarea:hover {
+  border: 1px solid #45F882 !important;
+}
+
 @media (max-width: 1600px) {
   .container {
     padding: 0 1rem;
@@ -306,7 +314,7 @@ a {
 }
 
 .pb-40 {
-  padding-bottom: 40px;
+  padding-bottom: 40px !important;
 }
 
 .p-24 {
@@ -379,6 +387,43 @@ a {
 
 .btn-color {
   color: #45F882;
+}
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed;
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+.modal-content {
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .header {
@@ -3238,10 +3283,6 @@ filter(); */
 }
 
 .succes-modal {
-  top: 20%;
-  transform: translateY(-80%);
-  left: 50%;
-  transform: translateX(-50%);
   background-color: #000000;
   max-width: 600px;
   width: 100%;
@@ -3600,8 +3641,15 @@ filter(); */
   line-height: 26px;
   transition: all 0.3s linear;
 }
+#blog-Details .blog-tag-shareBox .share-box .media-box .media-items .media-link svg g path {
+  transition: all 0.3s linear;
+  fill: #45F882;
+}
 #blog-Details .blog-tag-shareBox .share-box .media-box .media-items:hover .media-link {
   color: #45F882;
+}
+#blog-Details .blog-tag-shareBox .share-box .media-box .media-items:hover .media-link svg g path {
+  fill: #FFFFFF;
 }
 #blog-Details .comment-box .coment-card-box {
   gap: 22px;
@@ -3723,6 +3771,10 @@ filter(); */
   border-radius: 5px;
   color: #B9B9B9;
   background-color: #0B0E13;
+}
+
+.name-input:hover {
+  border: 1px solid #45F882 !important;
 }
 
 .color-button {
@@ -4678,14 +4730,16 @@ filter(); */
   border: 1px solid #45F882;
 }
 .support-box .user-content .content-btn-box .open-teket:hover {
-  background-color: #45F882;
+  background-color: #FFFFFF;
   border: 1px solid #FFFFFF;
-  color: #FFFFFF;
 }
 .support-box .user-content .content-btn-box .open-teket:hover svg path {
-  fill: #FFFFFF;
-  stroke: #FFFFFF;
+  fill: #000000 !important;
+  stroke: #000000 !important;
   transition: all 0.3s linear;
+}
+.support-box .user-content .content-btn-box .open-teket .offercard-link {
+  color: #000000 !important;
 }
 .support-box .user-content .order-title {
   font-size: 24px;
@@ -4775,13 +4829,12 @@ filter(); */
   border: 1px solid #45F882;
 }
 .open-teket:hover {
-  background-color: #45F882;
+  background-color: #FFFFFF;
   border: 1px solid #FFFFFF;
-  color: #FFFFFF;
 }
 .open-teket:hover svg path {
-  fill: #FFFFFF;
-  stroke: #FFFFFF;
+  fill: #000000 !important;
+  stroke: #000000 !important;
   transition: all 0.3s linear;
 }
 

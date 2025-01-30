@@ -136,6 +136,13 @@ button {
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
   }
+  textarea{
+    border: 1px solid rgba(255, 255, 255, 0.1019607843);
+    outline: none !important;
+    &:hover{
+      border: 1px solid $button-color !important;
+    }
+  }
 
 
 @media #{$pc-xl} {

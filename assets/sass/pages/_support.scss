@@ -16,13 +16,16 @@
                 border: 1px solid $button-color;
                 &:hover{
                     svg path{
-                        fill: $heading-white;
-                        stroke: $heading-white;
+                        fill: $section-secoundry !important;
+                        stroke: $section-secoundry !important;
                         transition: all 0.3s linear;
                     }
-                    background-color: $button-color;
+                    background-color: $heading-white;
                     border: 1px solid $heading-white;
-                    color: $heading-white;
+                   
+                }
+                .offercard-link{
+                    color: #000000 !important;
                 }
             }
            
@@ -121,13 +124,12 @@
     border: 1px solid $button-color;
     &:hover{
         svg path{
-            fill: $heading-white;
-            stroke: $heading-white;
+            fill: $section-secoundry !important;
+            stroke: $section-secoundry !important;
             transition: all 0.3s linear;
         }
-        background-color: $button-color;
+        background-color: $heading-white;
         border: 1px solid $heading-white;
-        color: $heading-white;
     }
 }
 // here design suporrt tiket modal
