@@ -1383,7 +1383,7 @@ a {
   gap: 1.6rem;
 }
 #games .games-card .game-card-head {
-  width: 160px;
+  max-width: 160px;
   width: 100%;
   overflow: hidden;
 }
