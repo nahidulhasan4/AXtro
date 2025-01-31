@@ -145,7 +145,12 @@
 }
 }
 
+.nav-link .active{
+  .title{
+    color: $button-color;
+  }
 
+}
 // header-nav---------->
 .header-nav {
   // border: 1px solid rgba($color: $color-white, $alpha: 0.1);

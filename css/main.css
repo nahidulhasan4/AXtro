@@ -559,6 +559,10 @@ a {
   opacity: 1;
 }
 
+.nav-link .active .title {
+  color: #45F882;
+}
+
 .header-nav {
   padding: 1.7rem 0;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1019607843);
