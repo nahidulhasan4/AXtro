@@ -559,8 +559,8 @@ a {
   opacity: 1;
 }
 
-.nav-link .active .title {
-  color: #45F882;
+.active .title {
+  color: #45F882 !important;
 }
 
 .header-nav {
