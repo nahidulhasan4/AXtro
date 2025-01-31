@@ -912,10 +912,16 @@ flex-direction: column;
          }
          .review-cardbox{
             margin-top: 20px;
-            display: grid;
-            grid-template-columns: repeat(1, minmax(129px, 1fr));
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            align-items: center;
+            justify-content: center;
+            .review-card {
+                max-width: 500px !important;
+
+            }
           
-            grid-row-gap: 3rem;
          
          }
     }
@@ -996,6 +1002,10 @@ flex-direction: column;
             grid-column-gap: 3rem;
             grid-row-gap: 3rem;
          
+         }
+         .review-card {
+            max-width: 500px !important;
+
          }
          .review-head{
            
@@ -2055,10 +2065,16 @@ flex-direction: column;
          }
          .review-cardbox{
             margin-top: 20px;
-            display: grid;
-            grid-template-columns: repeat(1, minmax(129px, 1fr));
-          
-            grid-row-gap: 3rem;
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            align-items: center;
+            justify-content: center;
+            .review-card {
+                max-width: 500px !important;
+    
+             }
          
          }
     }
