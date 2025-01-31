@@ -246,12 +246,12 @@ function priceslider(sliderId, minId, maxId) {
     };
 
     noUiSlider.create(sliderElement, {
-      start: [0, 500.0],
+      start: [0, 100.0],
       connect: true,
       format: formatForSlider,
       range: {
         min: 0.0,
-        max: 500.0,
+        max: 100.0,
       },
     });
 
