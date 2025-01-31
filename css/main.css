@@ -4176,7 +4176,8 @@ filter(); */
   border: 1px solid transparent;
 }
 #beCame-seller .became-seller-box .vendor-box .offerCard-btn:hover {
-  background-color: #f5a002;
+  background-color: #FFFFFF;
+  color: #000000;
 }
 
 #review {

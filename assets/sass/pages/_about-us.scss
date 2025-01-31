@@ -148,7 +148,8 @@
                 transition: all 0.3s linear;
                border: 1px solid transparent;
                &:hover{
-                background-color: #f5a002;
+                background-color: $heading-white;
+                color: $section-secoundry;
 
                }
             }
