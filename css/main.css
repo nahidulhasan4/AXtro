@@ -592,6 +592,7 @@ a {
   padding-top: 13px;
   padding-bottom: 13px;
   font-size: 14px;
+  color: #FFFFFF;
   font-weight: 500;
 }
 .header-nav .header-search-input .search-btn {
@@ -3595,12 +3596,16 @@ filter(); */
 }
 .blog-card .blog-card-head {
   padding: 12px;
-  padding-bottom: 0;
 }
-.blog-card .blog-card-head .blog-img {
+.blog-card .blog-card-head .img-div {
   max-width: 342px;
+  overflow: hidden;
+}
+.blog-card .blog-card-head .img-div .blog-img {
+  max-width: 100%;
   aspect-ratio: 342px/248px;
   object-fit: cover;
+  transition: all 0.3s ease-in-out;
 }
 .blog-card .blog-card-head .blog-date {
   padding: 9px 15px;
@@ -3610,8 +3615,9 @@ filter(); */
   font-weight: 400;
   line-height: 16px;
   color: #FFFFFF;
-  bottom: -16px;
+  bottom: -8px;
   right: 25px;
+  z-index: 11;
 }
 .blog-card .blog-card-body {
   padding-bottom: 24px;
@@ -3644,8 +3650,130 @@ filter(); */
   font-size: 16px;
   font-weight: 400;
   line-height: 19px;
-  text-decoration: underline;
+  transition: all 0.3s ease-in;
   color: #FFFFFF;
+}
+.blog-card .blog-card-body .blog-readMore::after {
+  content: "";
+  width: 100%;
+  bottom: 0;
+}
+.blog-card:hover .blog-img {
+  transform: scale(1.1);
+}
+
+.style-4 {
+  display: flex;
+  align-items: center;
+  --line: #FFFF;
+  --color: #2B3044;
+  text-decoration: none;
+  color: var(--color);
+  position: relative;
+}
+.style-4 span {
+  background-image: linear-gradient(0deg, var(--line) 0%, var(--line) 100%);
+  background-position: 100% 100%;
+  background-repeat: no-repeat;
+  background-size: var(--background-size, 100%) 1px;
+  transition: background-size 0.2s linear var(--background-delay, 0.15s);
+  font-size: 16px;
+  font-weight: 400;
+  color: #FFFFFF;
+  transform: translateZ(0);
+}
+.style-4 svg {
+  vertical-align: top;
+  display: inline;
+  line-height: 1;
+  width: 26px;
+  height: 40px;
+  position: relative;
+  left: -2px;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 1px;
+  stroke: var(--line);
+  stroke-dasharray: 7.95 30;
+  stroke-dashoffset: var(--stroke-dashoffset, 46);
+  transition: stroke-dashoffset var(--stroke-duration, 0.15s) var(--stroke-easing, linear) var(--stroke-delay, 0s);
+}
+.style-4:hover {
+  --background-size: 0%;
+  --background-delay: 0s;
+  --stroke-dashoffset: 26;
+  --stroke-duration: .3s;
+  --stroke-easing: cubic-bezier(.3, 1.5, .5, 1);
+  --stroke-delay: .195s;
+}
+
+.the-arrow {
+  width: 1px;
+  transition: all 0.2s;
+}
+.the-arrow.-left {
+  position: absolute;
+  top: 60%;
+  left: 0;
+}
+.the-arrow.-left > .shaft {
+  width: 0;
+  background-color: #4c4c4c;
+}
+.the-arrow.-left > .shaft:before, .the-arrow.-left > .shaft:after {
+  width: 0;
+  background-color: #4c4c4c;
+}
+.the-arrow.-left > .shaft:before {
+  transform: rotate(0);
+}
+.the-arrow.-left > .shaft:after {
+  transform: rotate(0);
+}
+.the-arrow.-right {
+  top: 3px;
+}
+.the-arrow.-right > .shaft {
+  width: 1px;
+  transition-delay: 0.2s;
+}
+.the-arrow.-right > .shaft:before, .the-arrow.-right > .shaft:after {
+  width: 8px;
+  transition-delay: 0.3s;
+  transition: all 0.5s;
+}
+.the-arrow.-right > .shaft:before {
+  transform: rotate(40deg);
+}
+.the-arrow.-right > .shaft:after {
+  transform: rotate(-40deg);
+}
+.the-arrow > .shaft {
+  background-color: #4c4c4c;
+  display: block;
+  height: 1px;
+  position: relative;
+  transition: all 0.2s;
+  transition-delay: 0;
+  will-change: transform;
+}
+.the-arrow > .shaft:before, .the-arrow > .shaft:after {
+  background-color: #4c4c4c;
+  content: "";
+  display: block;
+  height: 1px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transition: all 0.2s;
+  transition-delay: 0;
+}
+.the-arrow > .shaft:before {
+  transform-origin: top right;
+}
+.the-arrow > .shaft:after {
+  transform-origin: bottom right;
 }
 
 #blog-Details {
@@ -5236,7 +5364,7 @@ filter(); */
     font-size: 12px;
   }
   .mobile-menu .mobile-header .mobile-header-togol .header-search-input .search-btn {
-    padding: 7px 13px;
+    padding: 5px 13px;
   }
   .product-content-box {
     flex-direction: column;

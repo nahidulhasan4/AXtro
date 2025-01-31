@@ -18,15 +18,22 @@
     background-color: $section-secoundry;
     box-shadow: 0px 4px 84px 0px #0000000F;
     gap: 32px;
-
     .blog-card-head{
         padding: 12px;
-        padding-bottom: 0;
-        .blog-img{
+       
+       
+        .img-div{
             max-width: 342px;
-            aspect-ratio: 342px/248px;
-            object-fit: cover;
+            overflow: hidden;
+            .blog-img{
+                max-width: 100%;
+                aspect-ratio: 342px/248px;
+                object-fit: cover;
+                transition: all 0.3s ease-in-out;
+            }
         }
+       
+     
         .blog-date{
             padding: 9px 15px;
             border-radius: 4px;
@@ -35,8 +42,9 @@
             font-weight: 400;
             line-height: 16px;
             color: $heading-white;
-            bottom: -16px;
+            bottom: -8px;
             right: 25px;
+            z-index: 11;
         }
     }
     .blog-card-body{
@@ -77,13 +85,169 @@
             font-size: 16px;
             font-weight: 400;
             line-height: 19px;
-            text-decoration: underline;
+            transition: all 0.3s ease-in;
             color: $heading-white;
+            &::after{
+              content: "";
+              width: 100%;
+              bottom: 0;
+
+            }
         }
 
     }
+    &:hover{
+        .blog-img{
+            transform: scale(1.1);
+        }
+    }
 }
 
+.style-4 {
+    display: flex;
+    align-items: center;
+    --line: #FFFF;
+    --color: #2B3044;
+    text-decoration: none;
+    color: var(--color);
+    position: relative;
+    span {
+      background-image: linear-gradient(0deg, var(--line) 0%, var(--line) 100%);
+      background-position: 100% 100%;
+      background-repeat: no-repeat;
+      background-size: var(--background-size, 100%) 1px;
+      transition: background-size .2s linear var(--background-delay, .15s);
+      font-size:16px;
+      font-weight: 400;
+      color: $heading-white;
+      transform: translateZ(0);
+      }
+      svg {
+        vertical-align: top;
+        display: inline;
+        line-height: 1;
+        width: 26px;
+        height: 40px;
+        position: relative;
+        left: -2px;
+        fill: none;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 1px;
+        stroke: var(--line);
+        stroke-dasharray: 7.95 30;
+        stroke-dashoffset: var(--stroke-dashoffset, 46);
+        transition: stroke-dashoffset var(--stroke-duration, .15s) var(--stroke-easing, linear) var(--stroke-delay, 0s);
+      }
+      &:hover {
+        --background-size: 0%;
+        --background-delay: 0s;
+        --stroke-dashoffset: 26;
+        --stroke-duration: .3s;
+        --stroke-easing: cubic-bezier(.3, 1.5, .5, 1);
+        --stroke-delay: .195s;
+      }
+  }
+  
+  $black: #4c4c4c;
+  $white: #eaeaea;
+  $gray: #808080;
+  
+  $text-arrow-space: 16px;
+  $shaft-width: 1px;
+  $newshaft-width: 64px;
+  $shaft-thickness: 1px;
+  $arrow-head-width: 8px;
+  $arrow-head-thickness: $shaft-thickness;
+  
+  // The Arrow
+  
+  .the-arrow {
+    width: $shaft-width;
+    transition: all 0.2s;
+   
+    &.-left {
+      position: absolute;
+      top: 60%;
+      left: 0;
+  
+      > .shaft {
+        width: 0;
+        background-color: $black;
+        
+        &:before,
+        &:after {
+          width: 0;
+          background-color: $black;
+        }
+  
+        &:before {
+          transform: rotate(0);
+        }
+  
+        &:after {
+          transform: rotate(0);
+        }
+      }
+    }
+    
+    &.-right {
+      top: 3px;
+      
+      > .shaft {
+        width: $shaft-width;
+        transition-delay: 0.2s;
+  
+        &:before,
+        &:after { 
+          width: $arrow-head-width;
+          transition-delay: 0.3s;
+          transition: all 0.5s;
+        }
+        
+        &:before {
+          transform: rotate(40deg);
+        }
+        
+        &:after {
+          transform: rotate(-40deg);
+        }
+      }
+    }
+  
+    > .shaft {
+      background-color: $black;
+      display: block;
+      height: $shaft-thickness;
+      position: relative;
+      transition: all 0.2s;
+      transition-delay: 0;
+      will-change: transform;
+  
+      &:before,
+      &:after {
+        background-color: $black;
+        content: '';
+        display: block;
+        height: $arrow-head-thickness;
+        position: absolute;
+        top: 0;
+        right: 0;
+        transition: all 0.2s;
+        transition-delay: 0;
+      }
+  
+      &:before {
+        transform-origin: top right;
+      }
+  
+      &:after {
+        transform-origin: bottom right;
+      }
+    }
+  }
+  
+  
 // here design all deatils secction 
 #blog-Details{
     margin-top: 60px;
