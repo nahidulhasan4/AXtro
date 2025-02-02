@@ -89,6 +89,7 @@ new Swiper(".hero-swiper", {
   },
   pagination: {
     el: ".swiper-pagination",
+    clickable: true,
     type: "bullets",
   },
 
@@ -125,6 +126,7 @@ new Swiper(".review-swiper", {
   pagination: {
     el: ".swiper-pagination",
     type: "bullets",
+    clickable: true,
   },
 
   breakpoints: {

@@ -838,6 +838,7 @@ a {
   border: 1px solid #3C3E42;
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
+  color: #FFFFFF !important;
 }
 .mobile-menu .offcanvas .drop-dwonMenu {
   gap: 20px;
@@ -1383,7 +1384,6 @@ a {
   gap: 1.6rem;
 }
 #games .games-card .game-card-head {
-  max-width: 160px;
   width: 100%;
   overflow: hidden;
 }
@@ -1398,14 +1398,13 @@ a {
 }
 #games .games-card .game-card-head .games-img {
   width: 100%;
-  aspect-ratio: 160px/125px;
+  aspect-ratio: 160px/125px !important;
   height: auto;
   object-fit: cover;
   border-radius: 6px;
   transition: all 0.3s ease-in-out;
 }
 #games .games-card .game-car-body {
-  max-width: 220px;
   width: 100%;
 }
 #games .games-card .game-car-body .gameCard-price {
@@ -1759,6 +1758,7 @@ a {
   gap: 1.6rem;
 }
 .games-card .game-card-head {
+  width: 100% !important;
   overflow: hidden;
 }
 .games-card .game-card-head .games-watch-icon {
@@ -1771,12 +1771,14 @@ a {
   z-index: 11;
 }
 .games-card .game-card-head .games-img {
+  width: 100%;
+  aspect-ratio: 246/193;
+  object-fit: contain;
   height: auto;
   object-fit: cover;
   transition: all 0.3s ease-in-out;
 }
 .games-card .game-car-body {
-  max-width: 220px;
   width: 100%;
 }
 .games-card .game-car-body .gameCard-price {
