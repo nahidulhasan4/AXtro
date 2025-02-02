@@ -318,6 +318,7 @@ function createModal(id) {
 
 function initializeModals() {
   const modalContainer = document.getElementById('modal-container');
+ if(modalContainer){
   modalContainer.appendChild(createModal('modal1'));
   modalContainer.appendChild(createModal('modal2'));
   modalContainer.appendChild(createModal('modal3'));
@@ -333,6 +334,7 @@ function initializeModals() {
       modal.classList.add('open');
     });
   });
+ }
 }
 
 document.addEventListener('DOMContentLoaded', initializeModals);

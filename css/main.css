@@ -1196,7 +1196,7 @@ a {
   margin-right: 17%;
   max-width: 429px;
   width: 100%;
-  aspect-ratio: 429px/434px;
+  aspect-ratio: 429/434;
 }
 #hero .swiper-pagination {
   display: flex;
@@ -1326,7 +1326,7 @@ a {
 }
 #offer-Card .offer-card .offer-img {
   width: 100%;
-  aspect-ratio: 370px/180px;
+  aspect-ratio: 370/180;
   object-fit: cover;
   transition: all 0.3s ease-in-out;
 }
@@ -1398,7 +1398,7 @@ a {
 }
 #games .games-card .game-card-head .games-img {
   width: 100%;
-  aspect-ratio: 160px/125px !important;
+  aspect-ratio: 160/125 !important;
   height: auto;
   object-fit: cover;
   border-radius: 6px;
@@ -1456,7 +1456,7 @@ a {
   height: 100%;
   object-fit: cover;
   border-radius: 8px;
-  aspect-ratio: 258px/501px;
+  aspect-ratio: 258/501;
 }
 
 .offerCard-btn .offercard-link,
@@ -1893,7 +1893,7 @@ a {
 }
 #recommendtion .games-card .game-card-head {
   width: 160px !important;
-  aspect-ratio: 160px/125.85px;
+  aspect-ratio: 160/125.85;
 }
 #recommendtion .games-card .game-card-head .games-watch-icon {
   padding: 5px;
@@ -2111,7 +2111,7 @@ a {
 }
 .main-maintenacebox .maintenace-Img {
   width: 100%;
-  aspect-ratio: 739px/415px;
+  aspect-ratio: 739/415;
   object-fit: cover;
 }
 .main-maintenacebox .mianten-heading {
@@ -2130,7 +2130,7 @@ a {
 }
 .server-error .maintenace-Img {
   width: 100%;
-  aspect-ratio: 570px/450px;
+  aspect-ratio: 570/450;
   object-fit: cover;
 }
 .server-error .mianten-heading {
@@ -2410,7 +2410,7 @@ a {
 .free-offer .free-offer-content .img-offer {
   max-width: 228px;
   width: 100%;
-  aspect-ratio: 228px/280px;
+  aspect-ratio: 228/280;
 }
 .free-offer .free-offer-content .free-offer-title {
   margin-top: 26px;
@@ -2549,7 +2549,7 @@ a {
 .product-imgbox .product-img {
   width: 100%;
   max-width: 492px;
-  aspect-ratio: 492px/345px;
+  aspect-ratio: 492/345;
   object-fit: cover;
 }
 
@@ -2668,7 +2668,7 @@ filter(); */
 
 .hero-imgbox .product-details-img {
   max-width: 769px;
-  aspect-ratio: 769px/605px;
+  aspect-ratio: 769/605;
   object-fit: cover;
 }
 .hero-imgbox .product-acocunt-name {
@@ -2716,11 +2716,11 @@ filter(); */
 }
 .silder-card .imgBox {
   max-width: 135.32px;
-  aspect-ratio: 135.32px/123.6px;
+  aspect-ratio: 135.32/123.6;
 }
 .silder-card .hover-img {
   max-width: 22px;
-  aspect-ratio: 22px/11px;
+  aspect-ratio: 22/11;
   bottom: -13px;
   opacity: 0;
   transition: all 0.3s linear;
@@ -2818,7 +2818,7 @@ filter(); */
 }
 .review-card .review-card-body .review-castumer .castomer-img {
   max-width: 38px;
-  aspect-ratio: 38px/38px;
+  aspect-ratio: 38/38;
 }
 .review-card .review-card-body .review-castumer .customer-details {
   color: #FFFFFF;
@@ -2867,7 +2867,7 @@ filter(); */
 }
 .seller-profile .seller-profile-img {
   max-width: 112px;
-  aspect-ratio: 112px/112px;
+  aspect-ratio: 112/112;
   align-self: center;
 }
 
@@ -2916,7 +2916,7 @@ filter(); */
   height: auto;
 }
 .add-imgbox .add-img {
-  aspect-ratio: 370px/520px;
+  aspect-ratio: 370/520;
   object-fit: cover;
 }
 
@@ -3193,7 +3193,7 @@ filter(); */
 }
 #cart-view .cart-table .first-data .cart-card-img {
   max-width: 132px;
-  aspect-ratio: 132px/104px;
+  aspect-ratio: 132/104;
   object-fit: cover;
 }
 #cart-view .cart-table .discount-cart-price {
@@ -3362,7 +3362,7 @@ filter(); */
 
 .paymentcrad-img {
   max-width: 116px;
-  aspect-ratio: 116px/92px;
+  aspect-ratio: 116/92;
 }
 
 .return-box {
@@ -3436,7 +3436,7 @@ filter(); */
 }
 .succes-modal .sucess-img {
   max-width: 174px;
-  aspect-ratio: 174px/174px;
+  aspect-ratio: 174/174;
   object-fit: cover;
 }
 .succes-modal .success-modal-detal {
@@ -3610,7 +3610,7 @@ filter(); */
 }
 .blog-card .blog-card-head .img-div .blog-img {
   max-width: 100%;
-  aspect-ratio: 342px/248px;
+  aspect-ratio: 342/248;
   object-fit: cover;
   transition: all 0.3s ease-in-out;
 }
@@ -3644,7 +3644,7 @@ filter(); */
 }
 .blog-card .blog-card-body .blog-writer-box .writer-img-box .writer-img {
   max-width: 32px;
-  aspect-ratio: 32px/32px;
+  aspect-ratio: 32/32;
   object-fit: cover;
 }
 .blog-card .blog-card-body .blog-writer-box .writer-img-box .writer-name {
@@ -3793,7 +3793,7 @@ filter(); */
 }
 #blog-Details .blog-hero-Img .blog-detailsImg {
   width: 100%;
-  aspect-ratio: 970px/695px;
+  aspect-ratio: 970/695;
   object-fit: cover;
 }
 #blog-Details .blog-post-details {
@@ -3837,7 +3837,7 @@ filter(); */
 }
 #blog-Details .blog-details-box .blog-writer-viewbox .blog-writer-vieww .blog-writerImg {
   max-width: 70px;
-  aspect-ratio: 70px/70px;
+  aspect-ratio: 70/70;
 }
 #blog-Details .blog-details-box .blog-writer-viewbox .blog-writer-vieww .blog-writer-infobox .writer-information {
   font-size: 18px;
@@ -3861,7 +3861,7 @@ filter(); */
   width: 100%;
   height: auto;
   object-fit: cover;
-  aspect-ratio: 467px/250px;
+  aspect-ratio: 467/250;
 }
 #blog-Details .blog-details-box .blog-content-details .blog-content-info {
   margin-top: 20px;
@@ -3931,7 +3931,7 @@ filter(); */
 }
 #blog-Details .comment-box .coment-card-box .comment-card .comment-writerimg {
   max-width: 120px;
-  aspect-ratio: 120px/120px;
+  aspect-ratio: 120/120;
   object-fit: cover;
   width: 100%;
 }
@@ -4092,7 +4092,8 @@ filter(); */
   margin-top: 8px;
 }
 #about-us .about-us-hero .about-us-content .web-owner-box .owner-img {
-  aspect-ratio: 72px/72px;
+  width: 100;
+  aspect-ratio: 72/7;
   object-fit: cover;
 }
 #about-us .about-us-hero .about-us-content .web-owner-box .wowner-cdetails .owner-name {
@@ -4115,7 +4116,7 @@ filter(); */
 }
 #about-us .about-us-hero .about-us-imgbox .about-us-img {
   width: 100%;
-  aspect-ratio: 586px/479px;
+  aspect-ratio: 586/479;
   object-fit: cover;
 }
 
@@ -4355,7 +4356,7 @@ filter(); */
 }
 #Contact-Us .contact-imgbox .contact-img {
   width: 100%;
-  aspect-ratio: 370px/266px;
+  aspect-ratio: 370/266;
   object-fit: cover;
 }
 #Contact-Us .support-box {
@@ -6168,7 +6169,7 @@ filter(); */
   }
   .user-order .user-card .user-card-head .user-orderCard-img {
     width: 100%;
-    aspect-ratio: 260px/225.88px;
+    aspect-ratio: 260/225.88;
     object-fit: cover;
   }
   .user-order .user-card .user-card-body {
@@ -6418,7 +6419,7 @@ filter(); */
   #hero .hero-benner-box .hero-content-box .hero-img {
     max-width: 429px;
     width: 100%;
-    aspect-ratio: 429px/434px;
+    aspect-ratio: 429/434;
   }
   #gift-section {
     background-color: #0B0E13;
@@ -6514,7 +6515,7 @@ filter(); */
   }
   #games .games-card .game-card-head {
     width: 160px;
-    aspect-ratio: 160px/125px;
+    aspect-ratio: 160/125;
   }
   #games .games-card .game-card-head .games-watch-icon {
     padding: 5px;
@@ -6724,7 +6725,7 @@ filter(); */
   }
   #recommendtion .games-card .game-card-head {
     width: 160px !important;
-    aspect-ratio: 160px/125.85px;
+    aspect-ratio: 160/125.85;
   }
   #recommendtion .games-card .game-card-head .games-watch-icon {
     padding: 5px;
@@ -6860,7 +6861,7 @@ filter(); */
   }
   #product-details .imgBox {
     max-width: 124.32px;
-    aspect-ratio: 124.32px/123.6px;
+    aspect-ratio: 124.32/123.6;
   }
   #product-details .product-content-box {
     flex-direction: column;
@@ -6901,7 +6902,7 @@ filter(); */
   }
   #our-Blog .blog-card .blog-card-head .blog-img {
     max-width: 260px;
-    aspect-ratio: 270px/248px;
+    aspect-ratio: 270/248;
     object-fit: cover;
   }
   #our-Blog .blog-card .blog-card-body {
@@ -7002,7 +7003,7 @@ filter(); */
   }
   .user-order .user-card .user-card-head .user-orderCard-img {
     width: 100%;
-    aspect-ratio: 260px/225.88px;
+    aspect-ratio: 260/225.88;
     object-fit: cover;
   }
   .user-order .user-card .user-card-body {
@@ -7305,7 +7306,7 @@ filter(); */
   }
   #product-details .imgBox {
     max-width: 124.32px;
-    aspect-ratio: 124.32px/123.6px;
+    aspect-ratio: 124.32/123.6;
   }
   #product-details .product-content-box {
     flex-direction: column;
@@ -7345,7 +7346,7 @@ filter(); */
   }
   #our-Blog .blog-card .blog-card-head .blog-img {
     max-width: 300px;
-    aspect-ratio: 270px/248px;
+    aspect-ratio: 270/248;
     object-fit: cover;
   }
   #our-Blog .blog-card .blog-card-body {
@@ -7588,7 +7589,7 @@ filter(); */
   }
   #product-details .imgBox {
     max-width: 124.32px;
-    aspect-ratio: 124.32px/123.6px;
+    aspect-ratio: 124.32/123.6;
   }
   #product-details .product-content-box {
     flex-direction: column;
@@ -7616,7 +7617,7 @@ filter(); */
   }
   #product-details .product-details-img {
     max-width: 1024px;
-    aspect-ratio: 769px/605px;
+    aspect-ratio: 769/605;
     object-fit: cover;
   }
   #product-details .product-content {
@@ -7639,7 +7640,7 @@ filter(); */
   }
   #our-Blog .blog-card .blog-card-head .blog-img {
     max-width: 460px;
-    aspect-ratio: 270px/248px;
+    aspect-ratio: 270/248;
     object-fit: cover;
   }
   #our-Blog .blog-card .blog-card-body {

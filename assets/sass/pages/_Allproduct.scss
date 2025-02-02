@@ -331,7 +331,7 @@
         .img-offer {
             max-width: 228px;
             width: 100%;
-            aspect-ratio: 228px/280px;
+            aspect-ratio: 228/280;
         }
 
         .free-offer-title {
@@ -484,7 +484,7 @@
     .product-img{
         width: 100%;
         max-width: 492px;
-        aspect-ratio: 492px/345px;
+        aspect-ratio: 492/345;
         object-fit: cover;
     }
 }

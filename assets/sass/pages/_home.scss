@@ -151,7 +151,7 @@
                margin-right: 17%;
                 max-width: 429px;
                 width: 100%;
-                aspect-ratio: 429px/434px;
+                aspect-ratio: 429/434;
             }
 
         }
@@ -307,7 +307,7 @@
         overflow: hidden;
         .offer-img{
             width: 100%;
-            aspect-ratio: 370px/180px;
+            aspect-ratio: 370/180;
             object-fit: cover;
             transition: all 0.3s ease-in-out;
         }
@@ -400,7 +400,7 @@
             }
             .games-img{
                 width: 100%;
-                aspect-ratio: 160px/125px !important;
+                aspect-ratio: 160/125 !important;
                 height: auto;
                 object-fit: cover;
                 border-radius: 6px;
@@ -471,7 +471,7 @@
             height: 100%;
             object-fit: cover;
             border-radius: 8px;
-            aspect-ratio: 258px/501px;
+            aspect-ratio: 258/501;
         
         }
 
@@ -988,7 +988,7 @@
         .game-card-head{
             
             width: 160px !important;
-            aspect-ratio: 160px/125.85px;
+            aspect-ratio: 160/125.85;
 
             .games-watch-icon{
                 padding: 5px;
@@ -1238,7 +1238,7 @@
     height: auto;
     .maintenace-Img{
         width: 100%;
-        aspect-ratio: 739px/415px;
+        aspect-ratio: 739/415;
         object-fit: cover;
 
     }
@@ -1261,7 +1261,7 @@
     margin-bottom: 60px ;
     .maintenace-Img{
         width: 100%;
-        aspect-ratio: 570px/450px;
+        aspect-ratio: 570/450;
         object-fit: cover;
 
     }

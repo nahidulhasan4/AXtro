@@ -53,7 +53,7 @@
 .hero-imgbox{
     .product-details-img{
         max-width: 769px;
-        aspect-ratio: 769px/ 605px;
+        aspect-ratio: 769/ 605;
         object-fit: cover;
        }
        .product-acocunt-name{
@@ -111,11 +111,11 @@
  }
  .imgBox{
     max-width: 135.32px;
-    aspect-ratio: 135.32px/123.6px;
+    aspect-ratio: 135.32/123.6;
  }
  .hover-img{
     max-width: 22px;
-    aspect-ratio: 22px/11px;
+    aspect-ratio: 22/11;
     bottom: -13px;
     opacity: 0;
     transition: all 0.3s linear;
@@ -227,7 +227,7 @@
         .review-castumer{
             .castomer-img{
                 max-width: 38px;
-                aspect-ratio: 38px/38px;
+                aspect-ratio: 38/38;
             }
             .customer-details{
                 color: $heading-white;
@@ -287,7 +287,7 @@
     }
     .seller-profile-img{
         max-width: 112px;
-        aspect-ratio: 112px/112px;
+        aspect-ratio: 112/112;
         align-self: center;
     }
 }
@@ -341,7 +341,7 @@
     height: auto;
    
     .add-img{
-        aspect-ratio: 370px/520px;
+        aspect-ratio: 370/520;
         object-fit: cover;
     }
 }
