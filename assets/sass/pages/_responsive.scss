@@ -976,9 +976,30 @@ flex-direction: column;
 
         .counter-box{
             display: grid;
-            grid-template-columns: repeat(1, minmax(174px, 1fr));
-            grid-column-gap: 3rem;
-            grid-row-gap: 3rem;
+            grid-template-columns: repeat(2, minmax(140px, 1fr));
+            grid-column-gap: 0;
+            grid-row-gap: 2rem;
+            .single-counter{
+                gap: 15px;
+            }
+            .counter-img{
+                width: 80px;
+                height: 80px;
+                .count-img{
+                    width: 100%;
+                    aspect-ratio: 118/118;
+                    object-fit: cover;
+                }
+            }
+            .counter-number{
+                font-size: 30px;
+                line-height: 20px;
+            }
+            .counter-name{
+                font-size: 16px;
+                line-height: 20px;
+
+            }
         }
     }
     .vendor-box{
@@ -2717,7 +2738,7 @@ flex-direction: column;
 
             .counter-box{
                 display: grid;
-                grid-template-columns: repeat(3, minmax(174px, 1fr));
+                grid-template-columns: repeat(2, minmax(174px, 1fr)) !important;
                 grid-column-gap: 3rem;
                 grid-row-gap: 3rem;
             }

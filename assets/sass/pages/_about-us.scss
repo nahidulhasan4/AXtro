@@ -28,7 +28,8 @@
                 .about-us-infobox{
                     gap: 35px;
                     margin-top: 14px;
-                    max-width: 570px;
+                    
+                    width: 100%;
                     .about-us-info{
                         color: $heading-white;  
                        font-size: 16px;
@@ -71,10 +72,12 @@
             }
         }
         .about-us-imgbox{
-            max-width: 586px;
+            max-width: 786px;
+            width: 100%;
             .about-us-img{
                 width: 100%;
                 aspect-ratio: 586px/479px ;
+                object-fit: cover;
             }
           
            
@@ -88,6 +91,15 @@
         grid-template-columns: repeat(4, minmax(174px, 1fr));
         grid-column-gap: 3rem;
         grid-row-gap: 3rem;
+        .counter-img{
+            width: 118px;
+            height: 118px;
+            .count-img{
+                width: 100%;
+                aspect-ratio: 118/118;
+                object-fit: cover;
+            }
+        }
     }
     .single-counter{
         gap: 2.5rem;
